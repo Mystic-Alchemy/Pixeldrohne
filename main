@@ -1,0 +1,180 @@
+import asyncio
+import io
+import random
+import sqlite3
+import discord
+import requests
+import sys
+
+client = discord.Client()
+pmcid = "216529627034812416"
+pxlid = "269431915725979648"
+rpyid = "207899976796209152"
+connection = sqlite3.connect("bot.db")
+cursor = connection.cursor()
+mods = open("mods.txt", "r", encoding='utf-8')
+
+minutes = 0
+hour = 0
+
+@client.event
+async def on_ready():
+    print('Eingeloggt als')
+    print(client.user.name)
+    print(client.user.id)
+    print('------------------------')
+    await client.change_presence(game=discord.Game(name='In der Entwicklung',type=0))
+    startup = discord.Embed(color=0x1213a6, title="Moinsen", description="Ich bin auch wieder da!")
+    await client.send_message(discord.Object(id='269432704360120321'), embed=startup)
+
+@client.event
+async def on_message(message):
+    # Coinflip
+    if message.content.lower().startswith('p.coin'):
+        choice = random.randint(1,2)
+        if choice == 1:
+            await client.add_reaction(message, '🌑')
+        if choice == 2:
+            await client.add_reaction(message, '🌕')
+
+    # Spielstatus
+    if message.content.startswith('p.game') and message.author.id == pmcid:
+        game = message.content[7:]
+        await client.change_presence(game=discord.Game(name=game,type=0))
+        await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
+
+    # Pixels Liebling
+    if message.content.startswith('p.pixels_liebling'):
+        response = requests.get('https://media.giphy.com/media/3xz2BIXYagz5STg0xi/giphy.gif', stream=True)
+        await  client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="kaffee.gif", content="Jeder muss Pixel's Liebling kennen")
+
+    # Uptime abrufen
+    if message.content.startswith('p.uptime'):
+        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten im Testbetrieb".format(hour, minutes))
+
+    # Hilfe
+    if message.content.lower().startswith('p.hilfe'):
+        embed = discord.Embed(
+            title="Die Befehle der Pixeldrohne",
+            color=0xad1457,
+            description="Die Pixeldrohne ist ein Projekt von @PilleniusMC\n"
+                        "Sie ist ein ganz normaler Bot, der eure Befehle ausführt."
+        )
+        embed.set_author(
+            name="Pixeldrohne",
+            icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png",
+            url="https://twitch.tv/pixelwerfer"
+        )
+        embed.add_field(
+            name="p.coin",
+            value="Münzwurf"
+        )
+        embed.add_field(
+            name="p.pixels_liebling",
+            value="Kaffee, einfach\nnur Kaffee"
+        )
+        embed.add_field(
+            name="p.uptime",
+            value="Wie lang der Bot\nan dem Tag schon läuft."
+        )
+        embed.add_field(
+            name="p.hilfe",
+            value="Dieser Befehl"
+        )
+        embed.add_field(
+            name="p.avatar",
+            value="Das Profilbild einer\nPerson in groß."
+        )
+        embed.add_field(
+            name="p.ssp",
+            value="Schere, Stein, Papier\n[Von Bober gewünscht]"
+        )
+        embed.add_field(
+            name="p.zitat",
+            value="Zufälliges Zitat mit\nfalschem Autor"
+        )
+        embed.add_field(
+            name="p.schreiben",
+            value="Du fügst den mit p.zitat\nabgerufenen Zitaten deines\nhinzu."
+        )
+        embed.add_field(
+            name="p.enter",
+            value="Diesen Befehl bitte\nausführen wenn euch\ndie Pixeldrohne NICHT\nbegrüßt hat."
+        )
+        embed.add_field(
+            name="p.ja",
+            value="Reaktion"
+        )
+        embed.add_field(
+            name="p.nein",
+            value="Reaktion"
+        )
+        embed.add_field(
+            name="p.tableflip",
+            value="Reaktion"
+        )
+        embed.add_field(
+            name="p.response",
+            value="Der Bot redet\nmit euch."
+        )
+        embed.set_footer(
+            text='Dieser Bot ist in aktiver Entwicklung, fast täglich gibt es neues Zeug.',
+            icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
+        )
+        embed.set_thumbnail(
+            url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
+        )
+        await client.send_message(message.channel, embed=embed)
+
+    # Avatar abrufen
+    if message.content.startswith('p.avatar'):
+        if len(message.content) == 8:
+            user = message.author
+            response = requests.get(user.avatar_url, stream=True)
+            await client.send_file(message.channel, io.BytesIO(response.raw.read()),
+                                   filename="avatar.jpg", content=message.author.name)
+        if len(message.content) > 8:
+            user = message.mentions[0]
+            response = requests.get(user.avatar_url, stream=True)
+            await client.send_file(message.channel, io.BytesIO(response.raw.read()),
+                                   filename="avatar.jpg", content=user.display_name)
+
+    # Bot Remote
+    if message.content.startswith('p.say') and message.channel == client.get_channel('347000675093315584'):
+        msg = message.content[5:]
+        await client.delete_message(message)
+        await client.send_typing(discord.Object(id='269432704360120321'))
+        await asyncio.sleep(2)
+        await client.send_message(discord.Object(id='269432704360120321'), msg)
+
+    # Bot Remote Embed
+    if message.content.startswith('p.esay') and message.channel == client.get_channel('347000675093315584'):
+        emsg = message.content[7:]
+        embedmsg = discord.Embed(color=0x1213a6, description=emsg)
+        await client.delete_message(message)
+        await client.send_typing(discord.Object(id='269432704360120321'))
+        await asyncio.sleep(2)
+        await client.send_message(discord.Object(id='269432704360120321'), embed=embedmsg)
+
+    # Botstop
+    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+        emstop = discord.Embed(color=0x1213a6, title="Ich sage gute Nacht",  description="Drohne schaltet sich ab!")
+        await client.send_message(discord.Server, embed=emstop)
+        await client.close()
+        sys.exit()
+
+async def uptime():
+    await client.wait_until_ready()
+    global minutes
+    minutes = 0
+    global hour
+    hour = 0
+    while not client.is_closed:
+        await asyncio.sleep(60)
+        minutes +=1
+        if minutes == 60:
+            minutes = 0
+            hour += 1
+
+client.loop.create_task(uptime())
+client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
