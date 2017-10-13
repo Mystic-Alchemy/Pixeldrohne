@@ -6,7 +6,7 @@ client = discord.Client()
 players = {}
 pmcid = "216529627034812416"
 rpyid = "207899976796209152"
-mods = open("mods.txt", "r", encoding='utf-8')
+mods = open("config/mods.txt", "r", encoding='utf-8')
 
 
 @client.event
@@ -47,12 +47,6 @@ async def on_message(message):
             await client.send_message(message.channel, "Ich bin doch in keinem Kanal, was willst du von mir?")
         except Exception as error:
             await client.send_message(message.channel, "Ein Error is aufgetreten:\n ```{error}```".format(error=error))
-
-    if message.content.startswith('p.add'):
-        warteschlange = open("warteschlange.txt", "a", encoding='utf-8')
-        warteschlange.write(message.content[6:] + "\n")
-        await client.send_message(message.channel, "Das Video {0} wurde der "
-                                                   "Warteschlange hinzugefügt.".format(message.content[5:]))
 
     if message.content.startswith('p.play'):
         yt_url = message.content[7:]

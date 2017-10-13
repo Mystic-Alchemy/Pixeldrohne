@@ -12,7 +12,7 @@ pxlid = "269431915725979648"
 rpyid = "207899976796209152"
 connection = sqlite3.connect("bot.db")
 cursor = connection.cursor()
-mlist = open("mods.txt", "r", encoding='utf-8')
+mlist = open("config/mods.txt", "r", encoding='utf-8')
 mods = mlist.readlines()
 
 @client.event

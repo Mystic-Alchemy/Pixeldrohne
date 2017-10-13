@@ -12,7 +12,7 @@ messageuserid = None
 botid = "346997169070276608"
 pmcid = "216529627034812416"
 rpyid = "207899976796209152"
-mods = open("mods.txt", "r", encoding='utf-8')
+mods = open("config/mods.txt", "r", encoding='utf-8')
 
 @client.event
 async def on_ready():
@@ -24,14 +24,14 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.lower().startswith('p.zitat'):
-        öffnen = open("zitate.txt", "r", encoding='utf-8')
+        öffnen = open("config/zitate.txt", "r", encoding='utf-8')
         auswahl = öffnen.readlines()
         zitat = random.choice(auswahl)
         await client.send_message(message.channel, zitat)
         öffnen.close()
 
     if message.content.lower().startswith('p.schreiben'):
-        datei = open("zitate.txt", "a", encoding='utf-8')
+        datei = open("config/zitate.txt", "a", encoding='utf-8')
         zitat = message.content[12:]
         datei.write("\n" + zitat)
         await client.send_message(message.channel, "Dein Zitat `{0}` wurde der Liste hinzugefügt.".format(zitat))

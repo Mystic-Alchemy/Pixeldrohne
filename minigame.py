@@ -7,7 +7,7 @@ import requests
 client = discord.Client()
 pmcid = "216529627034812416"
 rpyid = "207899976796209152"
-mods = open("mods.txt", "r", encoding='utf-8')
+mods = open("config/mods.txt", "r", encoding='utf-8')
 
 @client.event
 async def on_ready():
@@ -35,9 +35,12 @@ async def on_message(message):
         elif (spieler.lower() == "schere" and wahl.lower() == "stein") or\
                 (spieler.lower() == "stein" and wahl.lower() == "papier") or\
                 (spieler.lower() == "papier" and wahl.lower() == "schere"):
-            ergemb = discord.Embed(color=0xb21512, title="Verloren", description="Yay! Ich habe gewonnen."
-                                                                                      "\n\n Du hast {sp} gewählt, ich "
-                                        "habe {bot} gewählt.".format(sp=spieler.capitalize(), bot=wahl.capitalize()))
+            ergemb = discord.Embed(color=0xb21512, title="Verloren", description="Yay! Ich habe gewonnen.\n\n"
+                                                                                 " Du hast {sp} gewählt, ich"
+                                                                                 " habe {bot}"
+                                                                                 " gewählt.".format(
+                                                                                    sp=spieler.capitalize(),
+                                                                                    bot=wahl.capitalize()))
             await client.send_message(message.channel, embed=ergemb)
         elif (wahl.lower() == "schere" and spieler.lower() == "stein") or\
                 (wahl.lower() == "stein" and spieler.lower() == "papier") or\
