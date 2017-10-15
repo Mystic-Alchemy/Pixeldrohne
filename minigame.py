@@ -3,6 +3,7 @@ import asyncio
 import io
 import random
 import requests
+import sys
 
 client = discord.Client()
 pmcid = "216529627034812416"
@@ -53,7 +54,7 @@ async def on_message(message):
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
         await client.close()
-        sys.exit(0)
+        sys.exit(1)
 
 
 client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')

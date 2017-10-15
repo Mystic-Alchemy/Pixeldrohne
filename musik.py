@@ -100,6 +100,6 @@ async def on_message(message):
 
     if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
         await client.close()
-        sys.exit(0)
+        sys.exit(1)
 
 client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
