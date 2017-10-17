@@ -4,21 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="178" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
-      <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
-      <change beforePath="$PROJECT_DIR$/minigame.py" afterPath="$PROJECT_DIR$/minigame.py" />
-      <change beforePath="$PROJECT_DIR$/moderation.py" afterPath="$PROJECT_DIR$/moderation.py" />
-      <change beforePath="$PROJECT_DIR$/musik.py" afterPath="$PROJECT_DIR$/musik.py" />
-      <change beforePath="$PROJECT_DIR$/reactions.py" afterPath="$PROJECT_DIR$/reactions.py" />
+      <change beforePath="$PROJECT_DIR$/mentions.py" afterPath="$PROJECT_DIR$/mentions.py" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="" />
-    <list default="true" id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
+    <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
     <ignored path="config/" />
     <ignored path="keys.py" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minigame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="minigame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minigame.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
@@ -51,6 +45,16 @@
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mentions.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mentions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +149,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/db_creation.py" />
         <option value="$PROJECT_DIR$/template.py" />
-        <option value="$PROJECT_DIR$/mentions.py" />
         <option value="$PROJECT_DIR$/test/template.py" />
         <option value="$PROJECT_DIR$/chatlog.log" />
         <option value="$PROJECT_DIR$/troll.py" />
@@ -162,6 +165,7 @@
         <option value="$PROJECT_DIR$/reactions.py" />
         <option value="$PROJECT_DIR$/musik.py" />
         <option value="$PROJECT_DIR$/minigame.py" />
+        <option value="$PROJECT_DIR$/mentions.py" />
       </list>
     </option>
   </component>
@@ -420,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508178234978</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird.">
+      <created>1508242280540</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1508242280540</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -511,7 +522,8 @@
     <MESSAGE value="Botstop geändert&#10;Update: zitate.txt&#10;Update: bot.db" />
     <MESSAGE value="Regelmäßiges Update" />
     <MESSAGE value="Anti Mentions hinzugefügt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Anti Mentions hinzugefügt." />
+    <MESSAGE value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -775,13 +787,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../tobsuas/mentions.py" />
-    <entry file="file://$PROJECT_DIR$/mentions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/asyncio/base_events.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -876,6 +881,14 @@
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mentions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

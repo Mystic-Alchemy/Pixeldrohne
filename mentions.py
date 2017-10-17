@@ -4,6 +4,8 @@ import random
 import sqlite3
 import discord
 import requests
+import keys
+
 
 client = discord.Client()
 pmcid = "216529627034812416"
@@ -31,4 +33,4 @@ async def on_message(message):
     except Exception as error:
         print("Erwarteter Error: {error}".format(error=error))
 
-client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
+client.run(keys.token)
