@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Readme geändert, die Fünfte: Formatfehler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config/zitate.txt" afterPath="$PROJECT_DIR$/config/zitate.txt" />
       <change beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
       <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
       <change beforePath="$PROJECT_DIR$/mentions.py" afterPath="$PROJECT_DIR$/mentions.py" />
@@ -558,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508252673863</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt">
+      <created>1508253988425</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1508253988425</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,7 +672,8 @@
     <MESSAGE value="Readme geändert, die Fünfte: Formatfehler" />
     <MESSAGE value="Ich habe mal was nettes entfernt." />
     <MESSAGE value="SauseBot" />
-    <option name="LAST_COMMIT_MESSAGE" value="SauseBot" />
+    <MESSAGE value="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">

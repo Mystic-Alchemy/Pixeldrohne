@@ -1,12 +1,9 @@
 import discord
-import asyncio
 import sys
 import keys
 
 client = discord.Client()
 players = {}
-pmcid = "216529627034812416"
-rpyid = "207899976796209152"
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 
@@ -99,7 +96,7 @@ async def on_message(message):
         except Exception as error:
             await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
 
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
         sys.exit(1)
 

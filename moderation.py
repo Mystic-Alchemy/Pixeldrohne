@@ -1,16 +1,9 @@
-import asyncio
-import io
-import random
 import sqlite3
 import discord
-import requests
 import sys
 import keys
 
 client = discord.Client()
-pmcid = "216529627034812416"
-pxlid = "269431915725979648"
-rpyid = "207899976796209152"
 connection = sqlite3.connect("bot.db")
 cursor = connection.cursor()
 mlist = open("config/mods.txt", "r", encoding='utf-8')
@@ -27,7 +20,7 @@ async def on_ready():
 async def on_message(message):
     # Massenlöschung
     try:
-        if message.content.lower().startswith('p.purge') and ((message.author.id in mods) or pmcid or pxlid):
+        if message.content.lower().startswith('p.purge') and ((message.author.id in mods) or keys.pmcid or keys.pxlid):
             await client.purge_from(message.channel, limit=int(message.content[8:]))
             await client.send_message(message.channel, "Erfolgreich gelöscht.")
     except Exception as e:
@@ -43,7 +36,7 @@ async def on_message(message):
         madd.close()
 
     # Botstop
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         mlist.close()
         await client.close()
         sys.exit(1)

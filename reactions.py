@@ -4,15 +4,10 @@ import random
 import io
 import sys
 import keys
-import os
-import codecs
 
 client = discord.Client()
 messageid = None
 messageuserid = None
-botid = "346997169070276608"
-pmcid = "216529627034812416"
-rpyid = "207899976796209152"
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 @client.event
@@ -77,7 +72,7 @@ async def on_message(message):
         response = requests.get('https://media.giphy.com/media/3ohhwqOVlEbBxEbss0/giphy.gif', stream=True)
         await client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="porg.gif")
 
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
         sys.exit(1)
 

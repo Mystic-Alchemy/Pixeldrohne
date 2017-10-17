@@ -1,18 +1,12 @@
 import asyncio
 import io
 import random
-import sqlite3
 import discord
 import requests
 import sys
 import keys
 
 client = discord.Client()
-pmcid = "216529627034812416"
-pxlid = "269431915725979648"
-rpyid = "207899976796209152"
-connection = sqlite3.connect("bot.db")
-cursor = connection.cursor()
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 minutes = 0
@@ -37,7 +31,7 @@ async def on_message(message):
             await client.add_reaction(message, '🌕')
 
     # Spielstatus
-    if message.content.startswith('p.game') and message.author.id == pmcid:
+    if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]
         await client.change_presence(game=discord.Game(name=game,type=0))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
@@ -165,7 +159,7 @@ async def on_message(message):
         await client.send_message(message.channel, embed=embed)
 
     # Botstop
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
         sys.exit(1)
 

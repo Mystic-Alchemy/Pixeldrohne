@@ -1,13 +1,9 @@
-import asyncio
 import sqlite3
 import discord
 import sys
 import keys
 
 client = discord.Client()
-pmcid = "216529627034812416"
-pxlid = "269431915725979648"
-rpyid = "207899976796209152"
 connection = sqlite3.connect("bot.db")
 cursor = connection.cursor()
 mods = open("config/mods.txt", "r", encoding='utf-8')
@@ -33,7 +29,7 @@ async def on_message(message):
                                                       "oder bist schon eingetragen.\n"
                                                       "Error: ```{error}```".format(error=error))
 
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
         sys.exit(1)
 

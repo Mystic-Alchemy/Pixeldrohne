@@ -1,14 +1,9 @@
 import discord
-import asyncio
-import io
 import random
-import requests
 import sys
 import keys
 
 client = discord.Client()
-pmcid = "216529627034812416"
-rpyid = "207899976796209152"
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 @client.event
@@ -53,7 +48,7 @@ async def on_message(message):
                                         "habe {bot} gewählt.".format(sp=spieler.capitalize(), bot=wahl.capitalize()))
             await client.send_message(message.channel, embed=ergemb)
     # Botstop
-    if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
+    if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
         sys.exit(1)
 
