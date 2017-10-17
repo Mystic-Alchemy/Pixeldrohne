@@ -3,6 +3,7 @@ import requests
 import random
 import io
 import sys
+import keys
 import os
 import codecs
 
@@ -93,4 +94,4 @@ async def on_reaction_add(reaction, user):
         await client.send_message(chat, "Jetzt bin ich traurig!")
         await client.delete_message(msg)
 
-client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
+client.run(keys.token)

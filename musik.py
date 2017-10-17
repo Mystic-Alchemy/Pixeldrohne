@@ -1,6 +1,7 @@
 import discord
 import asyncio
 import sys
+import keys
 
 client = discord.Client()
 players = {}
@@ -102,4 +103,4 @@ async def on_message(message):
         await client.close()
         sys.exit(1)
 
-client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
+client.run(keys.token)

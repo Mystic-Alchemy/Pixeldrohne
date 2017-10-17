@@ -2,6 +2,7 @@ import asyncio
 import sqlite3
 import discord
 import sys
+import keys
 
 client = discord.Client()
 pmcid = "216529627034812416"
@@ -59,4 +60,4 @@ async def on_member_remove(member):
     msg = "Leider hat {0} den Server verlassen".format(member.mention)
     await client.send_message(serverchannel, msg)
 
-client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
+client.run(keys.token)

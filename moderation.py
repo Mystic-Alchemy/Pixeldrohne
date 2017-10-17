@@ -5,6 +5,7 @@ import sqlite3
 import discord
 import requests
 import sys
+import keys
 
 client = discord.Client()
 pmcid = "216529627034812416"
@@ -48,4 +49,4 @@ async def on_message(message):
         sys.exit(1)
 
 
-client.run('MzQ2OTk3MTY5MDcwMjc2NjA4.DHR94g.It1hLi-Tk-tEAKln3VWg5MSQVAk')
+client.run(keys.token)
