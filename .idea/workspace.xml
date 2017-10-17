@@ -4,9 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="178" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird.">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/mentions.py" afterPath="$PROJECT_DIR$/mentions.py" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="" />
     <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3026">
-              <caret line="178" column="22" lean-forward="true" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
+              <caret line="178" column="22" lean-forward="false" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -49,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mentions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mentions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mentions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -59,11 +58,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="zitate.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/zitate.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="keys.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keys.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="69" lean-forward="true" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+              <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -155,7 +164,6 @@
         <option value="$PROJECT_DIR$/warteschlange.txt" />
         <option value="$PROJECT_DIR$/mods.txt" />
         <option value="$PROJECT_DIR$/zitate.txt" />
-        <option value="$PROJECT_DIR$/config/zitate.txt" />
         <option value="$PROJECT_DIR$/../tobsuas/mentions.py" />
         <option value="$PROJECT_DIR$/../tobsuas/lol.py" />
         <option value="$PROJECT_DIR$/keys.py" />
@@ -166,11 +174,12 @@
         <option value="$PROJECT_DIR$/musik.py" />
         <option value="$PROJECT_DIR$/minigame.py" />
         <option value="$PROJECT_DIR$/mentions.py" />
+        <option value="$PROJECT_DIR$/config/zitate.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2523" />
+    <option name="x" value="311" />
     <option name="y" value="-8" />
     <option name="width" value="1291" />
     <option name="height" value="999" />
@@ -431,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508242280540</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst">
+      <created>1508243067216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1508243067216</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -444,13 +460,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16057234" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10642782" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27173913" sideWeight="0.5126449" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28935185" sideWeight="0.4873551" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27173913" sideWeight="0.4873551" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -523,7 +539,8 @@
     <MESSAGE value="Regelmäßiges Update" />
     <MESSAGE value="Anti Mentions hinzugefügt." />
     <MESSAGE value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
+    <MESSAGE value="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -779,14 +796,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/zitate.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1524">
-          <caret line="126" column="71" lean-forward="false" selection-start-line="126" selection-start-column="71" selection-end-line="126" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tobsuas/mentions.py" />
+    <entry file="file://$PROJECT_DIR$/../tobsuas/Mentions.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/asyncio/base_events.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -859,18 +869,8 @@
     <entry file="file://$PROJECT_DIR$/keys.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="69" lean-forward="true" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
+          <caret line="0" column="69" lean-forward="false" selection-start-line="0" selection-start-column="69" selection-end-line="0" selection-end-column="69" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3026">
-          <caret line="178" column="22" lean-forward="true" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,6 +889,24 @@
         <state relative-caret-position="510">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/zitate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3026">
+          <caret line="178" column="22" lean-forward="false" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
