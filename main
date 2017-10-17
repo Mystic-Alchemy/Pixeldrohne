@@ -25,8 +25,6 @@ async def on_ready():
     print(client.user.id)
     print('------------------------')
     await client.change_presence(game=discord.Game(name='In der Entwicklung',type=0))
-    startup = discord.Embed(color=0x1213a6, title="Moinsen", description="Ich bin auch wieder da!")
-    await client.send_message(discord.Object(id='269432704360120321'), embed=startup)
 
 @client.event
 async def on_message(message):
@@ -156,6 +154,15 @@ async def on_message(message):
         await client.send_typing(discord.Object(id='269432704360120321'))
         await asyncio.sleep(2)
         await client.send_message(discord.Object(id='269432704360120321'), embed=embedmsg)
+
+    # Invite zur Heimat
+    if message.content.lower().startswith('p.test'):
+        embed = discord.Embed(
+            title="Invite zum Heimat-/Testserver",
+            description="http://discord.gg/sgDQjeH",
+            color=0x8a2be2
+        )
+        await client.send_message(message.channel, embed=embed)
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == pmcid:
