@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="185" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Readme verschoben in die Docs">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Readme geändert.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/docs/README.md" afterPath="$PROJECT_DIR$/docs/README.md" />
     </list>
@@ -41,8 +41,8 @@
         <entry file="file://$PROJECT_DIR$/docs/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -168,8 +168,8 @@
         <option value="$PROJECT_DIR$/minigame.py" />
         <option value="$PROJECT_DIR$/mentions.py" />
         <option value="$PROJECT_DIR$/config/zitate.txt" />
-        <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/main" />
+        <option value="$PROJECT_DIR$/docs/README.md" />
       </list>
     </option>
   </component>
@@ -495,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508248891800</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Readme geändert.">
+      <created>1508249069199</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1508249069199</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -594,7 +601,8 @@
     <MESSAGE value="Invite zum Testserver hinzugefügt" />
     <MESSAGE value="Noch ein neues Zitat" />
     <MESSAGE value="Neues Zitat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neues Zitat" />
+    <MESSAGE value="Readme geändert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme geändert." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -956,8 +964,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             <folding />
           </first_editor>
           <second_editor />
