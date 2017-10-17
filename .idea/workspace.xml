@@ -4,8 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="178" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Neues Zitat">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Allgemeines Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config/zitate.txt" afterPath="$PROJECT_DIR$/config/zitate.txt" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="" />
     <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
@@ -454,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508245291990</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Allgemeines Update">
+      <created>1508245325981</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1508245325981</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -548,7 +556,8 @@
     <MESSAGE value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
     <MESSAGE value="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst" />
     <MESSAGE value="Neues Zitat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neues Zitat" />
+    <MESSAGE value="Allgemeines Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allgemeines Update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
