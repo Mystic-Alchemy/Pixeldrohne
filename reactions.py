@@ -20,6 +20,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    # Zufälliges "falsches" Zitat
     if message.content.lower().startswith('p.zitat'):
         öffnen = open("config/zitate.txt", "r", encoding='utf-8')
         auswahl = öffnen.readlines()
@@ -27,6 +28,7 @@ async def on_message(message):
         await client.send_message(message.channel, zitat)
         öffnen.close()
 
+    # Zitat hinzufügen
     if message.content.lower().startswith('p.schreiben'):
         datei = open("config/zitate.txt", "a", encoding='utf-8')
         zitat = message.content[12:]
@@ -34,6 +36,15 @@ async def on_message(message):
         await client.send_message(message.channel, "Dein Zitat `{0}` wurde der Liste hinzugefügt.".format(zitat))
         datei.close()
 
+    # Coinflip
+    if message.content.lower().startswith('p.coin'):
+        choice = random.randint(1, 2)
+        if choice == 1:
+            await client.add_reaction(message, '🌑')
+        if choice == 2:
+            await client.add_reaction(message, '🌕')
+
+    # Test, dass Bot reagieren kann
     if message.content.lower().startswith('p.response'):
         botmsg = await client.send_message(message.channel, "Akzeptierst du mich? 👍 oder 👎")
 
@@ -46,6 +57,7 @@ async def on_message(message):
         global messageuserid
         messageuserid = message.author
 
+    # Ab hier muss umgebaut werden
     if message.content.lower().startswith('p.ja'):
         choice = random.randint(1, 4)
         if choice == 1:

@@ -22,14 +22,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # Coinflip
-    if message.content.lower().startswith('p.coin'):
-        choice = random.randint(1,2)
-        if choice == 1:
-            await client.add_reaction(message, '🌑')
-        if choice == 2:
-            await client.add_reaction(message, '🌕')
-
     # Spielstatus
     if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]

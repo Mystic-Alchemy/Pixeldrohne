@@ -22,6 +22,4 @@ Für detaillierte Informationen zu den einzenlen Befehlen und Codeabschnitten ei
 
 ### Inhalt
 
-## To-Do Liste
-
-- [ ] Code polishen und bereitmachen zur Veröffentlichung
+1. [To-Do Liste](todo.md)
