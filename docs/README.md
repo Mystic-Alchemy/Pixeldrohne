@@ -16,4 +16,6 @@ Um den Bot einzuladen müsst ihr diesen Schritten folgen:
 * Wenn ihr dann ein zweites mal abgelehnt werdet, könnt ihr erst in einem Monat wieder beantragen, dass der Server überprüft wird.
 * Der Invite des Bots darf unter keinen Umständen währen der Testphase weitergegeben werden
 
-##Documentation
+## Documentation
+
+Für detaillierte Informationen zu den einzenlen Befehlen und Codeabschnitten einfach in den Ordner [Docs](docs/) schauen
