@@ -18,4 +18,4 @@ Um den Bot einzuladen müsst ihr diesen Schritten folgen:
 
 ## Documentation
 
-Für detaillierte Informationen zu den einzenlen Befehlen und Codeabschnitten einfach in den Ordner [Docs](docs/) schauen
+Für detaillierte Informationen zu den einzenlen Befehlen und Codeabschnitten einfach in den Ordner [Docs]() schauen
