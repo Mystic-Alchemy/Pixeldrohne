@@ -3,6 +3,7 @@ import discord
 import sys
 import keys
 import random
+import asyncio
 
 client = discord.Client()
 connection = sqlite3.connect("bot.db")
@@ -22,7 +23,8 @@ async def on_message(message):
     # Massenlöschung
     try:
         if message.content.lower().startswith('p.purge') and ((message.author.id in mods) or keys.pmcid or keys.pxlid):
-            await client.purge_from(message.channel, limit=int(message.content[8:]))
+            lim = int(message.content[8:]) + 1
+            await client.purge_from(message.channel, limit=lim)
             await client.send_message(message.channel, "Erfolgreich gelöscht.")
     except Exception as e:
         await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
@@ -31,8 +33,8 @@ async def on_message(message):
     if message.author.id == (keys.pmcid or keys.pxlid) and message.content.lower().startswith('p.madd'):
         user = message.mentions[0]
         mod = user.id
-        madd = open("mods.txt", "a", encoding='utf-8')
-        madd.write('"{0]"'.format(mod) + "\n")
+        madd = open("config/mods.txt", "a", encoding='utf-8')
+        madd.write('"{0}"'.format(mod) + "\n")
         await client.send_message(message.channel, "{0} wurde erfolgreich den Mods hinzugefügt".format(user.name))
         madd.close()
 
@@ -58,6 +60,7 @@ async def on_message(message):
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         mlist.close()
         await client.close()
+        await asyncio.wait(1)
         sys.exit(1)
 
 

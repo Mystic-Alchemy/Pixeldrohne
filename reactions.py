@@ -1,5 +1,6 @@
 import discord
 import requests
+import asyncio
 import random
 import io
 import sys
@@ -74,6 +75,7 @@ async def on_message(message):
 
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
+        await asyncio.wait(1)
         sys.exit(1)
 
 @client.event

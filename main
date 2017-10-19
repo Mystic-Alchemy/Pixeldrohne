@@ -18,7 +18,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='In der Entwicklung',type=0))
+    await client.change_presence(game=discord.Game(name='mit p.hilfe', type=0))
 
 @client.event
 async def on_message(message):
@@ -47,6 +47,7 @@ async def on_message(message):
 
     # Hilfe
     if message.content.lower().startswith('p.hilfe'):
+        user = message.author
         embed = discord.Embed(
             title="Die Befehle der Pixeldrohne",
             color=0xad1457,
@@ -117,7 +118,7 @@ async def on_message(message):
         embed.set_thumbnail(
             url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
         )
-        await client.send_message(message.channel, embed=embed)
+        await client.send_message(user, embed=embed)
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
@@ -161,6 +162,7 @@ async def on_message(message):
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
+        await asyncio.wait(1)
         sys.exit(1)
 
 async def uptime():
