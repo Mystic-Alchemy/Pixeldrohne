@@ -1,3 +1,5 @@
+# Hier werden die einzelnen 'p.help'-Argumente gehandled.
+
 import discord
 import he
 import asyncio

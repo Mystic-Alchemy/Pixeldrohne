@@ -1,3 +1,5 @@
+# Dieses Skript steuert Moderator-Funktionen.
+
 import sqlite3
 import discord
 import sys

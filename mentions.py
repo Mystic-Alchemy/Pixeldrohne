@@ -1,3 +1,5 @@
+# Hier wird das taggen von gewissen Personen verhindert.
+
 import discord
 import keys
 

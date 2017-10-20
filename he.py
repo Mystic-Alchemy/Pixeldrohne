@@ -1,3 +1,5 @@
+# Hier befinden sich die einzelnen Embeds des 'p.help'-Commands.
+
 import discord
 
 hilfe = discord.Embed(
