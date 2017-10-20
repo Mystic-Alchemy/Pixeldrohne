@@ -1,4 +1,4 @@
-# Hier werden alle Commands gehandled.
+# Hier werden alle User Reaction Commands gehandled.
 
 import discord
 import requests
@@ -83,7 +83,7 @@ async def on_message(message):
         response = requests.get('https://media.giphy.com/media/uKT0MWezNGewE/giphy.gif', stream=True)
         await  client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="pixie.gif")
 
-    if ('porg' or 'porgs') in message.content.lower():
+    if 'porg' in message.content.lower():
         response = requests.get('https://media.giphy.com/media/3ohhwqOVlEbBxEbss0/giphy.gif', stream=True)
         await client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="porg.gif")
 
