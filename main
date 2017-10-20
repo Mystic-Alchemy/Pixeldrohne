@@ -1,4 +1,4 @@
-# Die main function des Bots.
+# Die 'main' function des Bots.
 
 import asyncio
 import io
