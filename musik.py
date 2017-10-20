@@ -1,3 +1,5 @@
+# Dieses Skript steuert die Musikfunktion des Bots.
+
 import discord
 import sys
 import keys

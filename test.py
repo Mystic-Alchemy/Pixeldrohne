@@ -16,7 +16,7 @@ async def on_message(message):
         embed = discord.Embed(
             title="Kategorie: Test",
             description="Alle Befehle in dieser Kategorie müssen noch getestet werden und können auch nur auf dem Heimat-/"
-                        "Testserver genutzt werden. Um viele dieser Befehle nutzen zu können ist der Schwesterbot PixelDev"
+                        "Testserver genutzt werden. Um viele dieser Befehle nutzen zu können, ist der Schwesterbot PixelDev"
                         "nötig. Die Befehle habe Tags:\n[Alpha] Nur mit PixelDev nutzbar.\n[Beta] Können mit der Pixeldrohne"
                         "verwendet werden."
         )

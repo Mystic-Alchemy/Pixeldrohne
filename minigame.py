@@ -1,3 +1,5 @@
+# Hier werden alle Minigames ausgeführt.
+
 import discord
 import random
 import sys

@@ -1,3 +1,5 @@
+# Hier werden alle Commands gehandled.
+
 import discord
 import requests
 import asyncio

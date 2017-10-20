@@ -1,3 +1,5 @@
+# Die main function des Bots.
+
 import asyncio
 import io
 import random
