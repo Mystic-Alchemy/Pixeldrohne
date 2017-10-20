@@ -60,7 +60,7 @@ async def on_message(message):
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         mlist.close()
         await client.close()
-        await asyncio.wait(1)
+        await asyncio.sleep(1)
         sys.exit(1)
 
 

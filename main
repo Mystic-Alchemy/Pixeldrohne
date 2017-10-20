@@ -20,7 +20,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit p.help', type=0))
+    await client.change_presence(game=discord.Game(name='mit p.help', type=1))
 
 
 @client.event
@@ -28,7 +28,7 @@ async def on_message(message):
     # Spielstatus
     if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]
-        await client.change_presence(game=discord.Game(name=game,type=0))
+        await client.change_presence(game=discord.Game(name=game, type=1))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
 
     # Pixels Liebling
@@ -87,8 +87,10 @@ async def on_message(message):
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
-        await asyncio.wait(1)
+        await embeds.halt()
+        await asyncio.sleep(1)
         sys.exit(1)
+
 
 async def uptime():
     await client.wait_until_ready()
@@ -98,7 +100,7 @@ async def uptime():
     hour = 0
     while not client.is_closed:
         await asyncio.sleep(60)
-        minutes +=1
+        minutes += 1
         if minutes == 60:
             minutes = 0
             hour += 1

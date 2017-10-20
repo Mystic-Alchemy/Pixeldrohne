@@ -1,6 +1,7 @@
 import discord
 import sys
 import keys
+import asyncio
 
 client = discord.Client()
 players = {}
@@ -98,6 +99,7 @@ async def on_message(message):
 
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.close()
+        await asyncio.sleep(1)
         sys.exit(1)
 
 client.run(keys.token)

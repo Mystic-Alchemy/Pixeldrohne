@@ -51,3 +51,6 @@ async def hilfe(message, user, length):
             embed = he.hilfe
             await client.send_message(user, embed=embed)
 
+
+async def halt():
+    await client.logout()

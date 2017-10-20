@@ -8,7 +8,7 @@ Die Einträge sind ihrer Priorität nach geordnet. Der oberste Eintrag ist immer
 
 - [ ] Code polishen und bereitmachen zur Veröffentlichung
 - [ ] Neue Funktion zur Veröffentlichung
-- [ ] Hilfe umstrukturieren
+- [x] Hilfe umstrukturieren
 - [x] Hilfe ist ohne Spam
 - [x] Bot lässt sich per Befehl stoppen
 
