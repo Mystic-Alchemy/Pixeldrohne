@@ -3,7 +3,7 @@ import discord
 hilfe = discord.Embed(
     title="Erklärung der Hilfe",
     color=0xad1457,
-    description='Um die einzelnen Teile der Hilfe aufzurufen einfach mit "p.help <argument>" '
+    description='Um die einzelnen Teile der Hilfe aufzurufen, einfach mit "p.help <argument>" '
                 'auf diese Nachricht reagieren.\n\nMögliche Argumente sind:'
 )
 hilfe.set_author(
@@ -32,7 +32,7 @@ hilfe.add_field(
 )
 hilfe.add_field(
     name="allgemein",
-    value="Ruft die Befehle ab die in keiner\n anderen Kategorie ihren Platz haben."
+    value="Ruft die Befehle ab, die in keiner\n anderen Kategorie ihren Platz haben."
 )
 
 allgemein = discord.Embed(
@@ -49,7 +49,7 @@ musik = discord.Embed(
 )
 musik.add_field(
     name="p.join",
-    value="Holt den Bot in den Sprachkanal in dem du auch bist."
+    value="Holt den Bot in den Sprachkanal, in dem du auch bist."
 )
 musik.add_field(
     name="p.leave",
@@ -70,7 +70,7 @@ musik.add_field(
 )
 musik.add_field(
     name="p.volume",
-    value="Passt die Lautstärke an. Werte von 0 bis 100 möglich."
+    value="Passt die Lautstärke in Prozent an. Werte von 0 bis 100 möglich."
 )
 
 
@@ -81,11 +81,11 @@ minigames = discord.Embed(
 )
 minigames.add_field(
     name="p.ssp <wahl>",
-    value="Schere, Stein, Papier gegen die Drohne"
+    value="Schere, Stein, Papier gegen die Drohne."
 )
 minigames.add_field(
     name="p.coin",
-    value="Münzwurf"
+    value="Der gute alte Münzwurf."
 )
 
 
