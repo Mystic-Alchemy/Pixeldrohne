@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="test.py angepasst">
-      <change beforePath="$PROJECT_DIR$/.idea/DiscordBot.iml" afterPath="$PROJECT_DIR$/.idea/DiscordBot.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/zitate.txt" afterPath="$PROJECT_DIR$/config/zitate.txt" />
       <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
@@ -66,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="96" lean-forward="false" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+              <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
               <folding>
                 <element signature="e#75#89#0" expanded="true" />
               </folding>
@@ -767,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508510017599</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="test.py angepasst">
+      <created>1508517373035</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1508517373035</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1208,7 +1213,7 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="96" lean-forward="false" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
+          <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
           <folding>
             <element signature="e#75#89#0" expanded="true" />
           </folding>
