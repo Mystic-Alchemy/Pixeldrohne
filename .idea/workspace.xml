@@ -4,16 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="108" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Hilfe wird umgebaut Teil 3">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Allgemeine Verbesserungen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
-      <change beforePath="$PROJECT_DIR$/docs/todo.md" afterPath="$PROJECT_DIR$/docs/todo.md" />
-      <change beforePath="$PROJECT_DIR$/embeds.py" afterPath="$PROJECT_DIR$/embeds.py" />
-      <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
-      <change beforePath="$PROJECT_DIR$/minigame.py" afterPath="$PROJECT_DIR$/minigame.py" />
-      <change beforePath="$PROJECT_DIR$/moderation.py" afterPath="$PROJECT_DIR$/moderation.py" />
-      <change beforePath="$PROJECT_DIR$/musik.py" afterPath="$PROJECT_DIR$/musik.py" />
-      <change beforePath="$PROJECT_DIR$/reactions.py" afterPath="$PROJECT_DIR$/reactions.py" />
+      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
     <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
@@ -57,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="todo.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/todo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -73,18 +66,18 @@
       <file leaf-file-name="he.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/he.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
+            <state relative-caret-position="1598">
               <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="19" column="112" lean-forward="false" selection-start-line="19" selection-start-column="112" selection-end-line="19" selection-end-column="112" />
               <folding>
                 <element signature="e#75#89#0" expanded="true" />
               </folding>
@@ -200,7 +193,6 @@
         <option value="$PROJECT_DIR$/hilfe.py" />
         <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/he.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/embeds.py" />
         <option value="$PROJECT_DIR$/minigame.py" />
         <option value="$PROJECT_DIR$/moderation.py" />
@@ -209,6 +201,7 @@
         <option value="$PROJECT_DIR$/musik.py" />
         <option value="$PROJECT_DIR$/main" />
         <option value="$PROJECT_DIR$/docs/todo.md" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -650,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508509046497</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Allgemeine Verbesserungen">
+      <created>1508509829602</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1508509829602</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,13 +664,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08271865" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08271865" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27934784" sideWeight="0.5147524" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27826086" sideWeight="0.48524764" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27826086" sideWeight="0.48524764" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102878466" sideWeight="0.50567263" order="2" side_tool="true" content_ui="tabs" />
@@ -735,7 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Anti Mentions hinzugefügt." />
     <MESSAGE value="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird." />
     <MESSAGE value="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst" />
     <MESSAGE value="Allgemeines Update" />
@@ -760,7 +760,8 @@
     <MESSAGE value="Hilfe wird umgebaut" />
     <MESSAGE value="Hilfe wird umgebaut Teil 2" />
     <MESSAGE value="Hilfe wird umgebaut Teil 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hilfe wird umgebaut Teil 3" />
+    <MESSAGE value="Allgemeine Verbesserungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allgemeine Verbesserungen" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1003,24 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/he.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minigame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1095,6 +1078,24 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/he.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="112" lean-forward="false" selection-start-line="19" selection-start-column="112" selection-end-line="19" selection-end-column="112" />
+          <folding>
+            <element signature="e#75#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
