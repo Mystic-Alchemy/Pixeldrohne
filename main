@@ -20,7 +20,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit p.hilfe', type=0))
+    await client.change_presence(game=discord.Game(name='mit p.help', type=0))
 
 
 @client.event
@@ -43,7 +43,7 @@ async def on_message(message):
     # Hilfe
     if message.content.lower().startswith('p.help'):
         user = message.author
-        await embeds.hilfe(message.content[7:], user, len(message.content))
+        await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
