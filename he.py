@@ -4,7 +4,7 @@ hilfe = discord.Embed(
     title="Erklärung der Hilfe",
     color=0xad1457,
     description='Um die einzelnen Teile der Hilfe aufzurufen einfach mit "p.help <argument>" '
-                'auf diese Nachricht reagieren\n\nMögliche Argumente sind:'
+                'auf diese Nachricht reagieren.\n\nMögliche Argumente sind:'
 )
 hilfe.set_author(
             name="Pixeldrohne",
@@ -20,5 +20,17 @@ hilfe.set_thumbnail(
 )
 hilfe.add_field(
     name="komplett",
-    value="Ruft die gesamte Hilfe ab"
+    value="Ruft die gesamte Hilfe ab."
+)
+hilfe.add_field(
+    name="musik",
+    value="Ruft die Hilfe für die Musik ab."
+)
+hilfe.add_field(
+    name="minigames",
+    value="Ruft die Minigames ab"
+)
+hilfe.add_field(
+    name="verschiedenes",
+    value="Ruft die Befehle ab die in keiner\n anderen Kategorie ihren Platz haben."
 )
