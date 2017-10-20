@@ -5,12 +5,14 @@ import discord
 import requests
 import sys
 import keys
+import embeds
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 minutes = 0
 hour = 0
+
 
 @client.event
 async def on_ready():
@@ -19,6 +21,7 @@ async def on_ready():
     print(client.user.id)
     print('------------------------')
     await client.change_presence(game=discord.Game(name='mit p.hilfe', type=0))
+
 
 @client.event
 async def on_message(message):
@@ -38,79 +41,9 @@ async def on_message(message):
         await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten im Testbetrieb".format(hour, minutes))
 
     # Hilfe
-    if message.content.lower().startswith('p.hilfe'):
+    if message.content.lower().startswith('p.help'):
         user = message.author
-        embed = discord.Embed(
-            title="Die Befehle der Pixeldrohne",
-            color=0xad1457,
-            description="Die Pixeldrohne ist ein Projekt von @PilleniusMC\n"
-                        "Sie ist ein ganz normaler Bot, der eure Befehle ausführt."
-        )
-        embed.set_author(
-            name="Pixeldrohne",
-            icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png",
-            url="https://twitch.tv/pixelwerfer"
-        )
-        embed.add_field(
-            name="p.coin",
-            value="Münzwurf"
-        )
-        embed.add_field(
-            name="p.pixels_liebling",
-            value="Kaffee, einfach\nnur Kaffee"
-        )
-        embed.add_field(
-            name="p.uptime",
-            value="Wie lang der Bot\nan dem Tag schon läuft."
-        )
-        embed.add_field(
-            name="p.hilfe",
-            value="Dieser Befehl"
-        )
-        embed.add_field(
-            name="p.avatar",
-            value="Das Profilbild einer\nPerson in groß."
-        )
-        embed.add_field(
-            name="p.ssp",
-            value="Schere, Stein, Papier\n[Von Bober gewünscht]"
-        )
-        embed.add_field(
-            name="p.zitat",
-            value="Zufälliges Zitat mit\nfalschem Autor"
-        )
-        embed.add_field(
-            name="p.schreiben",
-            value="Du fügst den mit p.zitat\nabgerufenen Zitaten deines\nhinzu."
-        )
-        embed.add_field(
-            name="p.enter",
-            value="Diesen Befehl bitte\nausführen wenn euch\ndie Pixeldrohne NICHT\nbegrüßt hat."
-        )
-        embed.add_field(
-            name="p.ja",
-            value="Reaktion"
-        )
-        embed.add_field(
-            name="p.nein",
-            value="Reaktion"
-        )
-        embed.add_field(
-            name="p.tableflip",
-            value="Reaktion"
-        )
-        embed.add_field(
-            name="p.response",
-            value="Der Bot redet\nmit euch."
-        )
-        embed.set_footer(
-            text='Dieser Bot ist in aktiver Entwicklung, fast täglich gibt es neues Zeug.',
-            icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
-        )
-        embed.set_thumbnail(
-            url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
-        )
-        await client.send_message(user, embed=embed)
+        await embeds.hilfe(message.content[7:], user, len(message.content))
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
