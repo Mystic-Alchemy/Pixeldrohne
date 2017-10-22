@@ -13,12 +13,14 @@ cursor = connection.cursor()
 mlist = open("config/mods.txt", "r", encoding='utf-8')
 mods = mlist.readlines()
 
+
 @client.event
 async def on_ready():
     print('Eingeloggt als')
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
+
 
 @client.event
 async def on_message(message):

@@ -36,6 +36,11 @@ hilfe.add_field(
     name="allgemein",
     value="Ruft die Befehle ab, die in keiner\n anderen Kategorie ihren Platz haben."
 )
+hilfe.add_field(
+    name="test",
+    value="[Achtung] Alle Befehle dieser Kategorie sind noch in der Testphase und auch nur in Verbindung mit dem Bot"
+          "PixelDev einsetzbar.  "
+)
 
 allgemein = discord.Embed(
     title="Allgemeine Befehle",

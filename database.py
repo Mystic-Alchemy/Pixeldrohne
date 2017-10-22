@@ -17,6 +17,7 @@ async def on_ready():
     print(client.user.id)
     print('------------------------')
 
+
 @client.event
 async def on_message(message):
     if message.content.startswith('p.enter'):
@@ -35,6 +36,7 @@ async def on_message(message):
         await asyncio.sleep(1)
         sys.exit(1)
 
+
 @client.event
 async def on_member_join(member):
     try:
@@ -51,6 +53,7 @@ async def on_member_join(member):
         connection.commit()
     except Exception as error:
         print(error)
+
 
 @client.event
 async def on_member_remove(member):
