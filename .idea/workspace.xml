@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main" line="110" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/main" line="115" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="test.py angepasst">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Ein paar Veränderungen">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pille.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/bot.db" afterPath="$PROJECT_DIR$/bot.db" />
-      <change beforePath="$PROJECT_DIR$/config/mods.txt" afterPath="$PROJECT_DIR$/config/mods.txt" />
-      <change beforePath="$PROJECT_DIR$/database.py" afterPath="$PROJECT_DIR$/database.py" />
-      <change beforePath="$PROJECT_DIR$/he.py" afterPath="$PROJECT_DIR$/he.py" />
-      <change beforePath="$PROJECT_DIR$/moderation.py" afterPath="$PROJECT_DIR$/moderation.py" />
+      <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
+      <change beforePath="$PROJECT_DIR$/musik.py" afterPath="$PROJECT_DIR$/musik.py" />
       <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
@@ -34,40 +33,8 @@
       <file leaf-file-name="main" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              <folding>
-                <element signature="e#75#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keys.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keys.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="he.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/he.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -76,7 +43,7 @@
       <file leaf-file-name="moderation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/moderation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-437">
+            <state relative-caret-position="170">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#47#61#0" expanded="true" />
@@ -85,34 +52,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="reactions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reactions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+            <state relative-caret-position="561">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="musik.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="musik.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/musik.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+            <state relative-caret-position="161">
+              <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minigame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minigame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#75#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,24 +145,24 @@
         <option value="$PROJECT_DIR$/hilfe.py" />
         <option value="$PROJECT_DIR$/embeds.py" />
         <option value="$PROJECT_DIR$/minigame.py" />
-        <option value="$PROJECT_DIR$/reactions.py" />
-        <option value="$PROJECT_DIR$/musik.py" />
-        <option value="$PROJECT_DIR$/main" />
         <option value="$PROJECT_DIR$/docs/todo.md" />
         <option value="$PROJECT_DIR$/config/zitate.txt" />
         <option value="$PROJECT_DIR$/moderation.py" />
         <option value="$PROJECT_DIR$/he.py" />
-        <option value="$PROJECT_DIR$/keys.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/database.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/keys.py" />
+        <option value="$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py" />
+        <option value="$PROJECT_DIR$/reactions.py" />
+        <option value="$PROJECT_DIR$/main" />
+        <option value="$PROJECT_DIR$/musik.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1908" />
+    <option name="width" value="1296" />
+    <option name="height" value="991" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -198,6 +175,11 @@
             <id>Python</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyArgumentListInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -217,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +216,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,8 +253,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.minigame">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -284,7 +266,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DiscordBot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="minigame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DiscordBot" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minigame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,38 +344,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DiscordBot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.moderation" />
-      <item index="1" class="java.lang.String" itemvalue="Python.database" />
-      <item index="2" class="java.lang.String" itemvalue="Python.reactions" />
-      <item index="3" class="java.lang.String" itemvalue="Python.musik" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.reactions" />
+      <item index="1" class="java.lang.String" itemvalue="Python.musik" />
+      <item index="2" class="java.lang.String" itemvalue="Python.minigame" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main" />
+      <item index="4" class="java.lang.String" itemvalue="Python.moderation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.musik" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.minigame" />
         <item index="2" class="java.lang.String" itemvalue="Python.reactions" />
-        <item index="3" class="java.lang.String" itemvalue="Python.database" />
-        <item index="4" class="java.lang.String" itemvalue="Python.moderation" />
+        <item index="3" class="java.lang.String" itemvalue="Python.moderation" />
+        <item index="4" class="java.lang.String" itemvalue="Python.musik" />
       </list>
     </recent_temporary>
   </component>
@@ -647,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508517392337</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Ein paar Veränderungen">
+      <created>1508675242982</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1508675242982</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,48 +649,48 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1908" y="0" width="1296" height="991" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0800843" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13354531" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2951389" sideWeight="0.51748806" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771739" sideWeight="0.48251194" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2982456" sideWeight="0.48251194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102878466" sideWeight="0.50567263" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30777904" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2951389" sideWeight="0.51748806" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27253446" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2982456" sideWeight="0.48251194" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07790143" sideWeight="0.4943274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102878466" sideWeight="0.50567263" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -734,7 +723,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst" />
     <MESSAGE value="Allgemeines Update" />
     <MESSAGE value="Allgemeines Update die Zweite" />
     <MESSAGE value="Readme verschoben in die Docs" />
@@ -759,7 +747,8 @@
     <MESSAGE value="Hilfe wird umgebaut Teil 3" />
     <MESSAGE value="Allgemeine Verbesserungen" />
     <MESSAGE value="test.py angepasst" />
-    <option name="LAST_COMMIT_MESSAGE" value="test.py angepasst" />
+    <MESSAGE value="Ein paar Veränderungen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ein paar Veränderungen" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -772,21 +761,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mentions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="89" lean-forward="false" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
@@ -957,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minigame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/todo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -975,11 +942,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="408">
@@ -988,12 +950,9 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/musik.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1004,45 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/embeds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,13 +974,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/moderation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
+        <state relative-caret-position="170">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#47#61#0" expanded="true" />
@@ -1064,13 +994,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.py">
+    <entry file="file://$PROJECT_DIR$/minigame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="833">
+          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="68" lean-forward="false" selection-start-line="0" selection-start-column="68" selection-end-line="0" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Philipp_s Programs/hanoi.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="33390" column="26" lean-forward="true" selection-start-line="33390" selection-start-column="26" selection-end-line="33390" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#75#89#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musik.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

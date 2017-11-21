@@ -33,6 +33,11 @@ async def on_message(message):
         await client.change_presence(game=discord.Game(name=game, type=1))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
 
+    # Nickname ändern
+    # if message.content.startswith('p.nick') and message.author.id == keys.pmcid:
+    #     nick = message.content[7:]
+    #     await client.change_nickname(message.author, nick)
+
     # Pixels Liebling
     if message.content.startswith('p.pixels_liebling'):
         response = requests.get('https://media.giphy.com/media/3xz2BIXYagz5STg0xi/giphy.gif', stream=True)

@@ -7,6 +7,7 @@ import asyncio
 
 client = discord.Client()
 players = {}
+schlange = []
 mods = open("config/mods.txt", "r", encoding='utf-8')
 
 
@@ -51,23 +52,26 @@ async def on_message(message):
 
     if message.content.startswith('p.play'):
         yt_url = message.content[7:]
-        if client.is_voice_connected(message.server):
-            voice = client.voice_client_in(message.server)
-            player = await voice.create_ytdl_player(yt_url,
-                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                   '-reconnect_delay_max 5 ')
-            players[message.server.id] = player
-            player.volume = 0.03
-            player.start()
-        elif not client.is_voice_connected(message.server):
-            channel = message.author.voice.voice_channel
-            voice = await client.join_voice_channel(channel)
-            player = await voice.create_ytdl_player(yt_url,
-                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                   '-reconnect_delay_max 5 ', )
-            players[message.server.id] = player
-            player.volume = 0.08
-            player.start()
+        players[message.server.id] = player
+        if not player[message.server.id].is_playing():
+            if client.is_voice_connected(message.server):
+                voice = client.voice_client_in(message.server)
+                player = await voice.create_ytdl_player(yt_url,
+                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
+                                                                       '-reconnect_delay_max 5 ')
+                player.volume = 0.03
+                player.start()
+            elif not client.is_voice_connected(message.server):
+                channel = message.author.voice.voice_channel
+                voice = await client.join_voice_channel(channel)
+                player = await voice.create_ytdl_player(yt_url,
+                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
+                                                                       '-reconnect_delay_max 5 ', )
+                player.volume = 0.08
+                player.start()
+        else:
+            await client.send_message(message.channel, "Sorry diese Anfrage kann ich zur Zeit nicht verarbeiten.")
+            schlange.append(yt_url)
 
     if message.content.startswith('p.pause'):
         try:

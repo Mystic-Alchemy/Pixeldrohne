@@ -35,6 +35,4 @@ async def on_message(message):
         await asyncio.sleep(1)
         await sys.exit(1)
 
-
-
 client.run(keys.dev)
