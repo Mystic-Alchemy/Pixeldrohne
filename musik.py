@@ -52,8 +52,7 @@ async def on_message(message):
 
     if message.content.startswith('p.play'):
         yt_url = message.content[7:]
-        players[message.server.id] = player
-        if not player[message.server.id].is_playing():
+        if not players[message.server.id].is_playing():
             if client.is_voice_connected(message.server):
                 voice = client.voice_client_in(message.server)
                 player = await voice.create_ytdl_player(yt_url,
@@ -104,7 +103,7 @@ async def on_message(message):
             await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
 
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
-        await client.close()
+        await client.logout()
         await asyncio.sleep(1)
         sys.exit(1)
 

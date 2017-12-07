@@ -88,7 +88,7 @@ async def on_message(message):
         await client.send_file(message.channel, io.BytesIO(response.raw.read()), filename="porg.gif")
 
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
-        await client.close()
+        await client.logout()
         await asyncio.sleep(1)
         sys.exit(1)
 

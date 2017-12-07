@@ -15,7 +15,6 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='In der Entwicklung',type=0))
 
 @client.event
 async def on_message(message):
@@ -52,7 +51,7 @@ async def on_message(message):
             await client.send_message(message.channel, embed=ergemb)
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
-        await client.close()
+        await client.logout()
         await asyncio.sleep(1)
         sys.exit(1)
 

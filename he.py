@@ -14,7 +14,7 @@ hilfe.set_author(
             url="https://twitch.tv/pixelwerfer"
 )
 hilfe.set_footer(
-    text='Dieser Bot ist in aktiver Entwicklung, fast täglich gibt es neues Zeug.',
+    text='Um mehr Informationen über den Autor dieses Bots zu erhalten: p.about',
     icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
 )
 hilfe.set_thumbnail(
@@ -88,7 +88,7 @@ minigames = discord.Embed(
 )
 minigames.add_field(
     name="p.ssp <wahl>",
-    value="Schere, Stein, Papier gegen die Drohne."
+    value="Schere, Stein, Papier\ngegen die Drohne."
 )
 minigames.add_field(
     name="p.coin",

@@ -31,7 +31,7 @@ async def on_message(message):
         await client.send_message(user, embed=embed)
 
     if message.content.lower().startswith('dev.halt') and (message.author.id == keys.pmcid or message.author.id == keys.m3lid):
-        await client.close()
+        await client.logout()
         await asyncio.sleep(1)
         await sys.exit(1)
 

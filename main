@@ -82,6 +82,14 @@ async def on_message(message):
         await asyncio.sleep(2)
         await client.send_message(discord.Object(id='269432704360120321'), embed=embedmsg)
 
+    # eine "Über" Sektion
+    if message.content.startswith('p.about'):
+        abemb = discord.Embed(
+            color=0xad1457,
+            title="Über",
+            description="Sorry, hier gibt es noch nichts zu sehen.")
+        await client.send_message(message.channel, embed=abemb)
+
     # Invite zur Heimat
     if message.content.lower().startswith('p.test'):
         embed = discord.Embed(
@@ -93,7 +101,7 @@ async def on_message(message):
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
-        await client.close()
+        await client.logout()
         await embeds.halt()
         await asyncio.sleep(1)
         sys.exit(1)
