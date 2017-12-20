@@ -14,19 +14,18 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit p.help', type=1))
+    await client.change_presence(game=discord.Game(name='mit dev.help', type=1))
 
 
 @client.event
 async def on_message(message):
     # Hilfe für Dev-Branch und Cutting Edge
-    if message.content.lower().startswith('p.help test'):
+    if message.content.lower().startswith('dev.help'):
         user = message.author
         embed = discord.Embed(
             title="Kategorie: Test",
-            description="Alle Befehle in dieser Kategorie müssen noch getestet werden und können auch nur auf dem Heimat-/"
-                        "Testserver genutzt werden. Um viele dieser Befehle nutzen zu können, ist der Schwesterbot PixelDev"
-                        "nötig. Die Befehle habe Tags:\n[Alpha] Cutting Edge\n[Beta] Early Access"
+            description="Alle Befehle, die hier aufgeführt sind noch in der Testphase, heißt sie können komplett "
+                        "verbuggt sein."
         )
         await client.send_message(user, embed=embed)
 
