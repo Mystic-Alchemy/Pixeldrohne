@@ -1,4 +1,5 @@
 # Diese Datei nur ausführen wenn ihr den gesamten Bot ausführen wollt ohne verschiedene Dateien zu verwenden.
+# Der Einfachheit halber wird diese Datei auch ein vollständiges UI kriegen.
 
 import asyncio
 import io

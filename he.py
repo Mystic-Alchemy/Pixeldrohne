@@ -29,7 +29,7 @@ hilfe.add_field(
     value="Ruft die Hilfe für die Musik ab."
 )
 hilfe.add_field(
-    name="minigames",
+    name="spiele",
     value="Ruft die Minigames ab"
 )
 hilfe.add_field(
