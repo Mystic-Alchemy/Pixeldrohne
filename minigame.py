@@ -22,11 +22,11 @@ async def on_message(message):
     if message.content.lower().startswith("p.ssp"):
         ssp = ['schere', 'stein', 'papier']
         wahl = random.choice(ssp)
-        spieler = message.content[6:]
+        spieler = message.content.split(" ")[1]
         if not spieler.lower() in ssp:
-            await client.send_message(message.channel, "Du musst Schere, Stein oder Papier wählen!")
+            await client.send_message(message.channel, "[SSP] Du musst Schere, Stein oder Papier wählen!")
         elif wahl == spieler.lower():
-            ergemb = discord.Embed(color=0xecde13, title="Unentschieden", description="Wir haben das gleiche gewählt."
+            ergemb = discord.Embed(color=0xecde13, title="Unentschieden!", description="Wir haben das gleiche gewählt."
                                                                                       "\n\n Du hast {sp} gewählt, ich "
                                                     "habe {bot} gewählt.".format(sp=spieler.capitalize()
                                                                                  ,bot=wahl.capitalize()))
@@ -34,7 +34,7 @@ async def on_message(message):
         elif (spieler.lower() == "schere" and wahl.lower() == "stein") or\
                 (spieler.lower() == "stein" and wahl.lower() == "papier") or\
                 (spieler.lower() == "papier" and wahl.lower() == "schere"):
-            ergemb = discord.Embed(color=0xb21512, title="Verloren", description="Yay! Ich habe gewonnen.\n\n"
+            ergemb = discord.Embed(color=0xb21512, title="Verloren!", description="Yay! Ich habe gewonnen.\n\n"
                                                                                  " Du hast {sp} gewählt, ich"
                                                                                  " habe {bot}"
                                                                                  " gewählt.".format(
@@ -44,11 +44,31 @@ async def on_message(message):
         elif (wahl.lower() == "schere" and spieler.lower() == "stein") or\
                 (wahl.lower() == "stein" and spieler.lower() == "papier") or\
                 (wahl.lower() == "papier" and spieler.lower() == "schere"):
-            ergemb = discord.Embed(color=0x71cc39, title="Gewonnen", description="Du hast gegen mich gewonnen."
+            ergemb = discord.Embed(color=0x71cc39, title="Gewonnen!", description="Du hast gegen mich gewonnen."
                                                                                  " Jetzt bin ich traurig."
                                                                                       "\n\n Du hast {sp} gewählt, ich "
                                         "habe {bot} gewählt.".format(sp=spieler.capitalize(), bot=wahl.capitalize()))
             await client.send_message(message.channel, embed=ergemb)
+    #Roulette
+    # TODO: Einsatz adden!
+    if message.content.lower().startswith("p.roulette"):
+        await client.message.channel(message.channel, "[Roulette] Schwarz oder Rot?")
+        roulette = ['schwarz', 'rot']
+        wahl = random.choice(roulette)
+        spieler = message.content.split(" ")[1]
+        if not spieler.lower() in roulette:
+            await client.send_message(message.channel, "[Roulette] Du musst schon Rot oder Schwarz wählen!")
+        elif wahl != spieler.lower().strip():
+            ergemb = discord.Embed(color=0xb21512,
+                                title="Verloren!",
+                                description="Die Kugel ist auf {} gelandet. Schade eigentlich!".format(wahl.capitalize()))
+            await client.send_message(message.channel, embed=ergemb)
+        elif wahl == spieler.lower().strip():
+            ergemb = discord.Embed(color=0x71cc39,
+                                title="Gewonnen!",
+                                description="Juhu! Die Kugel ist auf {} gelandet. Herzlichen Glückwunsch!".format(wahl.capitalize()))
+            await client.send_message(message.channel, embed=ergemb)
+
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.logout()
