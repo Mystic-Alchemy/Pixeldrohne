@@ -22,7 +22,7 @@ async def on_message(message):
     if message.content.lower().startswith("p.ssp"):
         ssp = ['schere', 'stein', 'papier']
         wahl = random.choice(ssp)
-        spieler = message.content.split(" ")[1]
+        spieler = message.content.strip().split(" ")[1]
         if not spieler.lower() in ssp:
             await client.send_message(message.channel, "[SSP] Du musst Schere, Stein oder Papier wählen!")
         elif wahl == spieler.lower():
@@ -52,18 +52,17 @@ async def on_message(message):
     #Roulette
     # TODO: Einsatz adden!
     if message.content.lower().startswith("p.roulette"):
-        await client.message.channel(message.channel, "[Roulette] Schwarz oder Rot?")
         roulette = ['schwarz', 'rot']
         wahl = random.choice(roulette)
-        spieler = message.content.split(" ")[1]
+        spieler = message.content.strip().split(" ")[1]
         if not spieler.lower() in roulette:
             await client.send_message(message.channel, "[Roulette] Du musst schon Rot oder Schwarz wählen!")
-        elif wahl != spieler.lower().strip():
+        elif wahl != spieler.lower():
             ergemb = discord.Embed(color=0xb21512,
                                 title="Verloren!",
                                 description="Die Kugel ist auf {} gelandet. Schade eigentlich!".format(wahl.capitalize()))
             await client.send_message(message.channel, embed=ergemb)
-        elif wahl == spieler.lower().strip():
+        elif wahl == spieler.lower():
             ergemb = discord.Embed(color=0x71cc39,
                                 title="Gewonnen!",
                                 description="Juhu! Die Kugel ist auf {} gelandet. Herzlichen Glückwunsch!".format(wahl.capitalize()))
