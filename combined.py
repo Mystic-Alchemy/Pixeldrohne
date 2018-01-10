@@ -78,6 +78,15 @@ async def on_message(message):
         user = message.author
         await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
 
+        # Bot Invite
+        if message.content.lower().startswith('p.test'):
+            embed = discord.Embed(
+                title="Einfach dem Link folgen um den Bot einzuladen.",
+                description="http://pixeldrohne.mystic-alchemy.com",
+                color=0x8a2be2
+            )
+            await client.send_message(message.channel, embed=iembed)
+
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
         if len(message.content) == 8:
