@@ -102,7 +102,7 @@ async def on_message(message):
 
         # Bot Invite
         if message.content.lower().startswith('p.test'):
-            embed = discord.Embed(
+            iembed = discord.Embed(
                 title="Einfach dem Link folgen um den Bot einzuladen.",
                 description="http://pixeldrohne.mystic-alchemy.com",
                 color=0x8a2be2
