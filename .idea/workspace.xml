@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="133" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Bot Invite hinzugefügt, zweiter Versuch">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/combined.py" afterPath="$PROJECT_DIR$/combined.py" />
       <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="main" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="104" column="35" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+            <state relative-caret-position="148">
+              <caret line="103" column="55" lean-forward="false" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="combined.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/combined.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="83" column="71" lean-forward="true" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
+            <state relative-caret-position="-425">
+              <caret line="285" column="30" lean-forward="true" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -208,6 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,7 +220,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -711,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515616935186</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]">
+      <created>1515617000462</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1515617000462</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -799,7 +806,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Readme geändert, die Fünfte: Formatfehler" />
     <MESSAGE value="Ich habe mal was nettes entfernt." />
     <MESSAGE value="SauseBot" />
     <MESSAGE value="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt" />
@@ -824,7 +830,8 @@
     <MESSAGE value="Änderungen in combined.py hinzugefügt." />
     <MESSAGE value="Game Status ein bisschen geändert." />
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bot Invite hinzugefügt, zweiter Versuch" />
+    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -970,17 +977,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="408">
             <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1086,16 +1093,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="104" column="35" lean-forward="true" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
+        <state relative-caret-position="148">
+          <caret line="103" column="55" lean-forward="false" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/combined.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="83" column="71" lean-forward="true" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
+        <state relative-caret-position="-425">
+          <caret line="285" column="30" lean-forward="true" selection-start-line="285" selection-start-column="30" selection-end-line="285" selection-end-column="30" />
           <folding />
         </state>
       </provider>
