@@ -101,13 +101,13 @@ async def on_message(message):
         await client.send_message(message.channel, embed=embed)
 
         # Bot Invite
-        if message.content.lower().startswith('p.invite'):
-            iembed = discord.Embed(
-                title="Einfach dem Link folgen um den Bot einzuladen.",
-                description="http://pixeldrohne.mystic-alchemy.com",
-                color=0x8a2be2
-            )
-            await client.send_message(message.channel, embed=iembed)
+    if message.content.lower().startswith('p.invite'):
+        iembed = discord.Embed(
+            title="Einfach dem Link folgen um den Bot einzuladen.",
+            description="http://pixeldrohne.mystic-alchemy.com",
+            color=0x8a2be2
+        )
+        await client.send_message(message.channel, embed=iembed)
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
