@@ -4,10 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="133" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/combined.py" afterPath="$PROJECT_DIR$/combined.py" />
-      <change beforePath="$PROJECT_DIR$/main" afterPath="$PROJECT_DIR$/main" />
     </list>
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
     <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
@@ -46,8 +45,8 @@
       <file leaf-file-name="combined.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/combined.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -388,13 +387,6 @@
       <option name="presentableId" value="Default" />
       <updated>1502798495867</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <created>1507892802398</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1507892802398</updated>
-    </task>
     <task id="LOCAL-00002" summary="+ Vorbereitung für serverspezifische Optionen&#10;- Löschung der troll.py">
       <created>1507896935169</created>
       <option name="number" value="00002" />
@@ -731,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515618744772</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]">
+      <created>1515619289555</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1515619289556</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -819,7 +818,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SauseBot" />
     <MESSAGE value="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt" />
     <MESSAGE value="Vorbereitung zur Testphase Hotfix&#10;Vergessene Dateien werden commited" />
     <MESSAGE value="Ein paar neue Sachen&#10;Änderungen:&#10;+ Anti Invite&#10;+ invite.txt mit zufälligen Sprüchen für den Anti Invite&#10;* License und Code of conduct verschoben in die Docs" />
@@ -844,7 +842,8 @@
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch" />
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]" />
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]" />
+    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1057,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/musik.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="66" column="95" lean-forward="false" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1097,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moderation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -1119,10 +1102,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/moderation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musik.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="66" column="95" lean-forward="false" selection-start-line="66" selection-start-column="95" selection-end-line="66" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/combined.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>

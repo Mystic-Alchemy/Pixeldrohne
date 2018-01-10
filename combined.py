@@ -12,6 +12,7 @@ import embeds
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
+players = {}
 
 minutes = 0
 hour = 0
