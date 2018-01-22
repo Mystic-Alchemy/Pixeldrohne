@@ -6,6 +6,7 @@ import asyncio
 import keys
 import dataset
 import data
+import random
 from collections import OrderedDict
 
 
@@ -72,7 +73,7 @@ async def on_message(message):
             userdb.upsert(level, ['userid'])
             embed = discord.Embed(
                 title="Levelaufstieg:",
-                color=0xF0FA4A,
+                color=0xf0fa4a,
                 description="{0}, du bist jetzt Level 1.".format(name)
             )
             db.commit()
@@ -84,7 +85,7 @@ async def on_message(message):
                 userdb.upsert(level, ['userid'])
                 embed = discord.Embed(
                     title="Levelaufstieg:",
-                    color=0xF0FA4A,
+                    color=0xf0fa4a,
                     description="{0}, du bist jetzt Level {1}.".format(name, str(lvl))
                 )
                 db.commit()
@@ -97,7 +98,7 @@ async def on_message(message):
                     userdb.upsert(level, ['userid'])
                     embed = discord.Embed(
                         title="Levelaufstieg:",
-                        color=0xF0FA4A,
+                        color=0xf0fa4a,
                         description="{0}, du bist jetzt Level {1}.".format(name, str(lvl))
                     )
                     db.commit()

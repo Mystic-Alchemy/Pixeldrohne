@@ -19,7 +19,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     #Schere Stein Papier
-    if message.content.lower().startswith("p.ssp"):
+    if message.content.lower().startswith("dev.ssp"):
         ssp = ['schere', 'stein', 'papier']
         wahl = random.choice(ssp)
         spieler = message.content.strip().split(" ")[1]
@@ -28,8 +28,7 @@ async def on_message(message):
         elif wahl == spieler.lower():
             ergemb = discord.Embed(color=0xecde13, title="Unentschieden!", description="Wir haben das gleiche gewählt."
                                                                                       "\n\n Du hast {sp} gewählt, ich "
-                                                    "habe {bot} gewählt.".format(sp=spieler.capitalize()
-                                                                                 ,bot=wahl.capitalize()))
+                                                    "habe {bot} gewählt.".format(sp=spieler.capitalize(), bot=wahl.capitalize()))
             await client.send_message(message.channel, embed=ergemb)
         elif (spieler.lower() == "schere" and wahl.lower() == "stein") or\
                 (spieler.lower() == "stein" and wahl.lower() == "papier") or\

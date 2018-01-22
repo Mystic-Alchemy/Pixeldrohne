@@ -4,17 +4,14 @@
     <bookmark url="file://$PROJECT_DIR$/main" line="133" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Noch ein verdammtes Update">
-      <change afterPath="$PROJECT_DIR$/config.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DiscordBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiscordBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.db" beforeDir="false" afterPath="$PROJECT_DIR$/bot.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minigame.py" beforeDir="false" afterPath="$PROJECT_DIR$/minigame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
-    <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
+    <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
     <ignored path="keys.py" />
     <manually-removed-from-ignored>
       <directory path="config/" />
@@ -34,11 +31,20 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+            <state relative-caret-position="1751">
+              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
               <folding>
                 <element signature="e#75#89#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="minigame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minigame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -119,7 +125,6 @@
         <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py" />
         <option value="$PROJECT_DIR$/moderation.py" />
-        <option value="$PROJECT_DIR$/minigame.py" />
         <option value="$PROJECT_DIR$/config/zitate.txt" />
         <option value="$PROJECT_DIR$/musik.py" />
         <option value="$PROJECT_DIR$/all.py" />
@@ -134,8 +139,9 @@
         <option value="$PROJECT_DIR$/../funstuff/testforsavingstuff.py" />
         <option value="$PROJECT_DIR$/../funstuff/Infinite random.py" />
         <option value="$PROJECT_DIR$/../funstuff/pi chudnowsky.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/data.py" />
+        <option value="$PROJECT_DIR$/minigame.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -339,13 +345,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502798495867</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Regelmäßiges Update der bot.db">
-      <created>1507969221080</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1507969221080</updated>
     </task>
     <task id="LOCAL-00004" summary="Botstop geändert&#10;Update: zitate.txt&#10;Update: bot.db">
       <created>1508101900283</created>
@@ -683,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515619690669</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration.">
+      <created>1516558255562</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1516558255563</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -770,7 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vorbereitung zur Testphase Hotfix&#10;Vergessene Dateien werden commited" />
     <MESSAGE value="Ein paar neue Sachen&#10;Änderungen:&#10;+ Anti Invite&#10;+ invite.txt mit zufälligen Sprüchen für den Anti Invite&#10;* License und Code of conduct verschoben in die Docs" />
     <MESSAGE value="p.halt geändert&#10;neuer Mod" />
     <MESSAGE value="readme geändert" />
@@ -795,7 +800,8 @@
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]" />
     <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]" />
     <MESSAGE value="Noch ein verdammtes Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Noch ein verdammtes Update" />
+    <MESSAGE value="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -807,13 +813,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reactions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -928,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minigame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/combined.py" />
     <entry file="file://$PROJECT_DIR$/moderation.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1021,6 +1013,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1031,10 +1031,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/minigame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+        <state relative-caret-position="1751">
+          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
           <folding>
             <element signature="e#75#89#0" expanded="true" />
           </folding>
