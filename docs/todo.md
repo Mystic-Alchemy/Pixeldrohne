@@ -38,6 +38,6 @@ Die Einträge sind ihrer Priorität nach geordnet. Der oberste Eintrag ist immer
 ## Verschiedenes
 
 - [ ] Unbekannte Befehl verweisen auf die Hilfe
-- [ ] Level System
 - [ ] Leaderboard
 - [ ] Reaktionen in einen Befehl
+- [x] Level System
