@@ -1,11 +1,12 @@
 import os
 import time
+import psutil
 
 
 def getCPUtemp():
     res = os.popen('vcgencmd measure_temp').readline()
     res = res.replace("temp=", "").replace("\'", "°").rstrip()
-    return(res)
+    return(str(res))
 
 
 def getRAMinfo():
@@ -19,4 +20,6 @@ def getRAMinfo():
 
 
 def getCPUuse():
-    return(str(os.popen("top -n1 | awk '/%Cpu\(s\):/ {print $2}'")))
+    # cpu = os.popen("top -n1 | awk '/%Cpu\(s\):/ {print $2}'")
+    cpu = psutil.cpu_percent()
+    return(str(cpu))

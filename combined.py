@@ -52,32 +52,16 @@ async def on_message(message):
 
     # Python Hilfe
     if message.content.lower().startswith('p.python'):
-        pyemb = discord.Embed(
-            title="Python lernen.",
-            color=0xf8dc2e,
-            description="Es scheint so, dass jemand hier zu viele Fragen über Python und vielleicht"
-                        " auch discord.py stellt."
-        )
-        pyemb.set_author(name="Pixeldrohne")
-        pyemb.set_footer(text='"Intelligenz ist die Fähigkeit, sich dem Wandel anzupassen." - Stephen Hawking')
-        pyemb.set_thumbnail(url="https://www.python.org/static/opengraph-icon-200x200.png")
-        pyemb.add_field(name="Tutorials:", value="https://www.python-kurs.eu/index.php\n"
-                                                 "http://py-tutorial-de.readthedocs.io/de/python-3.3/\n"
-                                                 "http://praxistipps.chip.de/python-tutorial-auf-deu"
-                                                 "tsch-fuer-einsteiger_93386")
-        pyemb.add_field(name="Bücher:", value="https://www.rheinwerk-verlag.de/einstieg-in-python_4374/\n"
-                                              "https://www.rheinwerk-verlag.de/programmieren-lernen-mit-python_3674/\n")
-        pyemb.add_field(name="Videos:", value="https://www.youtube.com/watch?v=bt_Wcp3qemM\n"
-                                              "https://www.youtube.com/watch?v=dG0kxa0XoXc\n"
-                                              "https://www.youtube.com/watch?v=ikuyDZNsbNk")
-        pyemb.add_field(name="discord.py", value="https://www.youtube.com/channel/UCisqgTzV--rB_WByK-wuY6g\n"
-                                                 "https://discordpy.readthedocs.io/en/latest/api.html#client")
-        await client.send_message(message.channel, embed=pyemb)
+        await client.send_message(message.channel, embed=embeds.py_help())
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
         user = message.author
         await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
+
+    # Sysinfo
+    if message.content.lower().startswith('p.sysinfo'):
+        await client.send_message(message.channel, embed=embeds.system_info())
 
     # Bot Invite
     if message.content.lower().startswith('p.invite'):

@@ -22,7 +22,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit p.help', url="http://twitch.com/pixelwerfer",
+    await client.change_presence(game=discord.Game(name='mit p.help', url="http://twitch.tv/pixeldrohne",
                                                    type=1))
 
 
@@ -31,7 +31,7 @@ async def on_message(message):
     # Spielstatus
     if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]
-        await client.change_presence(game=discord.Game(name=game, url="http://twitch.com/pixelwerfer", type=1))
+        await client.change_presence(game=discord.Game(name=game, url="http://twitch.tv/pixeldrohne", type=1))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
 
     # Nickname ändern
@@ -52,6 +52,14 @@ async def on_message(message):
     if message.content.lower().startswith('p.help'):
         user = message.author
         await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
+
+    # Sysinfo
+    if message.content.lower().startswith('p.sysinfo'):
+        await client.send_message(message.channel, embed=embeds.system_info())
+
+    # Python help
+    if message.content.lower().startswith('p.python'):
+        await client.send_message(message.channel, embed=embeds.py_help())
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):

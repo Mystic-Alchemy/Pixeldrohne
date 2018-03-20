@@ -31,7 +31,7 @@ async def on_message(message):
         )
         embed.add_field(name="Error 404", value="There seems to be nothing.")
         await client.send_message(user, embed=embed)
-    if message.content.lower().startswith('dev.lsd') and message.author.id == keys.pmcid:
+    if message.content.lower().startswith('dev.lsd'):
         # öffnen = open("config/zitate.txt", "r", encoding='utf-8')
         öffnen = urllib.request.urlopen("https://sherlock-holm.es/stories/plain-text/cano.txt")
         for line in öffnen:
@@ -40,7 +40,7 @@ async def on_message(message):
             if not line == "b''":
                 line = line[2:]
                 line = line.rstrip('\'')
-                await client.send_message(message.channel, line)
+                await client.send_message(message.author, line)
                 await asyncio.sleep(1)
     try:
         if message.content.lower().startswith('p.purge') and keys.pmcid:
