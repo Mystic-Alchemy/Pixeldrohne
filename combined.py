@@ -24,7 +24,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit p.help', url="http://pixeldrohne.mystic-alchemy.com",
+    await client.change_presence(game=discord.Game(name='mit p.help', url="https://twitch.tv/pixelwerfer",
                                                    type=1))
 
 
@@ -33,7 +33,7 @@ async def on_message(message):
     # Spielstatus
     if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]
-        await client.change_presence(game=discord.Game(name=game, url="http://pixeldrohne.mystic-alchemy.com", type=1))
+        await client.change_presence(game=discord.Game(name=game, url="https://twitch.tv/pixelwerfer", type=1))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
 
     # Nickname ändern

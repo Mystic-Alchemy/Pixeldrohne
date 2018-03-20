@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CUDA-Qt-Test/.idea/CUDA-Qt-Test.iml" filepath="$PROJECT_DIR$/../CUDA-Qt-Test/.idea/CUDA-Qt-Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DiscordBot.iml" filepath="$PROJECT_DIR$/.idea/DiscordBot.iml" />
       <module fileurl="file://$PROJECT_DIR$/../tobsuas/.idea/SauseBot.iml" filepath="$PROJECT_DIR$/../tobsuas/.idea/SauseBot.iml" />
       <module fileurl="file://$PROJECT_DIR$/../funstuff/.idea/funstuff.iml" filepath="$PROJECT_DIR$/../funstuff/.idea/funstuff.iml" />

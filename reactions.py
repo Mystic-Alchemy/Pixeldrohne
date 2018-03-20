@@ -115,6 +115,7 @@ async def on_message(message):
         await asyncio.sleep(1)
         sys.exit(1)
 
+
 @client.event
 async def on_reaction_add(reaction, user):
     msg = reaction.message

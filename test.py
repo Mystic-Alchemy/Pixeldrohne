@@ -4,14 +4,9 @@ import discord
 import sys
 import asyncio
 import keys
-import dataset
-import data
 import random
-from collections import OrderedDict
+import urllib.request
 
-
-db = dataset.connect('sqlite:///bot.db')
-userdb = db['daten']
 client = discord.Client()
 
 
@@ -21,7 +16,7 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------------------------')
-    await client.change_presence(game=discord.Game(name='mit dev.help', type=1))
+    await client.change_presence(game=discord.Game(name='mit dev.help', type=1, url="https://twitch.tv/pilleniusmc"))
 
 
 @client.event
@@ -34,75 +29,49 @@ async def on_message(message):
             description="Alle Befehle, die hier aufgeführt sind noch in der Testphase, heißt sie können komplett "
                         "verbuggt sein.\n[Beta]: Sollte soweit stabil sein.\n[Alpha]: Könnte zu Abstürzen führen."
         )
-        embed.add_field(name="[Beta] dev.inspect", value="Statistik Befehl")
+        embed.add_field(name="Error 404", value="There seems to be nothing.")
         await client.send_message(user, embed=embed)
-
-    elif message.content.lower().startswith('dev.inspect'):
-        if userdb.find_one(userid=message.author.id) is None:
-            db.begin()
-            userdb.upsert(dict(userid=message.author.id, lvl=0, xp=0, nachrichten=0), ['userid'])
-        ohgod = userdb.find_one(userid=message.author.id)
-        lvlemb = discord.Embed(
-            title="Deine Statistik",
-            color=0xf12b6e,
-            description='Hier siehst du alle deine Statistiken auf einen Blick'
-        )
-        lvlemb.add_field(name='Level:', value=ohgod['lvl'])
-        lvlemb.add_field(name='XP:', value=ohgod['xp'])
-        lvlemb.add_field(name='Nachrichten:', value=ohgod['nachrichten'])
-        await client.send_message(message.channel, embed=lvlemb)
-
-    elif message.content.lower().startswith('dev.halt') and (message.author.id == keys.pmcid or message.author.id == keys.m3lid):
-        await client.logout()
-        await asyncio.sleep(1)
+    if message.content.lower().startswith('dev.lsd') and message.author.id == keys.pmcid:
+        # öffnen = open("config/zitate.txt", "r", encoding='utf-8')
+        öffnen = urllib.request.urlopen("https://sherlock-holm.es/stories/plain-text/cano.txt")
+        for line in öffnen:
+            line = line.strip()
+            line = str(line)
+            if not line == "b''":
+                line = line[2:]
+                line = line.rstrip('\'')
+                await client.send_message(message.channel, line)
+                await asyncio.sleep(1)
+    try:
+        if message.content.lower().startswith('p.purge') and keys.pmcid:
+            lim = int(message.content[8:]) + 1
+            await client.purge_from(message.channel, limit=lim)
+            await client.send_message(message.channel, "Erfolgreich gelöscht.")
+    except discord.Forbidden:
+        await client.change_presence(game=discord.Game(name='Du kannst mich doch nicht einfach muten.', type=1))
+        await asyncio.sleep(5)
+        await client.change_presence(game=discord.Game(name='ENTMUTE MICH JETZT!!!', type=1))
+        await asyncio.sleep(5)
+        await client.change_presence(game=discord.Game(name='Ok, ich gebe auf.', type=1))
         await sys.exit(1)
+    except Exception as e:
+        await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
 
-    elif message.content.lower().startswith('dev.'):
-        client.send_message(message.channel, "Sorry, den Befehl kenne ich nicht.")
-    else:
-        user = message.author
-        name = user.name
-        mid = message.author.id
-        data.nachrichten(message.author.id)
-        data.xp(message.author.id, len(message.content))
-        db.begin()
-        xp = 250
-        nutzer = userdb.find_one(userid=mid)
-        if nutzer['lvl'] == 0:
-            level = dict(userid=mid, lvl=1)
-            userdb.upsert(level, ['userid'])
-            embed = discord.Embed(
-                title="Levelaufstieg:",
-                color=0xf0fa4a,
-                description="{0}, du bist jetzt Level 1.".format(name)
-            )
-            db.commit()
-            await client.send_message(message.channel, embed=embed)
-        elif nutzer['lvl'] == 1:
-            lvl = nutzer['lvl'] + 1
-            if nutzer['xp'] >= xp:
-                level = dict(userid=mid, lvl=lvl)
-                userdb.upsert(level, ['userid'])
-                embed = discord.Embed(
-                    title="Levelaufstieg:",
-                    color=0xf0fa4a,
-                    description="{0}, du bist jetzt Level {1}.".format(name, str(lvl))
-                )
-                db.commit()
-                await client.send_message(message.channel, embed=embed)
-            else:
-                xp = xp + (xp * (nutzer['lvl'] * 1.5))
-                if nutzer['xp'] > xp:
-                    lvl = nutzer['lvl'] + 1
-                    level = dict(userid=mid, lvl=lvl)
-                    userdb.upsert(level, ['userid'])
-                    embed = discord.Embed(
-                        title="Levelaufstieg:",
-                        color=0xf0fa4a,
-                        description="{0}, du bist jetzt Level {1}.".format(name, str(lvl))
-                    )
-                    db.commit()
-                    await client.send_message(message.channel, embed=embed)
+    if message.author.id == keys.pmcid and message.content.lower().startswith('dev.halt'):
+        await client.close()
+        sys.exit(1)
+
+
+@client.event
+async def on_reaction_add(reaction, user):
+    msg = reaction.message
+    chat = reaction.message.channel
+
+    if reaction.emoji == "👎" and msg.id == messageid and not user.id == client.user.id:
+        lol_msg = await client.send_message(chat, "Hey {0}! Du sollst dem bitte nicht auch noch den Daumen geben.".format(user.mention))
+        await client.remove_reaction(msg, "👎", user)
+        await asyncio.sleep(3)
+        await client.delete_message(lol_msg)
 
 # client.start(keys.dev)
 client.run(keys.dev)
