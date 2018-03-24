@@ -1,13 +1,12 @@
-# Die 'main' function des Bots.
+# Die 'main.py' function des Bots.
 
 import asyncio
 import io
-import random
 import discord
 import requests
 import sys
 import keys
-import embeds
+from pxldrn import embeds
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')

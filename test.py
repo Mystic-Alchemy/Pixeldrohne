@@ -42,20 +42,14 @@ async def on_message(message):
                 line = line.rstrip('\'')
                 await client.send_message(message.author, line)
                 await asyncio.sleep(1)
-    try:
-        if message.content.lower().startswith('p.purge') and keys.pmcid:
-            lim = int(message.content[8:]) + 1
-            await client.purge_from(message.channel, limit=lim)
-            await client.send_message(message.channel, "Erfolgreich gelöscht.")
-    except discord.Forbidden:
-        await client.change_presence(game=discord.Game(name='Du kannst mich doch nicht einfach muten.', type=1))
-        await asyncio.sleep(5)
-        await client.change_presence(game=discord.Game(name='ENTMUTE MICH JETZT!!!', type=1))
-        await asyncio.sleep(5)
-        await client.change_presence(game=discord.Game(name='Ok, ich gebe auf.', type=1))
-        await sys.exit(1)
-    except Exception as e:
-        await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
+
+    if message.content.lower().startswith('dev.tt'):
+        ttemb = discord.Embed(
+            title="PilleniusMC",
+            description="So könnte ein Twitch Chat Embed aussehen.",
+            color=0x6441a4
+        )
+        await client.send_message(message.channel, embed=ttemb)
 
     if message.author.id == keys.pmcid and message.content.lower().startswith('dev.halt'):
         await client.close()
@@ -74,4 +68,5 @@ async def on_reaction_add(reaction, user):
         await client.delete_message(lol_msg)
 
 # client.start(keys.dev)
-client.run(keys.dev)
+# client.run(keys.dev)
+client.run(keys.eng)

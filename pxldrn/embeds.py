@@ -1,10 +1,10 @@
 # Hier werden die einzelnen 'p.help'-Argumente gehandled.
 
 import discord
-import he
 import asyncio
 import keys
 import sysinfo
+from pxldrn.adv import he
 
 client = discord.Client()
 mlist = open("config/mods.txt", "r", encoding='utf-8')

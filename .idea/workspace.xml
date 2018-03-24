@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main" line="141" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="140" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
     <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt">
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Ne Menge kleinerer Änderungen.">
+      <change afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/twitch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DiscordBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiscordBot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combined.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/embeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sysinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/sysinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/embeds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/he.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/he.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <ignored path="keys.py" />
@@ -30,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+            <state relative-caret-position="1122">
+              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
               <folding>
                 <element signature="e#75#89#0" expanded="true" />
               </folding>
@@ -43,7 +48,7 @@
         </entry>
       </file>
       <file leaf-file-name="he.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/he.py">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
@@ -51,11 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
+              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+              <folding>
+                <element signature="e#36#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,19 +71,31 @@
       <file leaf-file-name="combined.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/combined.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="54" column="74" lean-forward="true" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+            <state relative-caret-position="413">
+              <caret line="420" column="19" selection-start-line="420" selection-start-column="19" selection-end-line="420" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="embeds.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/embeds.py">
+      <file leaf-file-name="embeds.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="54" column="106" selection-start-line="54" selection-start-column="106" selection-end-line="54" selection-end-column="106" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
                 <element signature="e#59#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="698">
+              <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/db_creation.py" />
         <option value="$PROJECT_DIR$/template.py" />
         <option value="$PROJECT_DIR$/test/template.py" />
@@ -132,7 +151,6 @@
         <option value="$PROJECT_DIR$/hilfe.py" />
         <option value="$PROJECT_DIR$/docs/todo.md" />
         <option value="$PROJECT_DIR$/database.py" />
-        <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py" />
         <option value="$PROJECT_DIR$/moderation.py" />
         <option value="$PROJECT_DIR$/config/zitate.txt" />
@@ -151,20 +169,24 @@
         <option value="$PROJECT_DIR$/../CUDA-Qt-Test/CUDA Test 1.py" />
         <option value="$PROJECT_DIR$/../CUDA-Qt-Test/Qt Test 1.py" />
         <option value="$PROJECT_DIR$/reactions.py" />
-        <option value="$PROJECT_DIR$/combined.py" />
         <option value="$PROJECT_DIR$/sysinfo.py" />
         <option value="$PROJECT_DIR$/../funstuff/test.py" />
         <option value="$PROJECT_DIR$/embeds.py" />
         <option value="$PROJECT_DIR$/main" />
+        <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/twitch.py" />
+        <option value="$PROJECT_DIR$/combined.py" />
+        <option value="$PROJECT_DIR$/pxldrn/embeds.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1941" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="2287" />
+    <option name="y" value="-15" />
+    <option name="width" value="864" />
+    <option name="height" value="946" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,21 +224,37 @@
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CUDA-Qt-Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
+              <item name="adv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
               <item name="funstuff" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixeldrone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixeldrone" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixeldrone" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
+              <item name="adv" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,6 +276,8 @@
       <recent name="C:\Users\pille\PycharmProjects\tobsuas" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne\pxldrn\adv" />
+      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne\pxldrn" />
       <recent name="C:\Users\pille\PycharmProjects\Pixeldrohne\docs" />
       <recent name="C:\Users\pille\PycharmProjects\Pixeldrohne\config" />
     </key>
@@ -253,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.combined">
     <configuration name="checkup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="funstuff" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,19 +313,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pi chudnowsky" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="funstuff" />
+    <configuration name="combined" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DiscordBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../funstuff" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../funstuff/pi chudnowsky.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/combined.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,19 +386,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.pi chudnowsky" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.checkup" />
       <item itemvalue="Python.sysinfo" />
+      <item itemvalue="Python.combined" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.combined" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.sysinfo" />
         <item itemvalue="Python.checkup" />
-        <item itemvalue="Python.pi chudnowsky" />
       </list>
     </recent_temporary>
   </component>
@@ -373,13 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502798495867</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Anti Mentions hinzugefügt.">
-      <created>1508178234978</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1508178234978</updated>
     </task>
     <task id="LOCAL-00007" summary="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird.">
       <created>1508242280540</created>
@@ -717,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521542047972</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Ne Menge kleinerer Änderungen.">
+      <created>1521567355265</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1521567355265</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -732,17 +773,16 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.30206677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.30206677" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.3259861" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5238474" side_tool="true" weight="0.27995643" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.2935035" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3225058" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3225058" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32826087" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31090486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32830626" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
       <window_info id="Favorites" order="2" sideWeight="0.50567263" side_tool="true" weight="0.102878466" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -751,27 +791,28 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.07790143" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48251194" visible="true" weight="0.2982456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.20021075" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31154683" />
       <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.32826087" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3263889" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.3259861" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3225058" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298611" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32826087" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51748806" side_tool="true" weight="0.2951389" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32830626" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5238474" side_tool="true" weight="0.27995643" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info id="Favorites" order="2" sideWeight="0.50567263" side_tool="true" weight="0.102878466" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32934782" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -804,7 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="readme geändert" />
     <MESSAGE value="To-Do Liste hinzugefügt" />
     <MESSAGE value="Hilfe wird umgebaut" />
     <MESSAGE value="Hilfe wird umgebaut Teil 2" />
@@ -829,7 +869,8 @@
     <MESSAGE value="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration." />
     <MESSAGE value="Nur ein kleines Update" />
     <MESSAGE value="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt" />
+    <MESSAGE value="Ne Menge kleinerer Änderungen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ne Menge kleinerer Änderungen." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -841,10 +882,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -895,13 +936,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui-test.py" />
     <entry file="file://$PROJECT_DIR$/dronetest.py" />
-    <entry file="file://$PROJECT_DIR$/keys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="68" selection-start-column="68" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Fun.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/combined.py" />
     <entry file="file://$PROJECT_DIR$/../funstuff/hanoi.txt" />
@@ -1012,56 +1046,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/he.py">
+    <entry file="file://$PROJECT_DIR$/sysinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sysinfo.py">
+    <entry file="file://$PROJECT_DIR$/keys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="34">
+          <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#75#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+          <folding>
+            <element signature="e#36#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/combined.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="54" column="74" lean-forward="true" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+        <state relative-caret-position="413">
+          <caret line="420" column="19" selection-start-line="420" selection-start-column="19" selection-end-line="420" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/embeds.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="54" column="106" selection-start-line="54" selection-start-column="106" selection-end-line="54" selection-end-column="106" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#59#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

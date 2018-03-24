@@ -8,7 +8,7 @@ import discord
 import requests
 import sys
 import keys
-import embeds
+from pxldrn import embeds
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
@@ -417,4 +417,5 @@ async def uptime():
             hour += 1
 
 client.loop.create_task(uptime())
-client.run(keys.token)
+# client.run(keys.token)
+client.run(keys.eng)
