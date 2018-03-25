@@ -6,7 +6,8 @@ import discord
 import requests
 import sys
 import keys
-from pxldrn import embeds
+from pxldrn.adv import embed_data
+from pxldrn import hilfe
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
@@ -49,16 +50,15 @@ async def on_message(message):
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
-        user = message.author
-        await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
+        await hilfe.hilfe(message.content[7:].lower(), len(message.content))
 
     # Sysinfo
     if message.content.lower().startswith('p.sysinfo'):
-        await client.send_message(message.channel, embed=embeds.system_info())
+        await client.send_message(message.channel, embed=embed_data.system_info())
 
     # Python help
     if message.content.lower().startswith('p.python'):
-        await client.send_message(message.channel, embed=embeds.py_help())
+        await client.send_message(message.channel, embed=embed_data.py_help())
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
@@ -92,34 +92,20 @@ async def on_message(message):
 
     # eine "Über" Sektion
     if message.content.startswith('p.about'):
-        abemb = discord.Embed(
-            color=0xad1457,
-            title="Über",
-            description="Sorry, hier gibt es noch nichts zu sehen.")
-        await client.send_message(message.channel, embed=abemb)
+        await client.send_message(message.channel, embed=embed_data.about())
 
     # Invite zur Heimat
     if message.content.lower().startswith('p.test'):
-        embed = discord.Embed(
-            title="Invite zum Heimat-/Testserver",
-            description="http://discord.gg/sgDQjeH",
-            color=0x8a2be2
-        )
-        await client.send_message(message.channel, embed=embed)
+        await client.send_message(message.channel, embed=embed_data.server_invite())
 
         # Bot Invite
     if message.content.lower().startswith('p.invite'):
-        iembed = discord.Embed(
-            title="Einfach dem Link folgen um den Bot einzuladen.",
-            description="http://pixeldrohne.mystic-alchemy.com",
-            color=0x8a2be2
-        )
-        await client.send_message(message.channel, embed=iembed)
+        await client.send_message(message.channel, embed=embed_data.bot_invite())
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.logout()
-        await embeds.halt()
+        await hilfe.halt()
         await asyncio.sleep(1)
         sys.exit(1)
 

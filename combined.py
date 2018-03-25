@@ -8,7 +8,7 @@ import discord
 import requests
 import sys
 import keys
-from pxldrn import embeds
+from pxldrn import hilfe
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
@@ -52,16 +52,16 @@ async def on_message(message):
 
     # Python Hilfe
     if message.content.lower().startswith('p.python'):
-        await client.send_message(message.channel, embed=embeds.py_help())
+        await client.send_message(message.channel, embed=hilfe.py_help())
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
         user = message.author
-        await embeds.hilfe(message.content[7:].lower(), user, len(message.content))
+        await hilfe.hilfe(message.content[7:].lower(), user, len(message.content))
 
     # Sysinfo
     if message.content.lower().startswith('p.sysinfo'):
-        await client.send_message(message.channel, embed=embeds.system_info())
+        await client.send_message(message.channel, embed=hilfe.system_info())
 
     # Bot Invite
     if message.content.lower().startswith('p.invite'):

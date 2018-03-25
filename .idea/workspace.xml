@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/main.py" line="140" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="126" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="Titel&#10;Beschreibung&#10;Beschreibung" />
-    <list id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="SauseBot" />
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Ne Menge kleinerer Änderungen.">
-      <change afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pxldrn/adv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pxldrn/adv/twitch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DiscordBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DiscordBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Vorbereitung und Test für den Refractor">
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pxldrn/hilfe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/combined.py" beforeDir="false" afterPath="$PROJECT_DIR$/combined.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/embeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/he.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/he.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minigame.py" beforeDir="false" afterPath="$PROJECT_DIR$/minigame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/adv/he.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/embeds.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sysinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/sysinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pixeldrone/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pixeldrone/main.py" afterDir="false" />
     </list>
     <ignored path="keys.py" />
     <manually-removed-from-ignored>
@@ -35,32 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-              <folding>
-                <element signature="e#75#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="he.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
               <folding>
                 <element signature="e#36#50#0" expanded="true" />
               </folding>
@@ -68,35 +46,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combined.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/combined.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="420" column="19" selection-start-line="420" selection-start-column="19" selection-end-line="420" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="embeds.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="513">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
-                <element signature="e#59#73#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitch.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+      <file leaf-file-name="minigame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/minigame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+            <state relative-caret-position="313">
+              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#42#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="help_embeds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -130,11 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db_creation.py" />
-        <option value="$PROJECT_DIR$/template.py" />
-        <option value="$PROJECT_DIR$/test/template.py" />
-        <option value="$PROJECT_DIR$/chatlog.log" />
-        <option value="$PROJECT_DIR$/troll.py" />
         <option value="$PROJECT_DIR$/warteschlange.txt" />
         <option value="$PROJECT_DIR$/mods.txt" />
         <option value="$PROJECT_DIR$/zitate.txt" />
@@ -163,7 +148,6 @@
         <option value="$PROJECT_DIR$/../funstuff/checkup.py" />
         <option value="$PROJECT_DIR$/../funstuff/testforsavingstuff.py" />
         <option value="$PROJECT_DIR$/../funstuff/Infinite random.py" />
-        <option value="$PROJECT_DIR$/minigame.py" />
         <option value="$PROJECT_DIR$/data.py" />
         <option value="$PROJECT_DIR$/../funstuff/pi chudnowsky.py" />
         <option value="$PROJECT_DIR$/../CUDA-Qt-Test/CUDA Test 1.py" />
@@ -175,16 +159,24 @@
         <option value="$PROJECT_DIR$/main" />
         <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pxldrn/adv/twitch.py" />
         <option value="$PROJECT_DIR$/combined.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/help_embeds/__init__.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/he.py" />
         <option value="$PROJECT_DIR$/pxldrn/embeds.py" />
+        <option value="$PROJECT_DIR$/../Pixeldrone/main.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" />
+        <option value="$PROJECT_DIR$/pxldrn/hilfe.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/minigame.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2287" />
-    <option name="y" value="-15" />
+    <option name="x" value="579" />
+    <option name="y" value="-21" />
     <option name="width" value="864" />
     <option name="height" value="946" />
   </component>
@@ -231,6 +223,20 @@
               <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
               <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
               <item name="adv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
+              <item name="adv" type="462c0819:PsiDirectoryNode" />
+              <item name="embed_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
+              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
+              <item name="adv" type="462c0819:PsiDirectoryNode" />
+              <item name="minigames" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
@@ -294,25 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.combined">
-    <configuration name="checkup" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="funstuff" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../funstuff" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../funstuff/checkup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.minigame">
     <configuration name="combined" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DiscordBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,6 +319,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="minigame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DiscordBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minigame.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="sysinfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DiscordBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,7 +349,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sysinfo.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\pmc\PycharmProjects\Pixeldrohne\pxldrn\adv\sysinfo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -388,17 +394,17 @@
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.checkup" />
       <item itemvalue="Python.sysinfo" />
       <item itemvalue="Python.combined" />
+      <item itemvalue="Python.minigame" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.minigame" />
         <item itemvalue="Python.combined" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.sysinfo" />
-        <item itemvalue="Python.checkup" />
       </list>
     </recent_temporary>
   </component>
@@ -407,20 +413,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d21170c3-b773-4c93-b8a9-e5e377885450" name="Default" comment="" />
       <changelist id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="" />
-      <changelist id="4533ca03-154c-4b8c-a02c-62f3f7dc771b" name="SauseBot" comment="" />
       <created>1502798495867</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502798495867</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Sicherheitsupdate #1&#10;Alle Schlüssel werden jetzt in einer Datei gespeichert, die nicht auf GitHub gespeichert wird.">
-      <created>1508242280540</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1508242280540</updated>
     </task>
     <task id="LOCAL-00008" summary="Sicherheitsupdate #1 Hotfix #1&#10;Fix:&#10;+ mentions.py angepasst">
       <created>1508243067216</created>
@@ -758,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521567355265</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Vorbereitung und Test für den Refractor">
+      <created>1521919883199</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1521919883200</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView">
@@ -771,18 +775,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.30206677" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.20021075" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.3259861" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5238474" side_tool="true" weight="0.27995643" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3225058" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31045753" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.30283225" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32826087" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31090486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32830626" />
-      <window_info id="Favorites" order="2" sideWeight="0.50567263" side_tool="true" weight="0.102878466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
+      <window_info id="Favorites" order="2" sideWeight="0.50567263" side_tool="true" weight="0.102878466" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -794,24 +798,24 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31090486" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.20021075" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.31154683" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.3259861" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3225058" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298611" />
+      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32826087" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32830626" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5238474" side_tool="true" weight="0.27995643" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.30283225" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" sideWeight="0.50567263" side_tool="true" weight="0.102878466" />
     </layout-to-restore>
   </component>
@@ -845,7 +849,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="To-Do Liste hinzugefügt" />
     <MESSAGE value="Hilfe wird umgebaut" />
     <MESSAGE value="Hilfe wird umgebaut Teil 2" />
     <MESSAGE value="Hilfe wird umgebaut Teil 3" />
@@ -870,7 +873,8 @@
     <MESSAGE value="Nur ein kleines Update" />
     <MESSAGE value="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt" />
     <MESSAGE value="Ne Menge kleinerer Änderungen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ne Menge kleinerer Änderungen." />
+    <MESSAGE value="Vorbereitung und Test für den Refractor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vorbereitung und Test für den Refractor" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -882,16 +886,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.py" />
-    <entry file="file://$PROJECT_DIR$/test/template.py" />
-    <entry file="file://$PROJECT_DIR$/chatlog.log" />
     <entry file="file://$PROJECT_DIR$/troll.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/encodings/cp1252.py" />
     <entry file="file://$PROJECT_DIR$/warteschlange.txt" />
@@ -975,13 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/minigame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/mods.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1046,17 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sysinfo.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/sysinfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1067,49 +1047,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combined.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="420" column="19" selection-start-line="420" selection-start-column="19" selection-end-line="420" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
+        <state relative-caret-position="403">
           <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py" />
+    <entry file="file://$PROJECT_DIR$/../Pixeldrone/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/hilfe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
           <folding>
             <element signature="e#36#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+        <state relative-caret-position="768">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/combined.py">
+    <entry file="file://$PROJECT_DIR$/minigame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="420" column="19" selection-start-line="420" selection-start-column="19" selection-end-line="420" selection-end-column="19" />
+        <state relative-caret-position="313">
+          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="e#42#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/embeds.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="513">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
-            <element signature="e#59#73#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

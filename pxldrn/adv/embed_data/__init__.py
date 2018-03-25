@@ -1,15 +1,5 @@
-# Hier werden die einzelnen 'p.help'-Argumente gehandled.
-
 import discord
-import asyncio
-import keys
-import sysinfo
-from pxldrn.adv import he
-
-client = discord.Client()
-mlist = open("config/mods.txt", "r", encoding='utf-8')
-mods = mlist.readlines()
-
+from pxldrn.adv import sysinfo
 
 def system_info():
     sysembed = discord.Embed(
@@ -29,7 +19,7 @@ def system_info():
         name="RAM Auslastung",
         value="Belegt: {0} KB\nFrei: {1} KB\nGesamt: {2} KB".format(sysinfo.getRAMinfo()[1], sysinfo.getRAMinfo()[2], sysinfo.getRAMinfo()[0])
     )
-    return(sysembed)
+    return sysembed
 
 
 def py_help():
@@ -53,52 +43,30 @@ def py_help():
                                           "https://www.youtube.com/watch?v=ikuyDZNsbNk")
     pyemb.add_field(name="discord.py", value="https://www.youtube.com/channel/UCisqgTzV--rB_WByK-wuY6g\n"
                                              "https://discordpy.readthedocs.io/en/latest/api.html#client")
-    return(pyemb)
+    return pyemb
 
 
-@asyncio.coroutine
-async def hilfe(message, user, length):
-    await client.login(keys.token)
-    if length <= 7:
-        embed = he.hilfe
-        await client.send_message(user, embed=embed)
-    elif length > 7:
-        arg = message
-        if arg == "musik":
-            embed = he.musik
-            await client.send_message(user, embed=embed)
-        elif arg == "allgemein":
-            embed = he.allgemein
-            await client.send_message(user, embed=embed)
-        elif arg == "mod" and user.id in mods:
-            embed = he.mods
-            await client.send_message(user, embed=embed)
-        elif arg == "spiele":
-            embed = he.minigames
-            await client.send_message(user, embed=embed)
-        elif arg == "test":
-            pass
-        elif arg == "komplett":
-            if user.id in mods:
-                allgemein = he.allgemein
-                musik = he.musik
-                spiele = he.minigames
-                mem = he.mods
-                await client.send_message(user, embed=allgemein)
-                await client.send_message(user, embed=musik)
-                await client.send_message(user, embed=spiele)
-                await client.send_message(user, embed=mem)
-            else:
-                allgemein = he.allgemein
-                musik = he.musik
-                spiele = he.minigames
-                await client.send_message(user, embed=allgemein)
-                await client.send_message(user, embed=musik)
-                await client.send_message(user, embed=spiele)
-        else:
-            embed = he.hilfe
-            await client.send_message(user, embed=embed)
+def about():
+    abemb = discord.Embed(
+        color=0xad1457,
+        title="Über",
+        description="Sorry, hier gibt es noch nichts zu sehen.")
+    return abemb
 
 
-async def halt():
-    await client.logout()
+def server_invite():
+    embed = discord.Embed(
+        title="Invite zum Heimat-/Testserver",
+        description="http://discord.gg/sgDQjeH",
+        color=0x8a2be2
+    )
+    return embed
+
+
+def bot_invite():
+    iembed = discord.Embed(
+        title="Einfach dem Link folgen um den Bot einzuladen.",
+        description="http://pixeldrohne.mystic-alchemy.com",
+        color=0x8a2be2
+    )
+    return iembed
