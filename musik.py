@@ -69,40 +69,6 @@ async def on_message(message):
             player.volume = 0.03
             player.start()
 
-        # Dieses Blockkommentar ist für eine spätere Funktion gedacht.
-        """if not players[message.server.id].is_playing():
-            if client.is_voice_connected(message.server):
-                voice = client.voice_client_in(message.server)
-                player = await voice.create_ytdl_player(yt_url,
-                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                       '-reconnect_delay_max 5 ')
-                player.volume = 0.03
-                player.start()
-            elif not client.is_voice_connected(message.server):
-                channel = message.author.voice.voice_channel
-                voice = await client.join_voice_channel(channel)
-                player = await voice.create_ytdl_player(yt_url,
-                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                       '-reconnect_delay_max 5 ', )
-                player.volume = 0.03
-                player.start()
-        else:
-            if client.is_voice_connected(message.server):
-                voice = client.voice_client_in(message.server)
-                player = await voice.create_ytdl_player(yt_url,
-                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                       '-reconnect_delay_max 5 ')
-                player.volume = 0.03
-                player.start()
-            elif not client.is_voice_connected(message.server):
-                channel = message.author.voice.voice_channel
-                voice = await client.join_voice_channel(channel)
-                player = await voice.create_ytdl_player(yt_url,
-                                                        before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                       '-reconnect_delay_max 5 ', )
-                player.volume = 0.08
-                player.start()"""
-
     if message.content.startswith('p.pause'):
         try:
             players[message.server.id].pause()
