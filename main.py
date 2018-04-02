@@ -50,7 +50,7 @@ async def on_message(message):
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
-        await hilfe.hilfe(message.content[7:].lower(), len(message.content))
+        await client.send_message(message.author, embed=hilfe.hilfe(message.content[7:].lower(), len(message.content)))
 
     # Sysinfo
     if message.content.lower().startswith('p.sysinfo'):
