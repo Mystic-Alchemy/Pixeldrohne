@@ -1,4 +1,4 @@
-# Dieses Skript steuert Moderator-Funktionen.
+# NICHT MEHR GENUTZT
 
 import sqlite3
 import discord
@@ -8,8 +8,6 @@ import random
 import asyncio
 
 client = discord.Client()
-connection = sqlite3.connect("bot.db")
-cursor = connection.cursor()
 mlist = open("config/mods.txt", "r", encoding='utf-8')
 mods = mlist.readlines()
 
@@ -24,14 +22,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # Massenlöschung
-    try:
-        if message.content.lower().startswith('p.purge') and ((message.author.id in mods) or keys.pmcid or keys.pxlid):
-            lim = int(message.content[8:]) + 1
-            await client.purge_from(message.channel, limit=lim)
-            await client.send_message(message.channel, "Erfolgreich gelöscht.")
-    except Exception as e:
-        await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
 
     # Mod hinzufügen
     if message.author.id == (keys.pmcid or keys.pxlid) and message.content.lower().startswith('p.madd'):

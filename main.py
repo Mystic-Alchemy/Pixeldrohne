@@ -7,10 +7,13 @@ import requests
 import sys
 import keys
 import pxldrn
+import safygiphy
 
 
 client = discord.Client()
-mods = open("config/mods.txt", "r", encoding='utf-8')
+mods = open("pxldrn/adv/config/mods.txt", "r", encoding='utf-8')
+players = {}
+gif = safygiphy.Giphy()
 
 
 @client.event
@@ -94,10 +97,33 @@ async def on_message(message):
     if message.content.lower().startswith('p.invite'):
         await client.send_message(message.channel, embed=pxldrn.adv.embed_data.bot_invite())
 
+    # Gif Reaction
+    if message.content.lower().startswith('p.gif'):
+        try:
+            tag = message.content.lower().split(" ")[1]
+            rgif = gif.random(tag=tag)
+            response = requests.get(str(rgif.get("data", {}).get('image_original_url')), stream=True)
+            await client.send_file(message.channel, io.BytesIO(response.raw.read()), filename='gif.gif')
+        except AttributeError:
+            await client.send_message(message.channel, "Es schaut fast so aus als gäbe es dazu kein Gif")
+
     # Schere Stein Papier
     if message.content.lower().startswith("p.ssp"):
         spieler = message.content[6:]
         await client.send_message(message.channel, embed=pxldrn.adv.minigames.ssp(spieler))
+
+    # Zufälliges "falsches" Zitat
+    if message.content.lower().startswith('p.zitat'):
+        await client.send_message(message.channel, pxldrn.adv.zitate())
+
+    # Zitat hinzufügen
+    if message.content.lower().startswith('p.schreiben'):
+        zitat = message.content[12:]
+        await client.send_message(message.channel, pxldrn.adv.schreiben(zitat))
+
+    # Coinflip
+    if message.content.lower().startswith('p.coin'):
+        await client.add_reaction(message, pxldrn.adv.coin())
 
     # Roulette
     # TODO: Einsatz adden!
@@ -105,12 +131,100 @@ async def on_message(message):
         spieler = message.content.strip().split(" ")[1]
         await client.send_message(message.channel, embed=pxldrn.adv.minigames.roulette(spieler))
 
+    # Massenlöschung
+    try:
+        if message.content.lower().startswith('p.purge') and (keys.pmcid or keys.pxlid):
+            lim = int(message.content[8:]) + 1
+            await client.purge_from(message.channel, limit=lim)
+            await client.send_message(message.channel, "Erfolgreich gelöscht.")
+    except Exception as e:
+        await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
+
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.logout()
         await pxldrn.hilfe.halt()
         await asyncio.sleep(1)
         sys.exit(1)
+
+# Ab hier beginnt der Musik-Bot
+    if message.content.startswith('p.join'):
+        try:
+            if client.is_voice_connected(message.server):
+                try:
+                    voice_client = client.voice_client_in(message.server)
+                    await voice_client.disconnect()
+                except AttributeError:
+                    await client.send_message(message.channel, "Ich bin doch in keinem Kanal, was willst du von mir?")
+                except Exception as error:
+                    await client.send_message(message.channel,
+                                              "Ein Error is aufgetreten:\n ```{error}```".format(error=error))
+            if not client.is_voice_connected(message.server):
+                try:
+                    channel = message.author.voice.voice_channel
+                    await client.join_voice_channel(channel)
+                except Exception as error:
+                    await client.send_message(message.channel, "Ein Error ist aufgetreten:\n"
+                                                               "```{error}```".format(error=error))
+        except Exception as error:
+            await client.send_message(message.channel, "Ein Error ist aufgetreten:\n"
+                                                       "```{error}```".format(error=error))
+
+    if message.content.startswith('p.leave'):
+        try:
+            voice_client = client.voice_client_in(message.server)
+            await voice_client.disconnect()
+        except AttributeError:
+            await client.send_message(message.channel, "Ich bin doch in keinem Kanal, was willst du von mir?")
+        except Exception as error:
+            await client.send_message(message.channel, "Ein Error is aufgetreten:\n ```{error}```".format(error=error))
+
+    if message.content.startswith('p.play'):
+        yt_url = message.content[7:]
+        if client.is_voice_connected(message.server):
+            voice = client.voice_client_in(message.server)
+            player = await voice.create_ytdl_player(yt_url,
+                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
+                                                                   '-reconnect_delay_max 5 ')
+            players[message.server.id] = player
+            player.volume = 0.03
+            player.start()
+        elif not client.is_voice_connected(message.server):
+            channel = message.author.voice.voice_channel
+            voice = await client.join_voice_channel(channel)
+            player = await voice.create_ytdl_player(yt_url,
+                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
+                                                                   '-reconnect_delay_max 5 ', )
+            players[message.server.id] = player
+            player.volume = 0.03
+            player.start()
+
+    if message.content.startswith('p.pause'):
+        try:
+            players[message.server.id].pause()
+        except Exception as error:
+            await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
+
+    if message.content.startswith('p.resume'):
+        try:
+            players[message.server.id].resume()
+        except Exception as error:
+            await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
+
+    if message.content.startswith('p.volume'):
+        volume = int(message.content[9:])
+        if volume <= 100:
+            players[message.server.id].volume = volume / 100
+            await client.send_message(message.channel, "Lautstärke erfolgreich "
+                                                       "auf {0} % eingestellt.".format(volume))
+        elif volume > 100:
+            await client.send_message(message.channel, "Diese Lautstärke ist eindeutig **zu hoch**!")
+
+    if message.content.startswith('p.stop'):
+        try:
+            players[message.server.id].stop()
+        except Exception as error:
+            await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
 
 
 client.loop.create_task(pxldrn.uptime())

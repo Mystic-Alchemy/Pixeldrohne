@@ -1,3 +1,5 @@
+# NICHT MEHR GENUTZT
+
 # Diese Datei nur ausführen wenn ihr den gesamten Bot ausführen wollt ohne verschiedene Dateien zu verwenden.
 # Der Einfachheit halber wird diese Datei auch ein vollständiges UI kriegen.
 
@@ -12,7 +14,6 @@ from pxldrn import hilfe
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
-players = {}
 
 minutes = 0
 hour = 0

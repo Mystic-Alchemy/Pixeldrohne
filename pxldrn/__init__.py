@@ -4,7 +4,7 @@ import pxldrn.adv
 from pxldrn.adv import *
 import pxldrn.hilfe
 
-client = discord.Client(0)
+client = discord.Client()
 minutes = 0
 hour = 0
 

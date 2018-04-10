@@ -6,7 +6,7 @@ import keys
 from pxldrn.adv.embed_data import help_embeds
 
 client = discord.Client()
-mlist = open("config/mods.txt", "r", encoding='utf-8')
+mlist = open("pxldrn/adv/config/mods.txt", "r", encoding='utf-8')
 mods = mlist.readlines()
 
 @asyncio.coroutine
