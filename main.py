@@ -6,14 +6,11 @@ import discord
 import requests
 import sys
 import keys
-from pxldrn.adv import embed_data
-from pxldrn import hilfe
+import pxldrn
+
 
 client = discord.Client()
 mods = open("config/mods.txt", "r", encoding='utf-8')
-
-minutes = 0
-hour = 0
 
 
 @client.event
@@ -34,11 +31,6 @@ async def on_message(message):
         await client.change_presence(game=discord.Game(name=game, url="http://twitch.tv/pixeldrohne", type=1))
         await client.send_message(message.channel, "Status erfolgreich zu {0} geändert".format(game))
 
-    # Nickname ändern
-    # if message.content.startswith('p.nick') and message.author.id == keys.pmcid:
-    #     nick = message.content[7:]
-    #     await client.change_nickname(message.author, nick)
-
     # Pixels Liebling
     if message.content.startswith('p.pixels_liebling'):
         response = requests.get('https://media.giphy.com/media/3xz2BIXYagz5STg0xi/giphy.gif', stream=True)
@@ -46,19 +38,19 @@ async def on_message(message):
 
     # Uptime abrufen
     if message.content.startswith('p.uptime'):
-        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten im Testbetrieb".format(hour, minutes))
+        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten im Testbetrieb".format(pxldrn.hour, pxldrn.minutes))
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
-        await client.send_message(message.author, embed=hilfe.hilfe(message.content[7:].lower(), len(message.content)))
+        await client.send_message(message.author, embed=pxldrn.hilfe.hilfe(message.content[7:].lower(), len(message.content)))
 
     # Sysinfo
     if message.content.lower().startswith('p.sysinfo'):
-        await client.send_message(message.channel, embed=embed_data.system_info())
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.system_info())
 
     # Python help
     if message.content.lower().startswith('p.python'):
-        await client.send_message(message.channel, embed=embed_data.py_help())
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.py_help())
 
     # Avatar abrufen
     if message.content.startswith('p.avatar'):
@@ -92,36 +84,34 @@ async def on_message(message):
 
     # eine "Über" Sektion
     if message.content.startswith('p.about'):
-        await client.send_message(message.channel, embed=embed_data.about())
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.about())
 
     # Invite zur Heimat
     if message.content.lower().startswith('p.test'):
-        await client.send_message(message.channel, embed=embed_data.server_invite())
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.server_invite())
 
-        # Bot Invite
+    # Bot Invite
     if message.content.lower().startswith('p.invite'):
-        await client.send_message(message.channel, embed=embed_data.bot_invite())
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.bot_invite())
+
+    # Schere Stein Papier
+    if message.content.lower().startswith("p.ssp"):
+        spieler = message.content[6:]
+        await client.send_message(message.channel, embed=pxldrn.adv.minigames.ssp(spieler))
+
+    # Roulette
+    # TODO: Einsatz adden!
+    if message.content.lower().startswith("p.roulette"):
+        spieler = message.content.strip().split(" ")[1]
+        await client.send_message(message.channel, embed=pxldrn.adv.minigames.roulette(spieler))
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.logout()
-        await hilfe.halt()
+        await pxldrn.hilfe.halt()
         await asyncio.sleep(1)
         sys.exit(1)
 
 
-async def uptime():
-    await client.wait_until_ready()
-    global minutes
-    minutes = 0
-    global hour
-    hour = 0
-    while not client.is_closed:
-        await asyncio.sleep(60)
-        minutes += 1
-        if minutes == 60:
-            minutes = 0
-            hour += 1
-
-client.loop.create_task(uptime())
+client.loop.create_task(pxldrn.uptime())
 client.run(keys.token)

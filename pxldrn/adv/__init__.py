@@ -1,5 +1,9 @@
 import discord
 import random
+import pxldrn.adv.minigames
+import pxldrn.adv.sysinfo
+import pxldrn.adv.embed_data
+
 
 
 def zitate():
