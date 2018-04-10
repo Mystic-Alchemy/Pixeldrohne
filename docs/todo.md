@@ -23,8 +23,8 @@ Die Einträge sind ihrer Priorität nach geordnet. Der oberste Eintrag ist immer
 
 ## Spiele/Minigames
 
-- [ ] Roulette einbauen
 - [ ] Rollenspiel einbauen
+- [x] Roulette einbauen (zu Teilen)
 - [x] Schere Stein Papier
 
 ## Musik
@@ -39,5 +39,5 @@ Die Einträge sind ihrer Priorität nach geordnet. Der oberste Eintrag ist immer
 
 - [ ] Unbekannte Befehl verweisen auf die Hilfe
 - [ ] Leaderboard
-- [ ] Reaktionen in einen Befehl
-- [x] Level System
+- [ ] Level System
+- [x] Reaktionen in einen Befehl
