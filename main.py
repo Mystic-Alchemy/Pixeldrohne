@@ -1,4 +1,4 @@
-# Die 'main.py' function des Bots.
+# Um den gesamten Bot auszuführen muss nur noch die Datei genutzt werden
 
 import asyncio
 import io
@@ -41,7 +41,7 @@ async def on_message(message):
 
     # Uptime abrufen
     if message.content.startswith('p.uptime'):
-        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten im Testbetrieb".format(pxldrn.hour, pxldrn.minutes))
+        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten ununterbrochen".format(hour, minutes))
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
@@ -143,7 +143,6 @@ async def on_message(message):
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
         await client.logout()
-        await pxldrn.hilfe.halt()
         await asyncio.sleep(1)
         sys.exit(1)
 
@@ -227,5 +226,18 @@ async def on_message(message):
             await client.send_message(message.channel, "Ein Error ist aufgetreten:\n ```{error}```".format(error=error))
 
 
-client.loop.create_task(pxldrn.uptime())
+async def uptime():
+    await client.wait_until_ready()
+    global minutes
+    minutes = 0
+    global hour
+    hour = 0
+    while not client.is_closed:
+        await asyncio.sleep(60)
+        minutes += 1
+        if minutes == 60:
+            minutes = 0
+            hour += 1
+
+client.loop.create_task(uptime())
 client.run(keys.token)

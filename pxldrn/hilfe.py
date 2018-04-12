@@ -9,9 +9,8 @@ client = discord.Client()
 mlist = open("pxldrn/adv/config/mods.txt", "r", encoding='utf-8')
 mods = mlist.readlines()
 
-@asyncio.coroutine
-async def hilfe(message, length):
-    await client.login(keys.token)
+
+def hilfe(message, length):
     if length <= 7:
         embed = help_embeds.intro()
         return embed
@@ -29,7 +28,3 @@ async def hilfe(message, length):
         else:
             embed = help_embeds.intro()
             return embed
-
-
-async def halt():
-    await client.logout()
