@@ -6,6 +6,7 @@ import discord
 import requests
 import sys
 import keys
+import random
 import pxldrn
 import safygiphy
 
@@ -97,6 +98,12 @@ async def on_message(message):
     if message.content.lower().startswith('p.invite'):
         await client.send_message(message.channel, embed=pxldrn.adv.embed_data.bot_invite())
 
+    # 8-Ball
+    if message.content.lower().startswith('p.8ball'):
+        msg = message.content.split(' ')[1:]
+        length = len(message.content[8:])
+        await client.send_message(message.channel, pxldrn.eightball(msg, length))
+
     # Gif Reaction
     if message.content.lower().startswith('p.gif'):
         try:
@@ -120,6 +127,14 @@ async def on_message(message):
     if message.content.lower().startswith('p.schreiben'):
         zitat = message.content[12:]
         await client.send_message(message.channel, pxldrn.adv.schreiben(zitat))
+
+    # Zufällige Zahl
+    if message.content.lower().startswith('p.zahl'):
+        zahl = message.content.split(" ")
+        b1 = int(zahl[1])
+        b2 = int(zahl[2])
+        zahl = random.randint(b1, b2)
+        await client.send_message(message.channel, "Deine Zahl ist {}".format(zahl))
 
     # Coinflip
     if message.content.lower().startswith('p.coin'):

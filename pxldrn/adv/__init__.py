@@ -3,6 +3,7 @@ import random
 import pxldrn.adv.minigames
 import pxldrn.adv.sysinfo
 import pxldrn.adv.embed_data
+import pxldrn.adv.eball
 
 
 def zitate():
@@ -33,3 +34,9 @@ def coin():
     if choice == 13:
         return '💮'
 
+
+def eightball(msg, length):
+    count = len(msg)
+    msgi = " ".join(msg)
+    rmsg = pxldrn.adv.eball.eball(msgi, msg, length, count)
+    return rmsg

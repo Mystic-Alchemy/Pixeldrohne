@@ -10,15 +10,15 @@ def intro():
     )
     hilfe.set_author(
         name="Pixeldrohne",
-        icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png",
+        icon_url="http://mystic-alchemy.com/pixeldrohne/avatar.jpg",
         url="https://twitch.tv/pixelwerfer"
     )
     hilfe.set_footer(
         text='Um mehr Informationen über den Autor dieses Bots zu erhalten: p.about',
-        icon_url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
+        icon_url="https://http://mystic-alchemy.com/pixeldrohne/avatar.jpg"
     )
     hilfe.set_thumbnail(
-        url="https://static-cdn.jtvnw.net/jtv_user_pictures/5aa94e1433d8041e-profile_image-300x300.png"
+        url="https://http://mystic-alchemy.com/pixeldrohne/avatar.jpg"
     )
     hilfe.add_field(
         name="musik",
