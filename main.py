@@ -107,7 +107,8 @@ async def on_message(message):
     # Gif Reaction
     if message.content.lower().startswith('p.gif'):
         try:
-            tag = message.content.lower().split(" ")[1]
+            tag = message.content.lower().split(" ")[1:]
+            tag = " ".join(tag)
             rgif = gif.random(tag=tag)
             response = requests.get(str(rgif.get("data", {}).get('image_original_url')), stream=True)
             await client.send_file(message.channel, io.BytesIO(response.raw.read()), filename='gif.gif')
@@ -131,10 +132,13 @@ async def on_message(message):
     # Zufällige Zahl
     if message.content.lower().startswith('p.zahl'):
         zahl = message.content.split(" ")
-        b1 = int(zahl[1])
-        b2 = int(zahl[2])
-        zahl = random.randint(b1, b2)
-        await client.send_message(message.channel, "Deine Zahl ist {}".format(zahl))
+        try:
+            b1 = int(zahl[1])
+            b2 = int(zahl[2])
+            zahl = random.randint(b1, b2)
+            await client.send_message(message.channel, "Deine Zahl ist {}".format(zahl))
+        except IndexError:
+            await client.send_message(message.channel, "Du musst mir zwei Zahlen geben [p.zahl <min> <max>]")
 
     # Coinflip
     if message.content.lower().startswith('p.coin'):

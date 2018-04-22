@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Mein Kammerjäger hat viele Käfer vernichtet.">
-      <change afterPath="$PROJECT_DIR$/pxldrn/adv/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pxldrn/adv/eball/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py" afterDir="false" />
+    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/adv/config/zitate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/config/zitate.txt" afterDir="false" />
     </list>
     <ignored path="keys.py" />
     <manually-removed-from-ignored>
@@ -28,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="104" column="80" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="80" />
+            <state relative-caret-position="478">
+              <caret line="262" selection-start-line="262" selection-end-line="262" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
               </folding>
@@ -40,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="1530">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -76,8 +70,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/adv/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="629">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -156,7 +150,6 @@
         <option value="$PROJECT_DIR$/../funstuff/numbers.txt" />
         <option value="$PROJECT_DIR$/../funstuff/fibonacci.txt" />
         <option value="$PROJECT_DIR$/../funstuff/functions.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/../funstuff/fibonacci.py" />
         <option value="$PROJECT_DIR$/../funstuff/test.py" />
@@ -165,14 +158,15 @@
         <option value="$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py" />
         <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
         <option value="$PROJECT_DIR$/pxldrn/adv/eball/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="594" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="864" />
-    <option name="height" value="946" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -268,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DiscordBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -368,10 +362,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.minigame" />
       </list>
     </recent_temporary>
@@ -386,13 +380,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502798495867</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Invite zum Testserver hinzugefügt">
-      <created>1508248848168</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1508248848168</updated>
     </task>
     <task id="LOCAL-00014" summary="Noch ein neues Zitat">
       <created>1508248891800</created>
@@ -730,7 +717,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523560637634</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen.">
+      <created>1524235031080</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1524235031082</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -743,15 +737,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.19072708" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.1899841" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.23605578" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5135135" side_tool="true" weight="0.30162412" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" visible="true" weight="0.23406374" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" visible="true" weight="0.2552204" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.2472767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.2430279" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.24291939" />
       <window_info id="Structure" order="1" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2603486" />
       <window_info id="Favorites" order="2" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
@@ -764,27 +757,28 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47615263" visible="true" weight="0.2430279" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.19072708" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47615263" visible="true" weight="0.2430279" />
+      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.23638344" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" weight="0.2342048" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298611" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.2472767" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2603486" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5135135" side_tool="true" weight="0.30162412" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" weight="0.2342048" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.2472767" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -817,7 +811,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ein bisschen Testzeug" />
     <MESSAGE value="Einige Fixes" />
     <MESSAGE value="musik.py hat ein paar wichtige Updates erhalten" />
     <MESSAGE value="combined.py hinzugefügt&#10;Mit diesem Python-Skript kann man alle Funktionen des Bots aus einer Datei abrufen." />
@@ -842,7 +835,8 @@
     <MESSAGE value="Viele kleine und große Veränderungen" />
     <MESSAGE value="TODO geupdated" />
     <MESSAGE value="Mein Kammerjäger hat viele Käfer vernichtet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mein Kammerjäger hat viele Käfer vernichtet." />
+    <MESSAGE value="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1006,9 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,23 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="104" column="80" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="80" />
-          <folding>
-            <element signature="e#74#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="57" column="85" lean-forward="true" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="629">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -1075,10 +1053,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="1530">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="262" selection-start-line="262" selection-end-line="262" />
+          <folding>
+            <element signature="e#74#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
