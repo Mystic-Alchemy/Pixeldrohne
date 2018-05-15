@@ -14,6 +14,7 @@ import safygiphy
 client = discord.Client()
 mods = open("pxldrn/adv/config/mods.txt", "r", encoding='utf-8')
 players = {}
+p_volume = {}
 gif = safygiphy.Giphy()
 
 
@@ -42,7 +43,7 @@ async def on_message(message):
 
     # Uptime abrufen
     if message.content.startswith('p.uptime'):
-        await client.send_message(message.channel, "Ich laufe seit {0} Stunden und {1} Minuten ununterbrochen".format(hour, minutes))
+        await client.send_message(message.channel, pxldrn.adv.uptime(minutes, hour, days))
 
     # Hilfe
     if message.content.lower().startswith('p.help'):
@@ -151,13 +152,15 @@ async def on_message(message):
         await client.send_message(message.channel, embed=pxldrn.adv.minigames.roulette(spieler))
 
     # Massenlöschung
-    try:
         if message.content.lower().startswith('p.purge') and (keys.pmcid or keys.pxlid):
-            lim = int(message.content[8:]) + 1
-            await client.purge_from(message.channel, limit=lim)
-            await client.send_message(message.channel, "Erfolgreich gelöscht.")
-    except Exception as e:
-        await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
+            try:
+                lim = int(message.content[8:]) + 1
+                await client.purge_from(message.channel, limit=lim)
+                del_msg = await client.send_message(message.channel, "Erfolgreich gelöscht.")
+                await asyncio.sleep(5)
+                await client.delete_message(del_msg)
+            except Exception as e:
+                await client.send_message(message.channel, "Es ist ein Fehler aufgetreten: {e}".format(e=e))
 
     # Botstop
     if message.content.lower().startswith('p.halt') and message.author.id == keys.pmcid:
@@ -197,6 +200,43 @@ async def on_message(message):
         except Exception as error:
             await client.send_message(message.channel, "Ein Error is aufgetreten:\n ```{error}```".format(error=error))
 
+    if message.content.lower().startswith('p.radio'):
+        radio = "".join(message.content.split(' ')[1:]).lower()
+        radio_msg = pxldrn.adv.capword(message.content.split(' ')[1:])
+        radio_url = pxldrn.adv.radio(radio)
+        if radio_url == "XTAB":
+            await client.send_message(message.channel, 'Sorry, den Radiosender kenne ich nicht. Für eine Liste der Sender nutze "p.radio liste".')
+        elif radio_url == "RSL":
+            await client.send_message(message.channel, embed=pxldrn.adv.embed_data.radio_list())
+        elif radio_url == "NoStation":
+            await client.send_message(message.channel, 'Wähle bitte einen Radio-Sender aus. Für eine Liste der Sender nutze "p.radio liste".')
+        else:
+            if client.is_voice_connected(message.server):
+                voice = client.voice_client_in(message.server)
+                if players[message.server.id].is_playing():
+                    players[message.server.id].stop()
+                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                    players[message.server.id] = player
+                    player.volume = p_volume[message.server.id]
+                    player.start()
+                    await client.send_message(message.channel, "Kanal auf {} gewechselt.".format(radio_msg))
+                else:
+                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                    players[message.server.id] = player
+                    player.volume = 0.03
+                    p_volume[message.server.id] = 0.03
+                    player.start()
+                    await client.send_message(message.channel, "Du hörst jetzt {}".format(radio_msg))
+            elif not client.is_voice_connected(message.server):
+                channel = message.author.voice.voice_channel
+                voice = await client.join_voice_channel(channel)
+                player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                players[message.server.id] = player
+                player.volume = 0.03
+                p_volume[message.server.id] = 0.03
+                player.start()
+                await client.send_message(message.channel, "Du hörst jetzt {}".format(radio_msg))
+
     if message.content.startswith('p.play'):
         yt_url = message.content[7:]
         if client.is_voice_connected(message.server):
@@ -206,6 +246,7 @@ async def on_message(message):
                                                                    '-reconnect_delay_max 5 ')
             players[message.server.id] = player
             player.volume = 0.03
+            p_volume[message.server.id] = 0.03
             player.start()
         elif not client.is_voice_connected(message.server):
             channel = message.author.voice.voice_channel
@@ -215,6 +256,7 @@ async def on_message(message):
                                                                    '-reconnect_delay_max 5 ', )
             players[message.server.id] = player
             player.volume = 0.03
+            p_volume[message.server.id] = 0.03
             player.start()
 
     if message.content.startswith('p.pause'):
@@ -233,10 +275,17 @@ async def on_message(message):
         volume = int(message.content[9:])
         if volume <= 100:
             players[message.server.id].volume = volume / 100
+            p_volume[message.server.id] = volume / 100
             await client.send_message(message.channel, "Lautstärke erfolgreich "
                                                        "auf {0} % eingestellt.".format(volume))
         elif volume > 100:
             await client.send_message(message.channel, "Diese Lautstärke ist eindeutig **zu hoch**!")
+
+    if message.content.lower().startswith('dev.mute'):
+        if players[message.server.id].volume == 0:
+            players[message.server.id].volume = p_volume[message.server.id]
+        else:
+            players[message.server.id].volume = 0
 
     if message.content.startswith('p.stop'):
         try:
@@ -251,12 +300,17 @@ async def uptime():
     minutes = 0
     global hour
     hour = 0
+    global days
+    days = 0
     while not client.is_closed:
         await asyncio.sleep(60)
         minutes += 1
         if minutes == 60:
             minutes = 0
             hour += 1
+        if hour == 24:
+            hour = 0
+            days += 1
 
 client.loop.create_task(uptime())
 client.run(keys.token)

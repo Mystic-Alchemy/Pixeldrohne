@@ -1,6 +1,24 @@
 import discord
 from pxldrn.adv import sysinfo
 
+
+def radio_list():
+    remb = discord.Embed(
+        title="Senderliste",
+        description='Das hier ist die Liste mit den aktuellen Radiosendern, die der Bot abspielen kann und mit welchen Stichwort sie abgerufen werden.\nDer Befehl baut sich immer als "p.radio <stichwort>" auf.',
+        color=0x1dbdb2
+    )
+    remb.add_field(name="Zufälliger Sender", value="random")
+    remb.add_field(name="Antenne Bayern", value="antenne bayern")
+    remb.add_field(name="Bayern 1", value="bayern 1")
+    remb.add_field(name="iLoveRadio", value="iloveradio")
+    remb.add_field(name="PlanetRadio", value="planetradio")
+    remb.add_field(name="Radio Galaxy", value="radio galaxy")
+    remb.add_field(name="Rock Antenne", value="rock antenne")
+    remb.add_field(name="YouFM", value="youfm")
+    return remb
+
+
 def system_info():
     sysembed = discord.Embed(
         title="System Info",

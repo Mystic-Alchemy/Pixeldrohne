@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen.">
+    <list default="true" id="83dbee24-fc2c-4728-8e24-316474056b14" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/pxldrn/adv/config/lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/config/zitate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/config/zitate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/adv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/adv/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
-    <ignored path="keys.py" />
-    <manually-removed-from-ignored>
-      <directory path="config/" />
-    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,16 +19,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Pixeldrohne" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Pixeldrohne$test.coverage" NAME="test Coverage Results" MODIFIED="1526400187638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="262" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="466">
+              <caret line="275" column="54" selection-start-line="275" selection-start-column="54" selection-end-line="275" selection-end-column="54" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
               </folding>
@@ -34,32 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/__init__.py">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="choice_selection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="90" column="54" lean-forward="true" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="-432">
+              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -70,11 +74,20 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/adv/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="466">
+              <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/lists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -90,85 +103,39 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Obama</find>
-      <find>wer mit</find>
-      <find>Kim</find>
-      <find>Kim Jong-</find>
+      <find>for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="PilleniusMC" />
-      </list>
-    </option>
-    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docs/README.md" />
-        <option value="$PROJECT_DIR$/emb.py" />
-        <option value="$PROJECT_DIR$/hilfe.py" />
-        <option value="$PROJECT_DIR$/database.py" />
-        <option value="$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py" />
-        <option value="$PROJECT_DIR$/config/zitate.txt" />
-        <option value="$PROJECT_DIR$/all.py" />
-        <option value="$PROJECT_DIR$/UI-Test.py" />
-        <option value="$PROJECT_DIR$/ui-test.py" />
-        <option value="$PROJECT_DIR$/he.py" />
-        <option value="$PROJECT_DIR$/Fun.py" />
-        <option value="$PROJECT_DIR$/../funstuff/checkup.py" />
-        <option value="$PROJECT_DIR$/../funstuff/testforsavingstuff.py" />
-        <option value="$PROJECT_DIR$/../funstuff/Infinite random.py" />
-        <option value="$PROJECT_DIR$/data.py" />
-        <option value="$PROJECT_DIR$/../funstuff/pi chudnowsky.py" />
-        <option value="$PROJECT_DIR$/../CUDA-Qt-Test/CUDA Test 1.py" />
-        <option value="$PROJECT_DIR$/../CUDA-Qt-Test/Qt Test 1.py" />
-        <option value="$PROJECT_DIR$/sysinfo.py" />
-        <option value="$PROJECT_DIR$/embeds.py" />
-        <option value="$PROJECT_DIR$/main" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/twitch.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/help_embeds/__init__.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/he.py" />
-        <option value="$PROJECT_DIR$/pxldrn/embeds.py" />
-        <option value="$PROJECT_DIR$/../Pixeldrone/main.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/moderation.py" />
-        <option value="$PROJECT_DIR$/minigame.py" />
-        <option value="$PROJECT_DIR$/moderation.py" />
-        <option value="$PROJECT_DIR$/musik.py" />
-        <option value="$PROJECT_DIR$/reactions.py" />
-        <option value="$PROJECT_DIR$/combined.py" />
-        <option value="$PROJECT_DIR$/docs/todo.md" />
-        <option value="$PROJECT_DIR$/start.sh" />
-        <option value="$PROJECT_DIR$/pxldrn/hilfe.py" />
         <option value="$PROJECT_DIR$/pxldrn/adv/config/__init__.py" />
-        <option value="$PROJECT_DIR$/../funstuff/numbers.txt" />
-        <option value="$PROJECT_DIR$/../funstuff/fibonacci.txt" />
-        <option value="$PROJECT_DIR$/../funstuff/functions.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/../funstuff/fibonacci.py" />
-        <option value="$PROJECT_DIR$/../funstuff/test.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/config/lists.py" />
         <option value="$PROJECT_DIR$/pxldrn/adv/__init__.py" />
-        <option value="$PROJECT_DIR$/keys.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py" />
-        <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
-        <option value="$PROJECT_DIR$/pxldrn/adv/eball/__init__.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="478" />
+    <option name="y" value="-29" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -205,13 +172,6 @@
               <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
               <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
               <item name="adv" type="462c0819:PsiDirectoryNode" />
-              <item name="eball" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
-              <item name="pxldrn" type="462c0819:PsiDirectoryNode" />
-              <item name="adv" type="462c0819:PsiDirectoryNode" />
               <item name="embed_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,30 +185,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../funstuff" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings module-name="DiscordBot" is-module-sdk="true">
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="DiscordBot" />
-      </console-settings>
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Isabelle Kumitz\PycharmProjects\Pixeldrohne\pxldrn\adv" />
-      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne\pxldrn\adv" />
-      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne\pxldrn" />
-      <recent name="C:\Users\pille\PycharmProjects\Pixeldrohne\docs" />
-      <recent name="C:\Users\pille\PycharmProjects\Pixeldrohne\config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pille\PycharmProjects\tobsuas" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,81 +201,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DiscordBot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pxldrn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pxldrn/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DiscordBot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="minigame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DiscordBot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minigame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="funstuff" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../funstuff" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../funstuff/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DiscordBot" />
+      <module name="Pixeldrohne" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -347,26 +214,16 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list>
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.minigame" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.__init__" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.minigame" />
       </list>
     </recent_temporary>
   </component>
@@ -375,716 +232,188 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c5b89c78-e045-44f8-9bd0-bd93a032e218" name="Pixeldrohne" comment="" />
-      <created>1502798495867</created>
+      <changelist id="83dbee24-fc2c-4728-8e24-316474056b14" name="Default" comment="" />
+      <created>1525517306264</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1502798495867</updated>
+      <updated>1525517306264</updated>
     </task>
-    <task id="LOCAL-00014" summary="Noch ein neues Zitat">
-      <created>1508248891800</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1508248891800</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Readme geändert.">
-      <created>1508249069199</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1508249069199</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Readme geändert nochmal">
-      <created>1508249128606</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1508249128606</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Readme geändert, die Dritte">
-      <created>1508251518821</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1508251518821</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Readme geändert, die Vierte: Die Dummheit">
-      <created>1508251612923</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1508251612923</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Readme geändert, die Fünfte: Formatfehler">
-      <created>1508251674844</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1508251674844</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Ich habe mal was nettes entfernt.">
-      <created>1508252647654</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1508252647654</updated>
-    </task>
-    <task id="LOCAL-00021" summary="SauseBot">
-      <created>1508252673863</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1508252673863</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Vorbereitung zur offiziellen Testphase.&#10;Änderungen:&#10;- Überflüssige Imports&#10;- IDs in den einzelnen Dateien&#10;+ IDs in den keys&#10;+ p.halt bei fehlenden eingeführt">
-      <created>1508253988425</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1508253988425</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Vorbereitung zur Testphase Hotfix&#10;Vergessene Dateien werden commited">
-      <created>1508254099033</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1508254099033</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Ein paar neue Sachen&#10;Änderungen:&#10;+ Anti Invite&#10;+ invite.txt mit zufälligen Sprüchen für den Anti Invite&#10;* License und Code of conduct verschoben in die Docs">
-      <created>1508347926373</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1508347926373</updated>
-    </task>
-    <task id="LOCAL-00025" summary="p.halt geändert&#10;neuer Mod">
-      <created>1508403764606</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1508403764606</updated>
-    </task>
-    <task id="LOCAL-00026" summary="readme geändert">
-      <created>1508431544375</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1508431544375</updated>
-    </task>
-    <task id="LOCAL-00027" summary="readme geändert">
-      <created>1508431598688</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1508431598688</updated>
-    </task>
-    <task id="LOCAL-00028" summary="readme geändert">
-      <created>1508437859470</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1508437859470</updated>
-    </task>
-    <task id="LOCAL-00029" summary="To-Do Liste hinzugefügt">
-      <created>1508440344496</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1508440344496</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Hilfe wird umgebaut">
-      <created>1508504719051</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1508504719051</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Hilfe wird umgebaut Teil 2">
-      <created>1508505762242</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1508505762242</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Hilfe wird umgebaut Teil 3">
-      <created>1508509046497</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1508509046497</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Allgemeine Verbesserungen">
-      <created>1508509829602</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1508509829602</updated>
-    </task>
-    <task id="LOCAL-00034" summary="test.py angepasst">
-      <created>1508510017599</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1508510017599</updated>
-    </task>
-    <task id="LOCAL-00035" summary="test.py angepasst">
-      <created>1508517373035</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1508517373035</updated>
-    </task>
-    <task id="LOCAL-00036" summary="test.py angepasst">
-      <created>1508517392337</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1508517392337</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Ein paar Veränderungen">
-      <created>1508675242982</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1508675242982</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Ein bisschen Testzeug">
-      <created>1511276653201</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1511276653201</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Einige Fixes">
-      <created>1512681781140</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1512681781140</updated>
-    </task>
-    <task id="LOCAL-00040" summary="musik.py hat ein paar wichtige Updates erhalten">
-      <created>1513099878830</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1513099878830</updated>
-    </task>
-    <task id="LOCAL-00041" summary="combined.py hinzugefügt&#10;Mit diesem Python-Skript kann man alle Funktionen des Bots aus einer Datei abrufen.">
-      <created>1513268495290</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1513268495291</updated>
-    </task>
-    <task id="LOCAL-00042" summary="fixes">
-      <created>1513758360082</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1513758360082</updated>
-    </task>
-    <task id="LOCAL-00043" summary="So viele fixes, nichts neues.">
-      <created>1515146602388</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1515146602388</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Pyhton Hilfe, der Combined hinzugefügt.">
-      <created>1515333074920</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1515333074920</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Änderungen in combined.py hinzugefügt.">
-      <created>1515608497991</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1515608497991</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Game Status ein bisschen geändert.">
-      <created>1515610675808</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1515610675808</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Bot Invite hinzugefügt, zweiter Versuch">
-      <created>1515616935186</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1515616935186</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]">
-      <created>1515617000462</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1515617000462</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]">
-      <created>1515618744772</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1515618744772</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]">
-      <created>1515619289555</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1515619289556</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Noch ein verdammtes Update">
-      <created>1515619690669</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1515619690669</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration.">
-      <created>1516558255562</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1516558255563</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Nur ein kleines Update">
-      <created>1516613271302</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1516613271303</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt">
-      <created>1521542047972</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1521542047972</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Ne Menge kleinerer Änderungen.">
-      <created>1521567355265</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1521567355265</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Vorbereitung und Test für den Refractor">
-      <created>1521919883199</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1521919883200</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Kleines Update">
-      <created>1522695858795</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1522695858796</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Import umgebaut">
-      <created>1523352442915</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1523352442915</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Viele kleine und große Veränderungen">
-      <created>1523354579478</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1523354579478</updated>
-    </task>
-    <task id="LOCAL-00060" summary="TODO geupdated">
-      <created>1523354911021</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1523354911022</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Mein Kammerjäger hat viele Käfer vernichtet.">
-      <created>1523560637633</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1523560637634</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen.">
-      <created>1524235031080</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1524235031082</updated>
-    </task>
-    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.1899841" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.23605578" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5135135" side_tool="true" weight="0.30162412" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" visible="true" weight="0.2552204" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.2472767" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47615263" weight="0.24291939" />
-      <window_info id="Structure" order="1" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2603486" />
-      <window_info id="Favorites" order="2" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32946634" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25692964" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32889125" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32889125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298611" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946634" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.19072708" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47615263" visible="true" weight="0.2430279" />
-      <window_info anchor="right" id="Data View" order="3" weight="0.32995737" />
-      <window_info id="Structure" order="1" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4914712" weight="0.23638344" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4864865" weight="0.2342048" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3298611" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39891306" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2603486" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5135135" side_tool="true" weight="0.30162412" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5077882" side_tool="true" weight="0.19915701" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.2472767" />
-    </layout-to-restore>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Einige Fixes" />
-    <MESSAGE value="musik.py hat ein paar wichtige Updates erhalten" />
-    <MESSAGE value="combined.py hinzugefügt&#10;Mit diesem Python-Skript kann man alle Funktionen des Bots aus einer Datei abrufen." />
-    <MESSAGE value="fixes" />
-    <MESSAGE value="So viele fixes, nichts neues." />
-    <MESSAGE value="Pyhton Hilfe, der Combined hinzugefügt." />
-    <MESSAGE value="Änderungen in combined.py hinzugefügt." />
-    <MESSAGE value="Game Status ein bisschen geändert." />
-    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch" />
-    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix]" />
-    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #2]" />
-    <MESSAGE value="Bot Invite hinzugefügt, zweiter Versuch [Hotfix #3]" />
-    <MESSAGE value="Noch ein verdammtes Update" />
-    <MESSAGE value="Datenbank klappt jetzt endlich, und Vorbereitungen für pro Server Kofiguration." />
-    <MESSAGE value="Nur ein kleines Update" />
-    <MESSAGE value="Viele Veränderungen:&#10;combined.py + main: Presence wurde angepasst&#10;reactions.py: eine Zeile mehr&#10;sysinfo.py hinzugefügt&#10;test.py: Liest dir die gesammelten Werke Sherlock Holmes vor&#10;config.db + data.py enfernt" />
-    <MESSAGE value="Ne Menge kleinerer Änderungen." />
-    <MESSAGE value="Vorbereitung und Test für den Refractor" />
-    <MESSAGE value="Kleines Update" />
-    <MESSAGE value="Das Umbauen geht vorran" />
-    <MESSAGE value="Import umgebaut" />
-    <MESSAGE value="Viele kleine und große Veränderungen" />
-    <MESSAGE value="TODO geupdated" />
-    <MESSAGE value="Mein Kammerjäger hat viele Käfer vernichtet." />
-    <MESSAGE value="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Zwei neue Befehle: p.zahl, p.8ball (WIP) &#10;Viele kleine Fixes, Korrekturen und Anpassungen." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="26" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../tobsuas/lol.py" />
-    <entry file="file://$PROJECT_DIR$/../tobsuas/SECRETS.py" />
-    <entry file="file://$PROJECT_DIR$/config/test.py" />
-    <entry file="file://$PROJECT_DIR$/config/schlaffi.py" />
-    <entry file="file://$PROJECT_DIR$/../tobsuas/main.py" />
-    <entry file="file://$PROJECT_DIR$/mods.txt" />
-    <entry file="file://$PROJECT_DIR$/emb.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/discord/client.py" />
-    <entry file="file://$PROJECT_DIR$/../Philipp_s Programs/hanoi.txt" />
-    <entry file="file://$PROJECT_DIR$/../Philipp_s Programs/Hanoi.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/discord/gateway.py" />
-    <entry file="file://$PROJECT_DIR$/ui-test.py" />
-    <entry file="file://$PROJECT_DIR$/dronetest.py" />
-    <entry file="file://$PROJECT_DIR$/Fun.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/combined.py" />
-    <entry file="file://$PROJECT_DIR$/../funstuff/hanoi.txt" />
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/mods.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/invite.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/zitate.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" column="35" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.py" />
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/he.py" />
-    <entry file="file://$PROJECT_DIR$/../Pixeldrone/main.py" />
-    <entry file="file://$PROJECT_DIR$/database.py" />
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/moderation.py" />
-    <entry file="file://$PROJECT_DIR$/mentions.py" />
-    <entry file="file://$PROJECT_DIR$/minigame.py" />
-    <entry file="file://$PROJECT_DIR$/musik.py" />
-    <entry file="file://$PROJECT_DIR$/reactions.py" />
-    <entry file="file://$PROJECT_DIR$/docs/todo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="714">
-            <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/minigames/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combined.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moderation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/sysinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/hilfe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/Infinite random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/fibonacci.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/fibonacci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../funstuff/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="57" column="85" lean-forward="true" selection-start-line="57" selection-start-column="85" selection-end-line="57" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="262" selection-start-line="262" selection-end-line="262" />
+        <state relative-caret-position="4182">
+          <caret line="246" column="103" selection-start-line="246" selection-start-column="100" selection-end-line="246" selection-end-column="103" />
           <folding>
             <element signature="e#74#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#74#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#74#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/eball/choice_selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../funstuff/pi chudnowsky.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/sysinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/config/lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="90" column="54" lean-forward="true" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="275" column="54" selection-start-line="275" selection-start-column="54" selection-end-line="275" selection-end-column="54" />
+          <folding>
+            <element signature="e#74#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
