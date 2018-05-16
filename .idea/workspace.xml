@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83dbee24-fc2c-4728-8e24-316474056b14" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/config/lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/config/lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/adv/sysinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/adv/sysinfo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -274,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526400884878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Neue Radiosender">
+      <created>1526504351624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526504351624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -311,7 +312,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Yay, es gibt jetzt einen Radio Befehl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yay, es gibt jetzt einen Radio Befehl" />
+    <MESSAGE value="Neue Radiosender" />
+    <option name="LAST_COMMIT_MESSAGE" value="Neue Radiosender" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
