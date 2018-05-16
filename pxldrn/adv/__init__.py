@@ -78,6 +78,18 @@ def radio(radio_o):
         return "http://mp3.planetradio.de/planetradio/hqlivestream.mp3"
     elif radio_o == "rockantenne":
         return "http://mp3channels.webradio.antenne.de/rockantenne"
+    elif radio_o == "oe3":
+        return "http://mp3stream7.apasf.apa.at:8000"
+    elif radio_o == "krone":
+        return "http://raj.krone.at:80/kronehit-ultra-hd.aac"
+    elif radio_o == "vgm":
+        return "http://radio.vgmradio.com:8040/stream"
+    elif radio_o == "bbc1":
+        return "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p"
+    elif radio_o == "bbc2":
+        return "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p"
+    elif radio_o == "bbc3":
+        return "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"
     elif radio_o == "random":
         return random.choice(pxldrn.adv.config.lists.random_radio)
     elif radio_o == "liste":

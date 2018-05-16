@@ -215,13 +215,13 @@ async def on_message(message):
                 voice = client.voice_client_in(message.server)
                 if players[message.server.id].is_playing():
                     players[message.server.id].stop()
-                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 ')
                     players[message.server.id] = player
                     player.volume = p_volume[message.server.id]
                     player.start()
                     await client.send_message(message.channel, "Kanal auf {} gewechselt.".format(radio_msg))
                 else:
-                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                    player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 ')
                     players[message.server.id] = player
                     player.volume = 0.03
                     p_volume[message.server.id] = 0.03
@@ -230,7 +230,7 @@ async def on_message(message):
             elif not client.is_voice_connected(message.server):
                 channel = message.author.voice.voice_channel
                 voice = await client.join_voice_channel(channel)
-                player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 ')
+                player = voice.create_ffmpeg_player(radio_url, before_options=' -reconnect 1 ')
                 players[message.server.id] = player
                 player.volume = 0.03
                 p_volume[message.server.id] = 0.03
@@ -242,8 +242,7 @@ async def on_message(message):
         if client.is_voice_connected(message.server):
             voice = client.voice_client_in(message.server)
             player = await voice.create_ytdl_player(yt_url,
-                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                   '-reconnect_delay_max 5 ')
+                                                    before_options=' -reconnect 1 ')
             players[message.server.id] = player
             player.volume = 0.03
             p_volume[message.server.id] = 0.03
@@ -252,8 +251,7 @@ async def on_message(message):
             channel = message.author.voice.voice_channel
             voice = await client.join_voice_channel(channel)
             player = await voice.create_ytdl_player(yt_url,
-                                                    before_options=' -reconnect 1 -reconnect_streamed 1 '
-                                                                   '-reconnect_delay_max 5 ', )
+                                                    before_options=' -reconnect 1 ')
             players[message.server.id] = player
             player.volume = 0.03
             p_volume[message.server.id] = 0.03
@@ -281,7 +279,7 @@ async def on_message(message):
         elif volume > 100:
             await client.send_message(message.channel, "Diese Lautstärke ist eindeutig **zu hoch**!")
 
-    if message.content.lower().startswith('dev.mute'):
+    if message.content.lower().startswith('p.mute'):
         if players[message.server.id].volume == 0:
             players[message.server.id].volume = p_volume[message.server.id]
         else:

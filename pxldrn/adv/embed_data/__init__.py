@@ -11,10 +11,16 @@ def radio_list():
     remb.add_field(name="Zufälliger Sender", value="random")
     remb.add_field(name="Antenne Bayern", value="antenne bayern")
     remb.add_field(name="Bayern 1", value="bayern 1")
+    remb.add_field(name="BBC Radio 1", value="bbc1")
+    remb.add_field(name="BBC Radio 2", value="bbc2")
+    remb.add_field(name="BBC Radio 3", value="bbc3")
     remb.add_field(name="iLoveRadio", value="iloveradio")
+    remb.add_field(name="Kronehit", value="krone")
+    remb.add_field(name="OE3", value="oe3")
     remb.add_field(name="PlanetRadio", value="planetradio")
     remb.add_field(name="Radio Galaxy", value="radio galaxy")
     remb.add_field(name="Rock Antenne", value="rock antenne")
+    remb.add_field(name="VGM Radio", value="vgm")
     remb.add_field(name="YouFM", value="youfm")
     return remb
 

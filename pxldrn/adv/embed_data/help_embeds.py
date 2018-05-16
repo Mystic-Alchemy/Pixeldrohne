@@ -10,15 +10,15 @@ def intro():
     )
     hilfe.set_author(
         name="Pixeldrohne",
-        icon_url="http://mystic-alchemy.com/pixeldrohne/avatar.jpg",
+        icon_url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg",
         url="https://twitch.tv/pixelwerfer"
     )
     hilfe.set_footer(
         text='Um mehr Informationen über den Autor dieses Bots zu erhalten: p.about',
-        icon_url="https://http://mystic-alchemy.com/pixeldrohne/avatar.jpg"
+        icon_url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg"
     )
     hilfe.set_thumbnail(
-        url="https://http://mystic-alchemy.com/pixeldrohne/avatar.jpg"
+        url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg"
     )
     hilfe.add_field(
         name="musik",
