@@ -10,4 +10,8 @@ random_radio = ["http://stream01.iloveradio.de/iloveradio1.mp3",
                 "http://radio.vgmradio.com:8040/stream",
                 "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p",
                 "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p",
-                "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"]
+                "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p",
+                "http://us2.internet-radio.com:8281/live",
+                "http://64.71.79.181:8040/",
+                "http://64.71.79.181:8018/",
+                "http://ibizaglobalradio.streaming-pro.com:8024/"]

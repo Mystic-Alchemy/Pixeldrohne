@@ -1,0 +1,5 @@
+token = "token"
+ownerid = "id"
+adminid = "id"
+modid1 = "id"
+modid2 = "id"

@@ -90,6 +90,14 @@ def radio(radio_o):
         return "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p"
     elif radio_o == "bbc3":
         return "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"
+    elif radio_o == "bollywood":
+        return "http://us2.internet-radio.com:8281/live"
+    elif radio_o == "bigb-k":
+        return "http://64.71.79.181:8040/"
+    elif radio_o == "bigb-j":
+        return "http://64.71.79.181:8018/"
+    elif radio_o == "ibiza":
+        return "http://ibizaglobalradio.streaming-pro.com:8024/"
     elif radio_o == "random":
         return random.choice(pxldrn.adv.config.lists.random_radio)
     elif radio_o == "liste":
