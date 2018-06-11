@@ -15,3 +15,8 @@ random_radio = ["http://stream01.iloveradio.de/iloveradio1.mp3",
                 "http://64.71.79.181:8040/",
                 "http://64.71.79.181:8018/",
                 "http://ibizaglobalradio.streaming-pro.com:8024/"]
+
+commands = ["p.game",'p.pixels_liebling','p.uptime','p.help','p.sysinfo','p.python','p.avatar',
+            'p.say','p.esay','p.about','p.test','p.invite','p.8ball','p.gif',"p.ssp",'p.zitat',
+            'p.schreiben','p.zahl','p.coin',"p.roulette",'p.purge','p.halt','p.join','p.leave',
+            'p.radio','p.play','p.pause','p.resume','p.volume','p.mute','p.stop'] #add new commands here
