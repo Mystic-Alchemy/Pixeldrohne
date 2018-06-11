@@ -16,7 +16,10 @@ mods = open("pxldrn/adv/config/mods.txt", "r", encoding='utf-8')
 players = {}
 p_volume = {}
 gif = safygiphy.Giphy()
-
+commands = ["p.game",'p.pixels_liebling','p.uptime','p.help','p.sysinfo','p.python','p.avatar',\
+            'p.say','p.esay','p.about','p.test','p.invite','p.8ball','p.gif',"p.ssp",'p.zitat',\
+            'p.schreiben','p.zahl','p.coin',"p.roulette",'p.purge','p.halt','p.join','p.leave',\
+            'p.radio','p.play','p.pause','p.resume','p.volume','p.mute','p.stop'] #add new commands here
 
 @client.event
 async def on_ready():
@@ -30,6 +33,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    # command existiert?
+    if message.content.lower().startswith('p') and message.content.lower().split(" ")[0] in commands:
+        pass
+    else:
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.help_embeds.intro())
+        return
     # Spielstatus
     if message.content.startswith('p.game') and message.author.id == keys.pmcid:
         game = message.content[7:]
