@@ -1,7 +1,7 @@
 import discord
 
 
-def intro():
+def intro(client):
     hilfe = discord.Embed(
         title="Erklärung der Hilfe",
         color=0xad1457,
@@ -10,15 +10,15 @@ def intro():
     )
     hilfe.set_author(
         name="Pixeldrohne",
-        icon_url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg",
-        url="https://twitch.tv/pixelwerfer"
+        icon_url=client.user.avatar_url,
+        url="http://twitch.tv/pixelwerfer"
     )
     hilfe.set_footer(
         text='Um mehr Informationen über den Autor dieses Bots zu erhalten: p.about',
-        icon_url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg"
+        icon_url=client.user.avatar_url
     )
     hilfe.set_thumbnail(
-        url="https://www.mystic-alchemy.com/wp-content/uploads/2018/05/avatar.jpg"
+        url=client.user.avatar_url
     )
     hilfe.add_field(
         name="musik",
@@ -35,7 +35,7 @@ def intro():
     return hilfe
 
 
-def primary():
+def primary(client):
     allgemein = discord.Embed(
         title="Allgemeine Befehle",
         color=0xad1457,
@@ -44,7 +44,7 @@ def primary():
     return allgemein
 
 
-def music():
+def music(client):
     musik = discord.Embed(
         title="Kategorie: Musik",
         color=0xad1457,
@@ -78,7 +78,7 @@ def music():
     return musik
 
 
-def minigames():
+def minigames(client):
     mini = discord.Embed(
         title="Kategorie: Spiele",
         color=0xad1457,

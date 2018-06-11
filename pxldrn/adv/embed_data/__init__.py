@@ -1,4 +1,5 @@
 import discord
+import pxldrn.adv.embed_data.help_embeds
 from pxldrn.adv import sysinfo
 
 

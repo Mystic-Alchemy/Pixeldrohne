@@ -23,6 +23,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    try:
+        mu = message.author.name + ": "
+        ms = message.content
+        print(mu + ms)
+    except Exception:
+        pass
     # Hilfe für Dev-Branch und Cutting Edge
     if message.content.lower().startswith('dev.help'):
         user = message.author
@@ -44,6 +50,8 @@ async def on_message(message):
                 line = line.rstrip('\'')
                 await client.send_message(message.author, line)
                 await asyncio.sleep(1)
+    if message.content.lower().startswith('dev.p'):
+        await client.send_message(message.channel, embed=pxldrn.adv.embed_data.help_embeds.intro(client))
     if message.content.lower().startswith('dev.perms'):
         member = message.author
         perms = member.server_permissions
