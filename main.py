@@ -31,7 +31,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     # command existiert?
-    if message.content.lower().startswith('p') and message.content.lower().split(" ")[0] in commands:
+    if message.content.lower().startswith('p') and message.content.lower().split(" ")[0] in pxldrn.adv.config.lists.commands:
         pass
     else:
         await client.send_message(message.channel, embed=pxldrn.adv.embed_data.help_embeds.intro())
