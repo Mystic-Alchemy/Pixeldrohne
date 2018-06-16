@@ -93,3 +93,36 @@ def minigames(client):
         value="Der gute alte Münzwurf."
     )
     return mini
+
+
+def no_command(client):
+    hilfe = discord.Embed(
+        title="Befehl nicht gefunden.",
+        color=0xad1457,
+        description='Um die einzelnen Teile der Hilfe aufzurufen, einfach mit "p.help <argument>" '
+                    'auf diese Nachricht antworten.\n\nMögliche Argumente sind:')
+    hilfe.set_author(
+        name="Pixeldrohne",
+        icon_url=client.user.avatar_url,
+        url="http://twitch.tv/pixelwerfer"
+    )
+    hilfe.set_footer(
+        text='Um mehr Informationen über den Autor dieses Bots zu erhalten: p.about',
+        icon_url=client.user.avatar_url
+    )
+    hilfe.set_thumbnail(
+        url=client.user.avatar_url
+    )
+    hilfe.add_field(
+        name="musik",
+        value="Ruft die Hilfe für die Musik ab."
+    )
+    hilfe.add_field(
+        name="spiele",
+        value="Ruft die Minigames ab"
+    )
+    hilfe.add_field(
+        name="allgemein",
+        value="Ruft die Befehle ab, die in keiner\n anderen Kategorie ihren Platz haben."
+    )
+    return hilfe
