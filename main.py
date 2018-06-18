@@ -7,6 +7,7 @@ from discord.ext import commands
 import requests
 import sys
 from helps import Help
+from moderation import *
 from music import Voice
 import keys
 import random
@@ -22,4 +23,5 @@ async def on_ready():
 
 bot.add_cog(Help(bot))
 bot.add_cog(Voice(bot))
+bot.add_cog(Mods(bot))
 bot.run(keys.dev)
