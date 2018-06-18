@@ -1,25 +1,14 @@
-# Pixeldrohne
+# Pixeldrohne Rewrite
 
-Dieser Discord-Bot ist eigentlich aus einem schlechten Scherz entstanden, hat sich aber mittlerweile in ein vollständiges Projekt entwickelt.
+Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen der "standard" Variante.
 
-## Bot einladen
+### Benötigt:
+- mindestens Python 3.6
+- discord.py rewrite (python3 -m pip install -U discord-rewrite)
+- ffmpeg (Linux: apt-get install ffmpeg, Windows nur die ffmpeg.exe wird benötigt)
+- PyNaCl (python3 -m pip install -U PyNaCl)
+- safygiphy (python3 -m pip install -U safygiphy)
+- requests (python3 -m pip install -U requests)
+- YoutubeDL (python3 -m pip install youtube-dl)
 
-Um den Bot einzuladen müsst ihr diesen Schritten folgen:
- 1. [Testserver](http://discord.gg/sgDQjeH) joinen.
- 1. PilleniusMC mit einem Invite Link zu eurem Server anschreiben, dass ihr den Bot testen wollt.
- 1. Euch wird geantwortet ob ihr als Tester angenommen wurdet oder nicht.
- 
-#### Bedingungen
-
-* Euer Server muss größtenteils auf deutsch sein.
-* Wenn ihr abgelehnt wurdet dürft ihr einmal beantragen, dass euer Server nochmal angeschaut wird.
-* Wenn ihr dann ein zweites mal abgelehnt werdet, könnt ihr erst in einem Monat wieder beantragen, dass der Server überprüft wird.
-* Der Invite des Bots darf unter keinen Umständen währen der Testphase weitergegeben werden
-
-## Dokumentation
-
-Für detaillierte Informationen zu den einzenlen Befehlen und Codeabschnitten einfach in den Ordner [Docs]() schauen
-
-### Inhalt
-
-1. [To-Do Liste](todo.md)
+Auf Linux wird möglicherweise noch libffi gebraucht.

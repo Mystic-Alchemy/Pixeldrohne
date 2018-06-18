@@ -3,9 +3,23 @@
 import asyncio
 import io
 import discord
-from discord.ext import commands as discom
+from discord.ext import commands
 import requests
 import sys
+from helps import Help
+from music import Voice
 import keys
 import random
-import safygiphy
+
+bot = commands.Bot(command_prefix="dev.", case_insensitive=True)
+bot.remove_command("help")
+
+
+@bot.event
+async def on_ready():
+    print("Bot-Info:\nName: " + bot.user.name + "\nId: " + str(bot.user.id))
+
+
+bot.add_cog(Help(bot))
+bot.add_cog(Voice(bot))
+bot.run(keys.dev)
