@@ -57,18 +57,17 @@ class Voice:
         self.states = {}
         self.queue = {}
 
-    async def get_stream(self, song):
+    async def get_stream(self, song: str):
 
         loop = asyncio.get_event_loop()
         data = await loop.run_in_executor(None, lambda: self.ytdl.extract_info(song, download=False))
 
-        if 'entries' in data:
+        if song.lower().startswith("https://youtu"):
 
-            data = data['entries'][0]
             return data
         else:
 
-            return "An error occured when trying to get the required data from the song"
+            return data['entries'][0]
 
     def radio(self, radio_channel):
 
