@@ -6,6 +6,8 @@ import random
 class Help:
     def __init__(self, bot):
         self.bot = bot
+        self.color_help = 0x0affe0
+        self.color_about = 0xd86f33
         self.footer_choices = ["Liest überhaupt jemand das hier unten?",
                                f"Deine zufällige Zahl ist: {random.randint(1,1000000000)}",
                                "Hier sind so viele lustige Fakten, was meinst du wie viele?",
@@ -33,17 +35,23 @@ class Help:
                 description=f"Die Hilfe ist in mehrere Abschnitte aufgeteilt. Diese Abschnitte werden mit dem Befehl "
                             f"`{self.bot.command_prefix}help <argument>` aufgerufen werden. So kann der Teil über die "
                             f"Befehle um Musik abzuspielen mit `{self.bot.command_prefix}help musik` aufgerufen werden.",
-                color=0x0affe0
+                color=self.color_help
             )
             he.set_thumbnail(url=self.bot.user.avatar_url)
             he.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
             he.add_field(name="musik", value="Die Musikbefehle")
             await ctx.channel.send(embed=he)
+        elif arg[0].lower() == 'allgemein':
+            ae = discord.Embed(
+                title="Die allgemeinen Befehle:",
+                description="Alle Befehle, die keine wirklich spezielle Kategorie haben.",
+                color=self.color_help
+            )
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
                 title="Die Musikbefehle:",
                 description=f"Um diese Befehle auszuführen sollte man am besten schon in einem Sprachkanal sein.",
-                color=0x0affe0
+                color=self.color_help
             )
             me.set_thumbnail(url=self.bot.user.avatar_url)
             me.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
@@ -69,7 +77,7 @@ class Help:
                         "universeller Bot für den Streamer Pixelwerfer gedacht hat sich dann aber hat sich dann "
                         "zu etwas einiges größerem entwickelt. Jetzt ist die Pixeldrohne schon eigentlich viel zu"
                         "groß, dass ich diese alleine aufrecht erhalten kann.",
-            color=0xd86f33
+            color=self.color_about
         )
         about_embed.set_author(name="Pixeldrohne", url="https://twitch.tv/pixeldrohne", icon_url=self.bot.user.avatar_url)
         about_embed.set_footer(text=random.choice(self.footer_choices), icon_url=self.bot.user.avatar_url)
@@ -84,6 +92,20 @@ class Help:
         github_embed = discord.Embed(
             title="GitHub:",
             description="https://github.com/Mystic-Alchemy/Pixeldrohne",
-            color=0xd86f33
+            color=self.color_about
         )
         await ctx.channel.send(embed=github_embed)
+
+    @commands.command(name="invite")
+    async def invite_panel(self, ctx):
+        embed = discord.Embed(
+            title="Bot auf deinen Server einladen|Invite the bot to your server",
+            description="Einfach einem der folgenden Links folgen um den Bot auf deinen Server zu holen.\n\nJust follow "
+                        "one of the following links to get the bot on your server.",
+            color=self.color_about
+        )
+        embed.set_thumbnail(url=self.bot.user.avatar_url)
+        embed.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
+        embed.add_field(name="Deutsch", value="https://pixeldrohne.mystic-alchemy.com/de-invite")
+        embed.add_field(name="English/International", value="https://pixeldrohne.mystic-alchemy.com/en-invite")
+        await ctx.channel.send(embed=embed)
