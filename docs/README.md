@@ -12,3 +12,21 @@ Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen 
 - YoutubeDL (python3 -m pip install youtube-dl)
 
 Auf Linux wird möglicherweise noch libffi gebraucht.
+
+### Was der Rewrite bisher kann:
+####Allgemeines:
+- Eine vollständige Hilfe
+- Ein About über den Bot
+- Einen Befehl mit den Daten, wie man den Bot einlädt
+####Musik:
+- Join
+- Leave
+- Radiosender
+- YouTube Videos abspielen
+- Lautstärke lässt sich anpassen (Leider ist die Startlautstärke der Radiosender und YT Videos zu laut.)
+- Natürlich kann man es auch pausieren und vollständig stoppen.
+####Moderation:
+- Kick
+- Ban
+- Purge
+#####Leider fehlt noch viel, einfach ein bisschen warten. Ich arbeite leider alleine am Bot, deswegen braucht alles ein bisschen länger.
