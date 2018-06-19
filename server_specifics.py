@@ -4,6 +4,13 @@ from discord.ext import commands
 
 # Ende der Imports
 
+
+def is_in_guild(guild_id):
+    async def predicate(ctx):
+        return ctx.guild and ctx.guild.id == guild_id
+    return commands.check(is_in_guild)
+
+
 """
 Pro Server unter hier einfach eine Klasse aufbauen. Eine Vorlage wie die Klasse aufgebuat sein sollte folgt hierauf.
 Ausfühlichere Beispiele und sowie bessere Vorlagen werden noch den Docs hinzugefügt.
