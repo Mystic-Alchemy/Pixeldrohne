@@ -54,3 +54,10 @@ class Mods:
             await ctx.send('Nutzer konnte nicht gebannt werden.')
         if isinstance(error, commands.MissingPermissions):
             await ctx.send('Sorry, du kannst diesen Befehl leider nicht nutzen.')
+
+    @commands.command(name="purge", no_pm=True)
+    @commands.has_permissions(manage_messages=True)
+    async def purge(self, ctx, messages):
+        messages = int(messages) + 1
+        deleted = await ctx.channel.purge(limit=messages, bulk=True)
+        await ctx.channel.send(f"Es wurden erfolgreich {len(deleted)-1} Nachrichten gelöscht.", delete_after=5)
