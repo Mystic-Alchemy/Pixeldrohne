@@ -6,6 +6,7 @@ import discord
 from discord.ext import commands
 import requests
 import sys
+from server_specifics import *
 from helps import Help
 from moderation import *
 from custom_commands import *
