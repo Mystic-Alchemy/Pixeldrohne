@@ -8,6 +8,7 @@ import requests
 import sys
 from helps import Help
 from moderation import *
+from custom_commands import *
 from music import Voice
 import keys
 import random
@@ -24,4 +25,5 @@ async def on_ready():
 bot.add_cog(Help(bot))
 bot.add_cog(Voice(bot))
 bot.add_cog(Mods(bot))
+bot.add_cog(CustomCommands(bot))
 bot.run(keys.dev)
