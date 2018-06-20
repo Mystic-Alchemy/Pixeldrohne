@@ -14,7 +14,7 @@ from music import Voice
 import keys
 import random
 
-bot = commands.Bot(command_prefix="dev.", case_insensitive=True)
+bot = commands.Bot(command_prefix=keys.prefix, case_insensitive=True)
 bot.remove_command("help")
 
 
