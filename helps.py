@@ -9,7 +9,7 @@ class Help:
         self.color_help = 0x0affe0
         self.color_about = 0xd86f33
         self.footer_choices = ["Liest überhaupt jemand das hier unten?",
-                               f"Deine zufällige Zahl ist: {random.randint(1,1000000000)}",
+                               f"Deine zufällige Zahl ist: nicht existent",
                                "Hier sind so viele lustige Fakten, was meinst du wie viele?",
                                "[         ]",
                                "Dieser Bot ist zu 100 % Fairtrade.",
@@ -39,6 +39,7 @@ class Help:
             )
             he.set_thumbnail(url=self.bot.user.avatar_url)
             he.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
+            he.add_field(name="allgemein", value="Alle Befehle ohne\nspezielle Kategorie")
             he.add_field(name="musik", value="Die Musikbefehle")
             await ctx.channel.send(embed=he)
         elif arg[0].lower() == 'allgemein':
@@ -47,6 +48,12 @@ class Help:
                 description="Alle Befehle, die keine wirklich spezielle Kategorie haben.",
                 color=self.color_help
             )
+            ae.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
+            ae.set_thumbnail(url=self.bot.user.avatar_url)
+            ae.add_field(name=f"{self.bot.command_prefix}help", value="Diese Hilfe")
+            ae.add_field(name=f"{self.bot.command_prefix}about", value="Erklärung des Bots")
+            ae.add_field(name=f"{self.bot.command_prefix}invite", value="Die Links um den Bot einzuladen")
+            await ctx.channel.send(embed=ae)
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
                 title="Die Musikbefehle:",
@@ -107,5 +114,6 @@ class Help:
         embed.set_thumbnail(url=self.bot.user.avatar_url)
         embed.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
         embed.add_field(name="Deutsch", value="https://pixeldrohne.mystic-alchemy.com/de-invite")
-        embed.add_field(name="English/International", value="https://pixeldrohne.mystic-alchemy.com/en-invite")
+        embed.add_field(name="English/International", value="https://pixeldrohne.mystic-alchemy.com/en-invite\n"
+                                                            "Warning: this bot isn't yet online.")
         await ctx.channel.send(embed=embed)

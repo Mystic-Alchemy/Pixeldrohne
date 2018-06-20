@@ -39,7 +39,7 @@ class Mods:
         else:
             reason = " ".join(arg)
         embed = discord.Embed(
-            title="Kick",
+            title="Ban",
             description=f"Der Nutzer {user.name} wurde mit dem Grund `{reason}` gebannt.",
             color=self.color
         )

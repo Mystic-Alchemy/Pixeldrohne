@@ -1,6 +1,7 @@
 # Um den gesamten Bot auszuführen muss nur noch die Datei genutzt werden
 
 import asyncio
+import aiohttp
 import io
 import discord
 from discord.ext import commands
@@ -22,6 +23,13 @@ bot.remove_command("help")
 async def on_ready():
     print("Bot-Info:\nName: " + bot.user.name + "\nId: " + str(bot.user.id))
 
+
+@bot.command(no_pm=True)
+async def say(ctx, *, arg):
+    await ctx.message.delete()
+    async with ctx.channel.typing():
+        await asyncio.sleep(1)
+        await ctx.channel.send(arg)
 
 bot.add_cog(Help(bot))
 bot.add_cog(Voice(bot))
