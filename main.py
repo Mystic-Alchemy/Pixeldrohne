@@ -27,9 +27,33 @@ async def on_ready():
 @bot.command(no_pm=True)
 async def say(ctx, *, arg):
     await ctx.message.delete()
+    time = 0.2 * len(arg.split(' '))
     async with ctx.channel.typing():
-        await asyncio.sleep(1)
+        await asyncio.sleep(time)
         await ctx.channel.send(arg)
+
+@say.error
+async def say_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.message.delete()
+        await ctx.channel.send("Du musst mir schon etwas geben, dass ich sagen kann.", delete_after=3)
+
+@bot.command(no_pm=True)
+async def avatar(ctx, user: discord.Member):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(user.avatar_url) as resp:
+            img = await resp.read()
+            await ctx.send(file=discord.File(img, 'avatar.gif'))
+
+@avatar.error
+async def avatar_error(ctx, error):
+    if isinstance(error, commands.BadArgument):
+        await ctx.send("Sorry, den Avatar dieses Nutzers kann ich nicht abrufen")
+    if isinstance(error, commands.MissingRequiredArgument):
+        async with aiohttp.ClientSession() as session:
+            async with session.get(ctx.message.author.avatar_url) as resp:
+                img = await resp.read()
+                await ctx.send(file=discord.File(img, 'avatar.gif'))
 
 bot.add_cog(Help(bot))
 bot.add_cog(Voice(bot))

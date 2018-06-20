@@ -61,3 +61,10 @@ class Mods:
         messages = int(messages) + 1
         deleted = await ctx.channel.purge(limit=messages, bulk=True)
         await ctx.channel.send(f"Es wurden erfolgreich {len(deleted)-1} Nachrichten gelöscht.", delete_after=5)
+
+    @purge.error
+    async def purge_error(self, ctx, error):
+        if isinstance(error, commands.MissingPermissions):
+            await ctx.send('Sorry, du kannst diesen Befehl leider nicht nutzen.')
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send('Bitte, gib eine Nachrichtenanzahl an.')
