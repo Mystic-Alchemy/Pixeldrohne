@@ -46,6 +46,7 @@ class Voice:
             'source_address': '0.0.0.0'
         }
 
+
         self.ffmpeg_opts = " -reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5"
 
         self.ytdl = youtube_dl.YoutubeDL(self.ytdl_opts)
@@ -56,6 +57,9 @@ class Voice:
 
         self.states = {}
         self.queue = {}
+
+    async def printtext(self):
+        print("something to test")
 
     async def get_stream(self, song: str):
 
@@ -287,7 +291,7 @@ class Voice:
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
-                    voice.play(source)
+                    voice.play(source, after=self.printtext())
 
                     await ctx.channel.send(f"Now playing: {channel}")
                 except Exception as error:
@@ -306,7 +310,7 @@ class Voice:
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
-                    voice.play(source)
+                    voice.play(source, after=self.printtext())
 
                     await ctx.channel.send(f"Now playing: {channel}")
                 except Exception as error:
@@ -351,11 +355,11 @@ class Voice:
                     if not self.states[str(ctx.guild.id)].is_playing() or self.states[str(ctx.guild.id)].is_paused():
 
                         player = discord.FFmpegPCMAudio(self.queue[str(ctx.guild.id)].pop(0),
-                                                        executable='bin/ffmpeg.exe', before_options=self.ffmpeg_opts)
+                                                        executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
                         source = discord.PCMVolumeTransformer(player)
-                        voice.play(source)
+                        voice.play(source, after=await self.printtext())
 
-                        await ctx.send("Tick Tick")
+                        await ctx.send("Playback gestartet")
                     elif self.states[str(ctx.guild.id)].is_playing() or self.states[str(ctx.guild.id)].is_paused():
 
                         pass
@@ -377,9 +381,9 @@ class Voice:
 
                 self.states[str(ctx.guild.id)] = voice
 
-                player = discord.FFmpegPCMAudio(yt_stream, executable='bin/ffmpeg.exe', before_options=self.ffmpeg_opts)
+                player = discord.FFmpegPCMAudio(yt_stream, executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
                 source = discord.PCMVolumeTransformer(player)
-                voice.play(source)
+                voice.play(source, after=await self.printtext())
 
                 await ctx.send("Tick Tick")
             except Exception as error:
