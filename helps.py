@@ -34,7 +34,9 @@ class Help:
                 title="Kurze Erklärung über die Hilfe",
                 description=f"Die Hilfe ist in mehrere Abschnitte aufgeteilt. Diese Abschnitte werden mit dem Befehl "
                             f"`{self.bot.command_prefix}help <argument>` aufgerufen werden. So kann der Teil über die "
-                            f"Befehle um Musik abzuspielen mit `{self.bot.command_prefix}help musik` aufgerufen werden.",
+                            f"Befehle um Musik abzuspielen mit `{self.bot.command_prefix}help musik` aufgerufen werden.\n\n"
+                            f"Bei einigen Befehlen muss noch ein Argument mitgegeben werden. Argumente, die mit <> markiert sind,"
+                            f" müssen angegeben werden. Mit [] markierte Argumente sind optional",
                 color=self.color_help
             )
             he.set_thumbnail(url=self.bot.user.avatar_url)
@@ -53,6 +55,9 @@ class Help:
             ae.add_field(name=f"{self.bot.command_prefix}help", value="Diese Hilfe")
             ae.add_field(name=f"{self.bot.command_prefix}about", value="Erklärung des Bots")
             ae.add_field(name=f"{self.bot.command_prefix}invite", value="Die Links um den Bot einzuladen")
+            ae.add_field(name=f"{self.bot.command_prefix}zahl <min> <may>", value="Zufällige Zahl, zwischen\neinem Min und Max")
+            ae.add_field(name=f"{self.bot.command_prefix}avatar [nutzer]", value="Ruft einen Avatar ab.")
+            ae.add_field(name=f"{self.bot.command_prefix}gif <suche>", value="Ruft ein GIF ab.")
             await ctx.channel.send(embed=ae)
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
@@ -69,9 +74,10 @@ class Help:
             me.add_field(name=f"{self.bot.command_prefix}stop", value="Die Wiedergabe stoppen.")
             me.add_field(name=f"{self.bot.command_prefix}volume", value="Die Wiedergabelautstärke ändern.")
             me.add_field(name=f"{self.bot.command_prefix}mute", value="Den Bot stummschalten.")
-            me.add_field(name=f"{self.bot.command_prefix}radio",
+            me.add_field(name=f"{self.bot.command_prefix}radio <radio>",
                          value=f"Einen Radiosender abspielen.\n`{self.bot.command_prefix}radio list` ruft eine Senderliste ab.")
-            me.add_field(name=f"{self.bot.command_prefix}play", value="Spielt YouTube Videos ab. Um den Befehl zu nutzen einfach nen Link oder eine Suche vorgeben.")
+            me.add_field(name=f"{self.bot.command_prefix}play <yt-link/suche>",
+                         value="Spielt YouTube Videos ab. Um den Befehl zu nutzen einfach nen Link oder eine Suche vorgeben.")
             await ctx.channel.send(embed=me)
         else:
             pass

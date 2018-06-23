@@ -3,10 +3,9 @@
 import asyncio
 import aiohttp
 import io
-import datetime
 import discord
+import safygiphy
 from discord.ext import commands
-import requests
 import sys
 from server_specifics import *
 from helps import Help
@@ -16,6 +15,7 @@ from music import Voice
 import keys
 import random
 
+giphy = safygiphy.Giphy()
 bot = commands.Bot(command_prefix=keys.prefix, case_insensitive=True)
 bot.remove_command("help")
 
@@ -58,6 +58,37 @@ async def avatar_error(ctx, error):
             async with session.get(ctx.message.author.avatar_url) as resp:
                 img = await resp.read()
                 await ctx.send(file=discord.File(img, 'avatar.gif'))
+
+
+@bot.command(no_pm=True)
+async def gif(ctx, *, arg):
+    async with ctx.channel.typing():
+        rgif = giphy.random(tag=arg)
+        async with aiohttp.ClientSession() as session:
+            async with session.get(str(rgif.get("data", {}).get('image_original_url'))) as resp:
+                rgif = await resp.read()
+                await ctx.send(file=discord.File(rgif, 'gif.gif'))
+
+
+@gif.error
+async def gif_error(ctx, error):
+    if isinstance(error, commands.CommandInvokeError):
+        await ctx.send("Irgendetwas ist schiefgegangen. Bitte versuche es nochmal")
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("Bitte gib einen Suchbegriff ein.")
+    else:
+        await ctx.send(str(error))
+
+
+@bot.command(no_pm=True)
+async def zahl(ctx, z_min: int, z_max: int):
+    await ctx.send(f"Deine Zahl ist: {random.randint(z_min, z_max)}")
+
+
+@zahl.error
+async def zahl_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("Du musst mir zwei Zahlen geben, die erste das Minimum, die zweite das Maximum.")
 
 
 bot.add_cog(Help(bot))
