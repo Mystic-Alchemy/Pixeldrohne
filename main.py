@@ -85,6 +85,33 @@ async def zahl_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("Du musst mir zwei Zahlen geben, die erste das Minimum, die zweite das Maximum.")
 
+@bot.group()
+async def zitat(ctx):
+    if ctx.invoked_subcommand is None:
+        async with ctx.channel.typing():
+            async with open('zitate.txt', 'a', encoding='utf-8') as file:
+                auswahl = file.readlines()
+                zitat = random.choice(auswahl)
+                await ctx.send(zitat)
+
+@zitat.command(name="hidden", aliases=["versteckt", "h", "v"])
+async def hidden(ctx):
+    async with ctx.channel.typing():
+        async with open('zitate.txt', 'r', encoding='utf-8') as file:
+            auswahl = file.readlines()
+            file.close()
+            zitat = random.choice(auswahl)
+            await ctx.send(zitat, delete_after=10)
+
+@zitat.command(name="write", aliases=["schreiben", "s", "w"])
+async def write(ctx, *, arg):
+    async with ctx.channel.typing():
+        async with open('zitate.txt', 'a', encoding='utf-8') as file:
+            file.write("\n" + arg)
+            file.close()
+            await ctx.send(f"Dein Zitat `{arg}` wurde der Liste hinzugefügt")
+
+
 
 bot.add_cog(pxldrn.helps.Help(bot))
 bot.add_cog(pxldrn.music.Voice(bot))

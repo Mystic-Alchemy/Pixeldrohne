@@ -36,7 +36,8 @@ class Help:
                             f"`{self.bot.command_prefix}help <argument>` aufgerufen werden. So kann der Teil über die "
                             f"Befehle um Musik abzuspielen mit `{self.bot.command_prefix}help musik` aufgerufen werden.\n\n"
                             f"Bei einigen Befehlen muss noch ein Argument mitgegeben werden. Argumente, die mit <> markiert sind,"
-                            f" müssen angegeben werden. Mit [] markierte Argumente sind optional",
+                            f" müssen angegeben werden. Mit [] markierte Argumente sind optional. Mit {'{}'} markierte Argumente "
+                            f"müssen bei bestimmten optionalen Argumenten genutzt werden.",
                 color=self.color_help
             )
             he.set_thumbnail(url=self.bot.user.avatar_url)
@@ -59,6 +60,9 @@ class Help:
             ae.add_field(name=f"{self.bot.command_prefix}zahl <min> <may>", value="Zufällige Zahl, zwischen\neinem Min und Max")
             ae.add_field(name=f"{self.bot.command_prefix}avatar [nutzer]", value="Ruft einen Avatar ab.")
             ae.add_field(name=f"{self.bot.command_prefix}gif <suche>", value="Ruft ein GIF ab.")
+            ae.add_field(name=f"{self.bot.command_prefix}zitat [modus] {'{zitat}'}",
+                         value="Wenn kein Modus angegeben ist, dann wird ein zufälliges Zitat abgerufen.\nDie Modi können schreiben oder versteckt sein.\n"
+                               "Wenn der Modus schreiben genutzt wird muss noch ein Zitat angegeben werden, dass der Liste hinzugefügt werden soll.")
             await ctx.channel.send(embed=ae)
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
@@ -88,7 +92,7 @@ class Help:
             )
             me.set_thumbnail(url=self.bot.user.avatar_url)
             me.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
-            me.add_field(name=f"{self.bot.command_prefix}ssp <wahl[-e]> [extended]",
+            me.add_field(name=f"{self.bot.command_prefix}ssp <wahl[-e]> {'{extended}'}",
                          value="Normales Schere Stein Papier und Extended mit Echse und Spock. Wenn -e genutzt wird, muss auch extended gesetzt sein.")
             await ctx.send(embed=me)
         else:
