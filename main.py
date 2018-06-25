@@ -3,6 +3,7 @@
 import asyncio
 import aiohttp
 import safygiphy
+from datetime import datetime, time
 import discord
 from discord.ext import commands
 from custom_commands import CustomCommands
@@ -19,6 +20,8 @@ bot.remove_command("help")
 async def on_ready():
     print("Bot-Info:\nName: " + bot.user.name + "\nId: " + str(bot.user.id))
     await bot.change_presence(activity=discord.Game(f"mit {bot.command_prefix}help"))
+    global st_datetime
+    st_datetime = datetime.now()
 
 
 @bot.command(no_pm=True)
@@ -118,6 +121,33 @@ async def write(ctx, *, arg):
 async def write_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("Sorry, wenn du kein Zitat angibst, kann ich es auch nicht hinzufügen.")
+
+
+@bot.command(no_pm=True)
+async def uptime(ctx):
+    result = datetime.now() - st_datetime
+    resultd = datetime.utcfromtimestamp(result.total_seconds()).time()
+    tstring = None
+    if resultd.second == 1:
+        tstring = f"{resultd.second} Sekunde"
+    else:
+        tstring = f"{resultd.second} Sekunden."
+    if resultd.minute > 0:
+        if resultd.minute == 1:
+            tstring = f"{resultd.minute} Minute und " + tstring
+        else:
+            tstring = f"{resultd.minute} Minuten und " + tstring
+    if resultd.hour > 0:
+        if resultd.hour == 1:
+            tstring = f"{resultd.hour} Stunde, " + tstring
+        else:
+            tstring = f"{resultd.hour} Stunden, " + tstring
+    if result.days > 0:
+        if result.days == 1:
+            tstring = f"{result.days} Tag, " + tstring
+        else:
+            tstring = f"{result.days} Tagen " + tstring
+    await ctx.send(f"Der Bot läuft schon seit {tstring}")
 
 
 bot.add_cog(pxldrn.helps.Help(bot))
