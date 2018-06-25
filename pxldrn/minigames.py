@@ -37,8 +37,8 @@ class SchereSteinPapier:
                 description="😭 Ich habe verloren. 😭 Och menno! 😭 Ich wollte doch gewinnen. 😭",
                 color=0x00ff00
             )
-            embed.add_field(name="Bot", value=bot)
-            embed.add_field(name="Spieler", value=spieler)
+            embed.add_field(name="Bot", value=bot.upper())
+            embed.add_field(name="Spieler", value=spieler.upper())
             await ctx.send(embed=embed)
         elif status == "v":
             embed = discord.Embed(
@@ -46,8 +46,8 @@ class SchereSteinPapier:
                 description="😁 Hihi, ich habe gewonnen. Aber keine Sorge du kannst dann auch gewinnen. 😇",
                 color=0xff0000
             )
-            embed.add_field(name="Bot", value=bot)
-            embed.add_field(name="Spieler", value=spieler)
+            embed.add_field(name="Bot", value=bot.upper())
+            embed.add_field(name="Spieler", value=spieler.upper())
             await ctx.send(embed=embed)
         else:
             embed = discord.Embed(
