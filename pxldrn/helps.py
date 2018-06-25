@@ -61,8 +61,8 @@ class Help:
             ae.add_field(name=f"{self.bot.command_prefix}avatar [nutzer]", value="Ruft einen Avatar ab.")
             ae.add_field(name=f"{self.bot.command_prefix}gif <suche>", value="Ruft ein GIF ab.")
             ae.add_field(name=f"{self.bot.command_prefix}zitat [modus] {'{zitat}'}",
-                         value="Wenn kein Modus angegeben ist, dann wird ein zufälliges Zitat abgerufen.\nDie Modi können schreiben oder versteckt sein.\n"
-                               "Wenn der Modus schreiben genutzt wird muss noch ein Zitat angegeben werden, dass der Liste hinzugefügt werden soll.")
+                         value="Wenn kein Modus angegeben ist, dann wird ein zufälliges Zitat abgerufen.\nDie Modi können write oder hidden sein.\n"
+                               "Wenn der Modus write genutzt wird muss noch ein Zitat angegeben werden, dass der Liste hinzugefügt werden soll.")
             await ctx.channel.send(embed=ae)
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
