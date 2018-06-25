@@ -2,16 +2,11 @@
 
 import asyncio
 import aiohttp
-import io
-import discord
 import safygiphy
+import discord
 from discord.ext import commands
-import sys
-from server_specifics import *
-from helps import Help
-from moderation import *
-from custom_commands import *
-from music import Voice
+from custom_commands import CustomCommands
+import pxldrn
 import keys
 import random
 
@@ -91,8 +86,9 @@ async def zahl_error(ctx, error):
         await ctx.send("Du musst mir zwei Zahlen geben, die erste das Minimum, die zweite das Maximum.")
 
 
-bot.add_cog(Help(bot))
-bot.add_cog(Voice(bot))
-bot.add_cog(Mods(bot))
+bot.add_cog(pxldrn.helps.Help(bot))
+bot.add_cog(pxldrn.music.Voice(bot))
+bot.add_cog(pxldrn.moderation.Mods(bot))
+bot.add_cog(pxldrn.minigames.SchereSteinPapier(bot))
 bot.add_cog(CustomCommands(bot))
 bot.run(keys.dev)

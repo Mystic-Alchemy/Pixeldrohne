@@ -123,3 +123,10 @@ class Help:
         embed.add_field(name="English/International", value="https://pixeldrohne.mystic-alchemy.com/en-invite\n"
                                                             "Warning: this bot isn't yet online.")
         await ctx.channel.send(embed=embed)
+
+    @commands.command(name="startup")
+    # @commands.has_permissions(administrator=True)
+    async def startup(self, ctx):
+        bot_mem = ctx.guild.get_member(self.bot.user.id)
+        perms = discord.abc.GuildChannel.permissions_for(ctx.channel, bot_mem)
+        await ctx.send(str(perms.value))
