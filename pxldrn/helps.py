@@ -27,7 +27,7 @@ class Help:
                                "Wusstest du schon, dass Honig normalerweise nicht verderben kann?",
                                "Wusstest du schon, dass britische Abgeordnete nicht im Parlament sterben dürfen?"]
 
-    @commands.command(name="help")
+    @commands.command(name="help", aliases=["hilfe"])
     async def help_base(self, ctx, *arg):
         if arg == ():
             he = discord.Embed(
@@ -90,6 +90,7 @@ class Help:
             me.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
             me.add_field(name=f"{self.bot.command_prefix}ssp <wahl[-e]> [extended]",
                          value="Normales Schere Stein Papier und Extended mit Echse und Spock. Wenn -e genutzt wird, muss auch extended gesetzt sein.")
+            await ctx.send(embed=me)
         else:
             pass
 
