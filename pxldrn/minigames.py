@@ -43,7 +43,7 @@ class SchereSteinPapier:
         elif status == "v":
             embed = discord.Embed(
                 title="Du hast verloren.",
-                description="😁 Hihi, ich habe gewonnen. Aber keine Sorge du kannst dann auch gewinnen. 😇",
+                description="😁 Hihi, ich habe gewonnen. Aber keine Sorge du kannst dann vielleicht nächstes mal auch gewinnen. 😇",
                 color=0xff0000
             )
             embed.add_field(name="Bot", value=bot.capitalize())
