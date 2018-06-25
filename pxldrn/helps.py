@@ -43,6 +43,7 @@ class Help:
             he.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
             he.add_field(name="allgemein", value="Alle Befehle ohne\nspezielle Kategorie")
             he.add_field(name="musik", value="Die Musikbefehle")
+            he.add_field(name="minigames", value="Die Minigames")
             await ctx.channel.send(embed=he)
         elif arg[0].lower() == 'allgemein':
             ae = discord.Embed(
@@ -79,6 +80,16 @@ class Help:
             me.add_field(name=f"{self.bot.command_prefix}play <yt-link/suche>",
                          value="Spielt YouTube Videos ab. Um den Befehl zu nutzen einfach nen Link oder eine Suche vorgeben.")
             await ctx.channel.send(embed=me)
+        elif arg[0].lower() == 'minigames':
+            me = discord.Embed(
+                title="Die Minigames des Bots",
+                description="Alle Minigames, die von Nutzern verwendet werden können",
+                color=self.color_help
+            )
+            me.set_thumbnail(url=self.bot.user.avatar_url)
+            me.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
+            me.add_field(name=f"{self.bot.command_prefix}ssp <wahl[-e]> [extended]",
+                         value="Normales Schere Stein Papier und Extended mit Echse und Spock. Wenn -e genutzt wird, muss auch extended gesetzt sein.")
         else:
             pass
 

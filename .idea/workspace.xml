@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pxldrn/minigames.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/minigames.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/helps.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/helps.py" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Pixeldrohne_Rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1529928673907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixeldrohne_Rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1529928802422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -39,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helps.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="helps.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="127" column="51" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
+            <state relative-caret-position="535">
+              <caret line="90" column="92" selection-start-line="90" selection-start-column="92" selection-end-line="90" selection-end-column="92" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="minigames.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="minigames.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+            <state relative-caret-position="510">
+              <caret line="45" column="111" lean-forward="true" selection-start-line="45" selection-start-column="111" selection-end-line="45" selection-end-column="111" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -84,6 +85,7 @@
         <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pxldrn/minigames.py" />
+        <option value="$PROJECT_DIR$/pxldrn/helps.py" />
       </list>
     </option>
   </component>
@@ -218,11 +220,33 @@
       <option name="project" value="LOCAL" />
       <updated>1529928605094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Embeds nochmals angepasst">
+      <created>1529928686168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928686168</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Embeds nochmals angepasst">
+      <created>1529928754020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928754020</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Embeds nochmals angepasst, warum denn nochmal?">
+      <created>1529928824765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1529928824765</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -281,7 +305,9 @@
     <MESSAGE value="Operationen ausgelagert ins Paket pxldrn" />
     <MESSAGE value="Schere Stein Paper Echse Spock&#10;Hat ein bisschen gedauert, aber jetzt kommt es." />
     <MESSAGE value="Farbe für Unentschieden angepasst" />
-    <option name="LAST_COMMIT_MESSAGE" value="Farbe für Unentschieden angepasst" />
+    <MESSAGE value="Embeds nochmals angepasst" />
+    <MESSAGE value="Embeds nochmals angepasst, warum denn nochmal?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Embeds nochmals angepasst, warum denn nochmal?" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
@@ -386,16 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="127" column="51" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -415,10 +431,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+        <state relative-caret-position="510">
+          <caret line="45" column="111" lean-forward="true" selection-start-line="45" selection-start-column="111" selection-end-line="45" selection-end-column="111" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="90" column="92" selection-start-line="90" selection-start-column="92" selection-end-line="90" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
