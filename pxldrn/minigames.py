@@ -27,7 +27,8 @@ class SchereSteinPapier:
         if status == "u":
             embed = discord.Embed(
                 title="Wir haben das gleiche gewählt",
-                description="Eigentlich hasse ich es ja, dass es auf ein Unentschieden rausläuft."
+                description="Eigentlich hasse ich es ja, dass es auf ein Unentschieden rausläuft.",
+                color=0xecde13
             )
             await ctx.send(embed=embed)
         elif status == "s":
