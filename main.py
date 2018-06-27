@@ -153,6 +153,7 @@ async def uptime(ctx):
 bot.add_cog(pxldrn.helps.Help(bot))
 bot.add_cog(pxldrn.music.Voice(bot))
 bot.add_cog(pxldrn.moderation.Mods(bot))
+bot.add_cog(pxldrn.moderation.Admin(bot))
 bot.add_cog(pxldrn.minigames.SchereSteinPapier(bot))
 bot.add_cog(CustomCommands(bot))
 bot.run(keys.dev)

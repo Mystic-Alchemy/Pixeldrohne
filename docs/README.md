@@ -18,6 +18,8 @@ Auf Linux wird möglicherweise noch libffi gebraucht.
 - Eine vollständige Hilfe
 - Ein About über den Bot
 - Einen Befehl mit den Daten, wie man den Bot einlädt
+- Uptime anzeigen
+- Zufällige falsch zugeordnete und dumme Zitate abrufen
 ####Musik:
 - Join
 - Leave
@@ -25,6 +27,8 @@ Auf Linux wird möglicherweise noch libffi gebraucht.
 - YouTube Videos abspielen
 - Lautstärke lässt sich anpassen (Leider ist die Startlautstärke der Radiosender und YT Videos zu laut.)
 - Natürlich kann man es auch pausieren und vollständig stoppen.
+#### Minigames:
+- Schere, Stein, Papier (Echse, Spock)
 ####Moderation:
 - Kick
 - Ban

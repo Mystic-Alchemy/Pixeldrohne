@@ -63,6 +63,7 @@ class Help:
             ae.add_field(name=f"{self.bot.command_prefix}zitat [modus] {'{zitat}'}",
                          value="Wenn kein Modus angegeben ist, dann wird ein zufälliges Zitat abgerufen.\nDie Modi können write oder hidden sein.\n"
                                "Wenn der Modus write genutzt wird muss noch ein Zitat angegeben werden, dass der Liste hinzugefügt werden soll.")
+            ae.add_field(name=f"{self.bot.command_prefix}uptime", value="Zeigt an wie lange\nder Bot schon\nonline ist.")
             await ctx.channel.send(embed=ae)
         elif arg[0].lower() == 'musik':
             me = discord.Embed(
@@ -139,10 +140,3 @@ class Help:
         embed.add_field(name="English/International", value="https://pixeldrohne.mystic-alchemy.com/en-invite\n"
                                                             "Warning: this bot isn't yet online.")
         await ctx.channel.send(embed=embed)
-
-    @commands.command(name="startup")
-    # @commands.has_permissions(administrator=True)
-    async def startup(self, ctx):
-        bot_mem = ctx.guild.get_member(self.bot.user.id)
-        perms = discord.abc.GuildChannel.permissions_for(ctx.channel, bot_mem)
-        await ctx.send(str(perms.value))
