@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Uptime des Bots hinzugefügt.">
+    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Ich habe es ein bisschen übertrieben.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/helps.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/helps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/moderation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -25,13 +22,13 @@
         <counts>
           <entry key="md" value="134" />
           <entry key="py" value="3061" />
-          <entry key="txt" value="51" />
+          <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="134" />
-          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="PLAIN_TEXT" value="88" />
           <entry key="Python" value="3061" />
         </counts>
       </usages-collector>
@@ -51,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="155" column="41" lean-forward="true" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+            <state relative-caret-position="407">
+              <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
                 <marker date="1530085931145" expanded="true" signature="4241:5134" ph="..." />
@@ -64,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="117" column="112" lean-forward="true" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
+            <state relative-caret-position="1989">
+              <caret line="117" column="112" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <marker date="1530091290583" expanded="true" signature="3014:3138" ph="..." />
@@ -125,8 +122,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="784" />
-    <option name="y" value="-21" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -161,15 +157,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../funstuff" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pixeldrohne" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne Rewrite" />
+      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne Rewrite\pxldrn" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne Rewrite" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pmc\PycharmProjects\Pixeldrohne Rewrite\pxldrn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529946382577</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ich habe es ein bisschen übertrieben.">
+      <created>1530091395039</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1530091395039</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -322,7 +326,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1119403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -388,7 +391,8 @@
     <MESSAGE value="Zufällige Zitate hinzugefügt." />
     <MESSAGE value="Zitate geändert." />
     <MESSAGE value="Uptime des Bots hinzugefügt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uptime des Bots hinzugefügt." />
+    <MESSAGE value="Ich habe es ein bisschen übertrieben." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ich habe es ein bisschen übertrieben." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
@@ -428,17 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="155" column="41" lean-forward="true" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
-          <folding>
-            <element signature="e#74#88#0" expanded="true" />
-            <marker date="1530085931145" expanded="true" signature="4241:5134" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -451,14 +444,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="117" column="112" lean-forward="true" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
+        <state relative-caret-position="1989">
+          <caret line="117" column="112" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <marker date="1530091290583" expanded="true" signature="3014:3138" ph="..." />
             <marker date="1530091290583" expanded="true" signature="6662:6667" ph="..." />
             <marker date="1530091290583" expanded="true" signature="6939:6944" ph="..." />
             <marker date="1530091290583" expanded="true" signature="6939:6948" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+          <folding>
+            <element signature="e#74#88#0" expanded="true" />
+            <marker date="1530085931145" expanded="true" signature="4241:5134" ph="..." />
           </folding>
         </state>
       </provider>
