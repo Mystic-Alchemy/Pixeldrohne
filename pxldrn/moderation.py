@@ -58,10 +58,14 @@ class Mods:
 
     @commands.command(name="purge", no_pm=True)
     @commands.has_permissions(manage_messages=True)
-    async def purge(self, ctx, messages):
-        messages = int(messages) + 1
-        deleted = await ctx.channel.purge(limit=messages, bulk=True)
-        await ctx.channel.send(f"Es wurden erfolgreich {len(deleted)-1} Nachrichten gelöscht.", delete_after=5)
+    @commands.cooldown(5, 10, commands.BucketType.default)
+    async def purge(self, ctx, messages: int):
+        if messages > 150:
+            await ctx.send("So viele Nachrichten kann ich leider nicht löschen.")
+        else:
+            messages = messages + 1
+            deleted = await ctx.channel.purge(limit=messages, bulk=True)
+            await ctx.channel.send(f"Es wurden erfolgreich {len(deleted)-1} Nachrichten gelöscht.", delete_after=5)
 
     @purge.error
     async def purge_error(self, ctx, error):
@@ -69,6 +73,8 @@ class Mods:
             await ctx.send('Sorry, du kannst diesen Befehl leider nicht nutzen.')
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send('Bitte, gib eine Nachrichtenanzahl an.')
+        if isinstance(error, commands.CommandOnCooldown):
+            await  ctx.send("Bitte warte kurz bevor du diesen Befehl wieder nutzt.\nLeider unterliege ich Rate-Limits")
 
 
 class Admin:

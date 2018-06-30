@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Ich habe es ein bisschen übertrieben.">
+    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Lizenz im Basisverzeichniss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/moderation.py" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -14,76 +14,88 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Pixeldrohne_Rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1530091290596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixeldrohne_Rewrite$main.coverage" NAME="main Coverage Results" MODIFIED="1530364848133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-333455539">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="134" />
-          <entry key="py" value="3061" />
-          <entry key="txt" value="88" />
+          <entry key="py" value="3705" />
+          <entry key="txt" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="134" />
-          <entry key="PLAIN_TEXT" value="88" />
-          <entry key="Python" value="3061" />
+          <entry key="PLAIN_TEXT" value="116" />
+          <entry key="Python" value="3705" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="LICENSE" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="3" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+            <state relative-caret-position="1836">
+              <caret line="108" column="11" lean-forward="true" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
-                <marker date="1530085931145" expanded="true" signature="4241:5134" ph="..." />
+                <marker date="1530364671165" expanded="true" signature="4241:5134" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
+        <entry file="file://$PROJECT_DIR$/custom_commands.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="112" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
+            <state relative-caret-position="492">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1530091290583" expanded="true" signature="3014:3138" ph="..." />
-                <marker date="1530091290583" expanded="true" signature="6662:6667" ph="..." />
-                <marker date="1530091290583" expanded="true" signature="6939:6944" ph="..." />
-                <marker date="1530091290583" expanded="true" signature="6939:6948" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="508">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1530366841554" expanded="true" signature="3386:3510" ph="..." />
+                <marker date="1530366841554" expanded="true" signature="7034:7039" ph="..." />
+                <marker date="1530366841554" expanded="true" signature="7311:7316" ph="..." />
+                <marker date="1530366841554" expanded="true" signature="7311:7320" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,6 +123,7 @@
         <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/pxldrn/helps.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/custom_commands.py" />
         <option value="$PROJECT_DIR$/pxldrn/moderation.py" />
       </list>
     </option>
@@ -122,7 +135,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="631" />
+    <option name="y" value="-19" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -137,11 +151,6 @@
             <path>
               <item name="Pixeldrohne Rewrite" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pixeldrohne Rewrite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pixeldrohne Rewrite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pixeldrohne Rewrite" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixeldrohne Rewrite" type="b2602c69:ProjectViewProjectNode" />
@@ -312,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530091395039</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Lizenz im Basisverzeichniss">
+      <created>1530109176656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530109176656</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -327,19 +343,19 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1119403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32212582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32212582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32212582" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
@@ -392,20 +408,14 @@
     <MESSAGE value="Zitate geändert." />
     <MESSAGE value="Uptime des Bots hinzugefügt." />
     <MESSAGE value="Ich habe es ein bisschen übertrieben." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ich habe es ein bisschen übertrieben." />
+    <MESSAGE value="Lizenz im Basisverzeichniss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lizenz im Basisverzeichniss" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -432,9 +442,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="51">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -442,27 +462,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
+    <entry file="file://$PROJECT_DIR$/custom_commands.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="112" selection-start-line="117" selection-start-column="112" selection-end-line="117" selection-end-column="112" />
+        <state relative-caret-position="492">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1530091290583" expanded="true" signature="3014:3138" ph="..." />
-            <marker date="1530091290583" expanded="true" signature="6662:6667" ph="..." />
-            <marker date="1530091290583" expanded="true" signature="6939:6944" ph="..." />
-            <marker date="1530091290583" expanded="true" signature="6939:6948" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="155" column="41" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="11" lean-forward="true" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
           <folding>
             <element signature="e#74#88#0" expanded="true" />
-            <marker date="1530085931145" expanded="true" signature="4241:5134" ph="..." />
+            <marker date="1530364671165" expanded="true" signature="4241:5134" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1530366841554" expanded="true" signature="3386:3510" ph="..." />
+            <marker date="1530366841554" expanded="true" signature="7034:7039" ph="..." />
+            <marker date="1530366841554" expanded="true" signature="7311:7316" ph="..." />
+            <marker date="1530366841554" expanded="true" signature="7311:7320" ph="..." />
           </folding>
         </state>
       </provider>
