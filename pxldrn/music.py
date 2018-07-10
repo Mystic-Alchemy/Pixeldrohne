@@ -11,23 +11,23 @@ class Voice:
 
         self.bot = bot
         self.channels = [
-            "http://stream01.iloveradio.de/iloveradio1.mp3,I Love Radio",
-            "http://br-br1-obb.cast.addradio.de/br/br1/obb/mp3/128/stream.mp3,Bayern 1",
-            "http://mp3channels.webradio.antenne.de:80/antenne,Antenne Bayern",
-            "http://fhin.4broadcast.de/galaxyin.mp3,Radio Galaxy",
-            "http://hr-youfm-live.cast.addradio.de/hr/youfm/live/mp3/128/stream.mp3,YOU FM",
-            "http://mp3.planetradio.de/planetradio/hqlivestream.mp3,Planet Radio",
-            "http://mp3channels.webradio.antenne.de/rockantenne,ROCK ANTENNE",
-            "http://mp3stream7.apasf.apa.at:8000,Ö3",
-            "http://raj.krone.at:80/kronehit-ultra-hd.aac,Kronehit",
-            "http://radio.vgmradio.com:8040/stream,VGM Radio",
-            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p,BBC Radio 1",
-            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p,BBC Radio 2",
-            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p,BBC Radio 3",
-            "http://us2.internet-radio.com:8281/live,Bollywood",
-            "http://64.71.79.181:8040/,Big B Korea",
-            "http://64.71.79.181:8018/,Big B Japan",
-            "http://ibizaglobalradio.streaming-pro.com:8024/,Ibiza Global Radio"
+            "http://stream01.iloveradio.de/iloveradio1.mp3,I Love Radio,iloveradio",
+            "http://br-br1-obb.cast.addradio.de/br/br1/obb/mp3/128/stream.mp3,Bayern 1,bayern1",
+            "http://mp3channels.webradio.antenne.de:80/antenne,Antenne Bayern,antenne",
+            "http://fhin.4broadcast.de/galaxyin.mp3,Radio Galaxy,radiogalaxy",
+            "http://hr-youfm-live.cast.addradio.de/hr/youfm/live/mp3/128/stream.mp3,YOU FM,youfm",
+            "http://mp3.planetradio.de/planetradio/hqlivestream.mp3,Planet Radio,planetradio",
+            "http://mp3channels.webradio.antenne.de/rockantenne,ROCK ANTENNE,rockantenne",
+            "http://mp3stream7.apasf.apa.at:8000,Ö3,oe3",
+            "http://raj.krone.at:80/kronehit-ultra-hd.aac,Kronehit,krone",
+            "http://radio.vgmradio.com:8040/stream,VGM Radio,vgm",
+            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p,BBC Radio 1,bbc1",
+            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p,BBC Radio 2,bbc2",
+            "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p,BBC Radio 3,bbc3",
+            "http://us2.internet-radio.com:8281/live,Bollywood,bollywood",
+            "http://64.71.79.181:8040/,Big B Korea,bigb-k",
+            "http://64.71.79.181:8018/,Big B Japan,bigb-j",
+            "http://ibizaglobalradio.streaming-pro.com:8024/,Ibiza Global Radio,ibiza"
         ]
 
         self.ytdl_opts = {
@@ -98,7 +98,7 @@ class Voice:
             return "http://mp3channels.webradio.antenne.de/rockantenne,ROCK ANTENNE"
         elif radio_channel == "oe3":
 
-            return "http://mp3stream7.apasf.apa.at:8000,Ö3"
+            return "http://mp3stream7.apasf.apa.at:8000,Ö3,oe3"
         elif radio_channel == "krone":
 
             return "http://raj.krone.at:80/kronehit-ultra-hd.aac,Kronehit"
@@ -269,11 +269,18 @@ class Voice:
 
         if radio_url == "NOPE":
 
-            await ctx.channel.send(f"Sorry, this is an unknown channel. For a list of valid channels, please type `{self.bot.command_prefix}list`")
+            await ctx.channel.send(f"Sorry, this is an unknown channel. For a list of valid channels, please type `{self.bot.command_prefix}radio list`")
             return
         elif radio_url == "EMBED":
-
-            await ctx.channel.send("Here's a list of valid radio channels:")
+            embed = discord.Embed(
+                title="Radiosender",
+                description="Das hier ist die aktuelle Liste an Radiosendern, die der Bot abspielen kann.",
+                color=0x22a64b
+            )
+            for i in self.channels:
+                url, channel, argument = i.split(",")
+                embed.add_field(name=argument, value=channel)
+            await ctx.channel.send(embed=embed)
             return
         else:
 
