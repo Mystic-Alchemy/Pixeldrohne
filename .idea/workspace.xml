@@ -5,7 +5,7 @@
       <change afterPath="$PROJECT_DIR$/database_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/music.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/music.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zitate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/zitate.txt" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -73,12 +73,13 @@
           <entry key="md" value="1" />
           <entry key="py" value="23" />
           <entry key="sql" value="3" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="23" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="1" />
@@ -86,16 +87,17 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -105,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            <state relative-caret-position="401">
+              <caret line="112" column="28" lean-forward="true" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
               <folding>
                 <marker date="1530383135916" expanded="true" signature="466:467" ph="..." />
                 <marker date="1530383135916" expanded="true" signature="4298:5190" ph="..." />
@@ -116,10 +118,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zitate.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2412">
+              <caret column="183" selection-start-column="183" selection-end-column="183" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="282" column="46" selection-start-line="282" selection-start-column="46" selection-end-line="282" selection-end-column="46" />
+              <caret line="282" column="47" selection-start-line="282" selection-start-column="47" selection-end-line="282" selection-end-column="47" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -202,8 +213,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1571" />
-    <option name="y" value="37" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -212,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +239,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530366897850</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Schutz gegen das Erreichen von Rate Limits">
+      <created>1531216478469</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1531216478469</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -444,22 +462,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="37" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19174758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33833718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33833718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32212582" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
@@ -524,9 +541,6 @@
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zitate.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -635,17 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-          <folding>
-            <marker date="1530383135916" expanded="true" signature="466:467" ph="..." />
-            <marker date="1530383135916" expanded="true" signature="4298:5190" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -675,10 +678,28 @@
     <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="282" column="46" selection-start-line="282" selection-start-column="46" selection-end-line="282" selection-end-column="46" />
+          <caret line="282" column="47" selection-start-line="282" selection-start-column="47" selection-end-line="282" selection-end-column="47" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="112" column="28" lean-forward="true" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+          <folding>
+            <marker date="1530383135916" expanded="true" signature="466:467" ph="..." />
+            <marker date="1530383135916" expanded="true" signature="4298:5190" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zitate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2412">
+          <caret column="183" selection-start-column="183" selection-end-column="183" />
         </state>
       </provider>
     </entry>

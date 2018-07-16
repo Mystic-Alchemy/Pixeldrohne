@@ -7,14 +7,15 @@ from datetime import datetime, time
 import discord
 from discord.ext import commands
 from custom_commands import CustomCommands
+from database_test import MainCommands
 import pxldrn
 import keys
 import random
+import asyncpg
 
 giphy = safygiphy.Giphy()
 bot = commands.Bot(command_prefix=keys.prefix, case_insensitive=True)
 bot.remove_command("help")
-
 
 @bot.event
 async def on_ready():
@@ -88,6 +89,7 @@ async def zahl_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("Du musst mir zwei Zahlen geben, die erste das Minimum, die zweite das Maximum.")
 
+
 @bot.group()
 async def zitat(ctx):
     if ctx.invoked_subcommand is None:
@@ -97,6 +99,7 @@ async def zitat(ctx):
                 zitat = random.choice(auswahl)
                 await ctx.send(zitat)
 
+
 @zitat.command(name="hidden")
 async def hidden(ctx):
     async with ctx.channel.typing():
@@ -105,6 +108,7 @@ async def hidden(ctx):
             file.close()
             zitat = random.choice(auswahl)
             await ctx.send(zitat, delete_after=10)
+
 
 @zitat.command(name="write")
 async def write(ctx, *, arg):
@@ -116,6 +120,7 @@ async def write(ctx, *, arg):
                 await ctx.send(f"Dein Zitat `{arg}` wurde der Liste hinzugefügt")
     else:
         pass
+
 
 @write.error
 async def write_error(ctx, error):
@@ -149,11 +154,11 @@ async def uptime(ctx):
             tstring = f"{result.days} Tagen " + tstring
     await ctx.send(f"Der Bot läuft schon seit {tstring}")
 
-
 bot.add_cog(pxldrn.helps.Help(bot))
 bot.add_cog(pxldrn.music.Voice(bot))
 bot.add_cog(pxldrn.moderation.Mods(bot))
 bot.add_cog(pxldrn.moderation.Admin(bot))
 bot.add_cog(pxldrn.minigames.SchereSteinPapier(bot))
 bot.add_cog(CustomCommands(bot))
+bot.add_cog(MainCommands(bot))
 bot.run(keys.dev)
