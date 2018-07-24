@@ -294,7 +294,7 @@ class Voice:
 
                     self.states[str(ctx.guild.id)].stop()
 
-                    player = discord.FFmpegPCMAudio(radio_url, executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
+                    player = discord.FFmpegPCMAudio(radio_url, before_options=self.ffmpeg_opts)
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
@@ -313,7 +313,7 @@ class Voice:
 
                     voice = ctx.guild.voice_client
 
-                    player = discord.FFmpegPCMAudio(radio_url, executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
+                    player = discord.FFmpegPCMAudio(radio_url, before_options=self.ffmpeg_opts)
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
@@ -362,7 +362,7 @@ class Voice:
                     if not self.states[str(ctx.guild.id)].is_playing() or self.states[str(ctx.guild.id)].is_paused():
 
                         player = discord.FFmpegPCMAudio(self.queue[str(ctx.guild.id)].pop(0),
-                                                        executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
+                                                        before_options=self.ffmpeg_opts)
                         source = discord.PCMVolumeTransformer(player)
                         voice.play(source, after=await self.printtext())
 
@@ -388,7 +388,7 @@ class Voice:
 
                 self.states[str(ctx.guild.id)] = voice
 
-                player = discord.FFmpegPCMAudio(yt_stream, executable='ffmpeg.exe', before_options=self.ffmpeg_opts)
+                player = discord.FFmpegPCMAudio(yt_stream, before_options=self.ffmpeg_opts)
                 source = discord.PCMVolumeTransformer(player)
                 voice.play(source, after=await self.printtext())
 
