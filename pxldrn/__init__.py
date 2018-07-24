@@ -1,4 +1,4 @@
-import discord
-import asyncio
-import pxldrn.adv
-import pxldrn.hilfe
+import pxldrn.helps
+import pxldrn.minigames
+import pxldrn.moderation
+import pxldrn.music
