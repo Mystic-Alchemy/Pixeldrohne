@@ -298,7 +298,7 @@ class Voice:
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
-                    voice.play(source, after=self.printtext())
+                    voice.play(source)
 
                     await ctx.channel.send(f"Now playing: {channel}")
                 except Exception as error:
@@ -317,7 +317,7 @@ class Voice:
                     self.states[str(ctx.guild.id)] = voice
 
                     source = discord.PCMVolumeTransformer(player)
-                    voice.play(source, after=self.printtext())
+                    voice.play(source)
 
                     await ctx.channel.send(f"Now playing: {channel}")
                 except Exception as error:
