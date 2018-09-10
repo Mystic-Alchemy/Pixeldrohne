@@ -58,9 +58,6 @@ class Voice:
         self.states = {}
         self.queue = {}
 
-    async def printtext(self):
-        print("something to test")
-
     async def get_stream(self, song: str):
 
         loop = asyncio.get_event_loop()
@@ -364,7 +361,7 @@ class Voice:
                         player = discord.FFmpegPCMAudio(self.queue[str(ctx.guild.id)].pop(0),
                                                         before_options=self.ffmpeg_opts)
                         source = discord.PCMVolumeTransformer(player)
-                        voice.play(source, after=await self.printtext())
+                        voice.play(source)
 
                         await ctx.send("Playback gestartet")
                     elif self.states[str(ctx.guild.id)].is_playing() or self.states[str(ctx.guild.id)].is_paused():
@@ -390,7 +387,7 @@ class Voice:
 
                 player = discord.FFmpegPCMAudio(yt_stream, before_options=self.ffmpeg_opts)
                 source = discord.PCMVolumeTransformer(player)
-                voice.play(source, after=await self.printtext())
+                voice.play(source)
 
                 await ctx.send("Tick Tick")
             except Exception as error:
