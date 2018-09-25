@@ -5,6 +5,9 @@ import aiohttp
 import safygiphy
 from datetime import datetime, time
 import discord
+import io
+import matplotlib.pyplot as plt
+import matplotlib
 from discord.ext import commands
 from custom_commands import CustomCommands
 from database_test import MainCommands
@@ -16,6 +19,8 @@ import asyncpg
 giphy = safygiphy.Giphy()
 bot = commands.Bot(command_prefix=keys.prefix, case_insensitive=True)
 bot.remove_command("help")
+plt.rcParams.update({'figure.autolayout': True})
+matplotlib.rc('xtick', labelsize=10)
 
 @bot.event
 async def on_ready():
@@ -38,6 +43,30 @@ async def say_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.message.delete()
         await ctx.channel.send("Du musst mir schon etwas geben, dass ich sagen kann.", delete_after=3)
+
+
+@bot.command()
+async def würfel(ctx, augen: int, anzahl: int):
+    liste = []
+    for i in range(anzahl):
+        rando = random.randint(1, augen)
+        liste.append(rando)
+    simple = []
+    eyes = []
+    for i in range(augen):
+        count = liste.count(i + 1)
+        eyes.append(i + 1)
+        simple.append(count)
+
+    plt.bar(eyes, simple, tick_label=eyes)
+    plt.xlabel('Augen')
+    plt.ylabel('Anzahl')
+    plt.title('zufällige Würfel')
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    await ctx.send(file=discord.File(buf, "plot.png"))
+    plt.clf()
 
 
 @bot.command(no_pm=True)
