@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="DAU Debuggen von Würfel">
+    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Snosh Sicherheit vom Würfel Befehl gesichert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -115,7 +114,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="139" />
-          <entry key="txt" value="138" />
+          <entry key="txt" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -126,7 +125,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="138" />
+          <entry key="PLAIN_TEXT" value="184" />
           <entry key="Python" value="139" />
         </counts>
       </usages-collector>
@@ -145,8 +144,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="91" selection-end-column="35" />
+            <state relative-caret-position="1547">
+              <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
               </folding>
@@ -475,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537895357137</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Snosh Sicherheit vom Würfel Befehl gesichert">
+      <created>1537895690370</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1537895690370</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -488,10 +494,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27305245" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27305245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -503,7 +508,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" visible="true" weight="0.36193448" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" visible="true" weight="0.36193448" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007949" side_tool="true" weight="0.36193448" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
@@ -562,7 +567,8 @@
     <MESSAGE value="Kleiner Fix der after Argumente" />
     <MESSAGE value="Neuer Befehl: Würfel, leider aktuell noch Blocking" />
     <MESSAGE value="DAU Debuggen von Würfel" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAU Debuggen von Würfel" />
+    <MESSAGE value="Snosh Sicherheit vom Würfel Befehl gesichert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Snosh Sicherheit vom Würfel Befehl gesichert" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py" />
@@ -637,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="91" selection-end-column="35" />
+        <state relative-caret-position="1547">
+          <caret line="91" column="35" lean-forward="true" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
           <folding>
             <element signature="e#74#88#0" expanded="true" />
           </folding>

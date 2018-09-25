@@ -10,6 +10,7 @@ Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen 
 - safygiphy (python3 -m pip install -U safygiphy)
 - requests (python3 -m pip install -U requests)
 - YoutubeDL (python3 -m pip install youtube-dl)
+- Matplotlib (python3 -m pip install matplotlib)
 
 Auf Linux wird möglicherweise noch libffi gebraucht.
 
