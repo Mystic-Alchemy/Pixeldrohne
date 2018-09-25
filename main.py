@@ -87,6 +87,9 @@ async def würfel_error(ctx, error):
         await ctx.send("Mit den Werten kann ich leider nicht arbeiten.")
     if isinstance(error, commands.BadArgument):
         await ctx.send("Äh, ich brauche schon Zahlen.")
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("Es tut mir leid, aber um zu funktionieren brauche ich die Anzahl an Augen **und** die Anzahl"
+                       "der Würfe")
 
 
 @bot.command(no_pm=True)
