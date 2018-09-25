@@ -12,6 +12,7 @@ from discord.ext import commands
 from custom_commands import CustomCommands
 from database_test import MainCommands
 import pxldrn
+import functools
 import keys
 import random
 import asyncpg
@@ -47,26 +48,45 @@ async def say_error(ctx, error):
 
 @bot.command()
 async def würfel(ctx, augen: int, anzahl: int):
-    liste = []
-    for i in range(anzahl):
-        rando = random.randint(1, augen)
-        liste.append(rando)
-    simple = []
-    eyes = []
-    for i in range(augen):
-        count = liste.count(i + 1)
-        eyes.append(i + 1)
-        simple.append(count)
+    if augen <= 100:
+        if anzahl <= 1000000:
+            async with ctx.channel.typing():
+                def blocking():
+                    liste = []
+                    for i in range(anzahl):
+                        rando = random.randint(1, augen)
+                        liste.append(rando)
+                    return liste
 
-    plt.bar(eyes, simple, tick_label=eyes)
-    plt.xlabel('Augen')
-    plt.ylabel('Anzahl')
-    plt.title('zufällige Würfel')
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
-    await ctx.send(file=discord.File(buf, "plot.png"))
-    plt.clf()
+                partial = functools.partial(blocking)
+                liste = await bot.loop.run_in_executor(None, partial)
+                simple = []
+                eyes = []
+                for i in range(augen):
+                    count = liste.count(i + 1)
+                    eyes.append(i + 1)
+                    simple.append(count)
+
+                plt.bar(eyes, simple, tick_label=eyes)
+                plt.xlabel('Augen')
+                plt.ylabel('Anzahl')
+                plt.title('zufällige Würfel')
+                buf = io.BytesIO()
+                plt.savefig(buf, format='png')
+                buf.seek(0)
+                await ctx.send(file=discord.File(buf, "plot.png"))
+                plt.clf()
+        else:
+            await ctx.send("Why?")
+    else:
+        await ctx.send("Why?")
+
+@würfel.error
+async def würfel_error(ctx, error):
+    if isinstance(error, ValueError):
+        await ctx.send("Mit den Werten kann ich leider nicht arbeiten.")
+    if isinstance(error, commands.BadArgument):
+        await ctx.send("Äh, ich brauche schon Zahlen.")
 
 
 @bot.command(no_pm=True)
