@@ -4,8 +4,8 @@ Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen 
 
 ### Benötigt:
 - mindestens Python 3.6
-- discord.py rewrite (python3 -m pip install -U discord-rewrite)
-- ffmpeg (Linux: apt-get install ffmpeg, Windows nur die ffmpeg.exe wird benötigt)
+- discord.py rewrite (python3 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice])
+- ffmpeg (Linux: apt-get install ffmpeg, Windows: ffmpeg hier runterladen: https://www.ffmpeg.org/ und in den Bot Pfad einfügen.)
 - PyNaCl (python3 -m pip install -U PyNaCl)
 - safygiphy (python3 -m pip install -U safygiphy)
 - requests (python3 -m pip install -U requests)
