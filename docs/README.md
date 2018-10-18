@@ -3,7 +3,7 @@
 Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen der "standard" Variante.
 
 ### Benötigt:
-- mindestens Python 3.6
+- Python 3.6.x (aktuell klappt der Bot leider nicht mit der 3.7)
 - discord.py rewrite (python3 -m pip install -U git+https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice])
 - ffmpeg (Linux: apt-get install ffmpeg, Windows: ffmpeg hier runterladen: https://www.ffmpeg.org/ und in den Bot Pfad einfügen.)
 - PyNaCl (python3 -m pip install -U PyNaCl)
@@ -15,13 +15,13 @@ Das hier ist die Rewrite Version der Pixeldrohne, sie hat nicht alle Funktionen 
 Auf Linux wird möglicherweise noch libffi gebraucht.
 
 ### Was der Rewrite bisher kann:
-####Allgemeines:
+#### Allgemeines:
 - Eine vollständige Hilfe
 - Ein About über den Bot
 - Einen Befehl mit den Daten, wie man den Bot einlädt
 - Uptime anzeigen
 - Zufällige falsch zugeordnete und dumme Zitate abrufen
-####Musik:
+#### Musik:
 - Join
 - Leave
 - Radiosender
@@ -30,8 +30,8 @@ Auf Linux wird möglicherweise noch libffi gebraucht.
 - Natürlich kann man es auch pausieren und vollständig stoppen.
 #### Minigames:
 - Schere, Stein, Papier (Echse, Spock)
-####Moderation:
+#### Moderation:
 - Kick
 - Ban
 - Purge
-#####Leider fehlt noch viel, einfach ein bisschen warten. Ich arbeite leider alleine am Bot, deswegen braucht alles ein bisschen länger.
+##### Leider fehlt noch viel, einfach ein bisschen warten. Ich arbeite leider alleine am Bot, deswegen braucht alles ein bisschen länger.
