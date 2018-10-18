@@ -146,30 +146,24 @@ async def zahl_error(ctx, error):
 async def zitat(ctx):
     if ctx.invoked_subcommand is None:
         async with ctx.channel.typing():
-            with open('zitate.txt', 'a', encoding='utf-8') as file:
-                auswahl = file.readlines()
-                zitat = random.choice(auswahl)
-                await ctx.send(zitat)
+            zitat = random.choice(pxldrn.zitate.zitate)
+            await ctx.send(zitat)
 
 
 @zitat.command(name="hidden")
 async def hidden(ctx):
     async with ctx.channel.typing():
-        with open('zitate.txt', 'r', encoding='utf-8') as file:
-            auswahl = file.readlines()
-            file.close()
-            zitat = random.choice(auswahl)
-            await ctx.send(zitat, delete_after=10)
+        zitat = random.choice(pxldrn.zitate.zitate)
+        await ctx.send(zitat, delete_after=10)
 
 
 @zitat.command(name="write")
 async def write(ctx, *, arg):
     if not arg is None:
         async with ctx.channel.typing():
-            with open('zitate.txt', 'a', encoding='utf-8') as file:
-                file.write("\n" + arg)
-                file.close()
-                await ctx.send(f"Dein Zitat `{arg}` wurde der Liste hinzugefügt")
+            channel = bot.get_channel(502539843012657153)
+            await channel.send(f"Zitat von {ctx.message.author.name}: {arg}")
+            await ctx.send(f"Dein Zitat `{arg}` wurde der Liste hinzugefügt", delete_after=10)
     else:
         pass
 
