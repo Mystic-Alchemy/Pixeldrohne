@@ -161,4 +161,15 @@ zitate = ['“I don’t really have no ambition you know. I only have one thing 
           '"Google ist dein Freund" ~Snosh',
           '"Ban mich doch, juckt mich net" ~ Snosh',
           '"Wichtig ist was hinten rauskommt" ~ Helmut Kohl',
-          "'Emotions ist geil' ~ Snosh"]
+          "'Emotions ist geil' ~ Snosh",
+          '"Halt Stopp! Jetzt reicht es." -Andreas"',
+          '"Danke für die gute Laune Lampe." -Pixelwerfer',
+          '"Affe zu Klappe tot." -Affe',
+          '"Hass ist Ballast, das Leben ist zu kurz um immer wütend zu sein." -Hulk',
+          '"Micha hat mich gerade fett genannt :frowning:" - Elfi',
+          '"Ich bin eine Edel-Hure"  -Elfi 2018',
+          '"1000 Nerds stehen hinter mir und rufen: >"DDOS Attacke!<"  -Darkwing Duck',
+          '"Sag mal was denkst du was ich denke, denkst du was ich denke ist das das du denkst was ich denke, denn wenn du denkst was ich denke, dann denken wir es ja beide"  - Hund der dich anschaut weil er Hunger hat',
+          '"Ich bin die Trixi vom Hinterhof, Ich bin nicht hübsch aber dafür doof"  -SHADOWP4IN',
+          '"Ich habe keine Ahnung von Motorräder aber die haben 2 reifen ich nehme den halben preis eines Autos"  -Autoverkäufer',
+          '"So du Drachen verrücktes Weib, jetzt bin ich auf 180"  -Lucy Heartfilia']

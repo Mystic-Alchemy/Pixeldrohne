@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Ich bin ein absoluter Idiot, ich habe jetzt seit zu vielen Commits vergessen endlich den Run auf Token zu ändern.">
-      <change afterPath="$PROJECT_DIR$/pxldrn/zitate.py" afterDir="false" />
+    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Noch ein Readme Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pxldrn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/zitate.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/zitate.py" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
@@ -17,10 +15,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Pixeldrohne$Hanoi.coverage" NAME="Hanoi Coverage Results" MODIFIED="1527881777147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../funstuff" />
-    <SUITE FILE_PATH="coverage/Pixeldrohne$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1527881368984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../funstuff" />
+    <SUITE FILE_PATH="coverage/Pixeldrohne$main.coverage" NAME="main Coverage Results" MODIFIED="1526496587010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pixeldrohne$Infinite_random.coverage" NAME="Infinite random Coverage Results" MODIFIED="1527881581883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../funstuff" />
     <SUITE FILE_PATH="coverage/Pixeldrohne$test.coverage" NAME="test Coverage Results" MODIFIED="1528744845848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Pixeldrohne$main.coverage" NAME="main Coverage Results" MODIFIED="1526496587010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixeldrohne$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1527881368984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../funstuff" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -52,107 +50,13 @@
     </expand>
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-333455539">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="md" value="134" />
-          <entry key="py" value="6225" />
-          <entry key="sql" value="96" />
-          <entry key="txt" value="187" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="134" />
-          <entry key="PLAIN_TEXT" value="187" />
-          <entry key="Python" value="6225" />
-          <entry key="Scratch" value="96" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="LICENSE" value="1" />
-          <entry key="md" value="1" />
-          <entry key="py" value="23" />
-          <entry key="sql" value="3" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="23" />
-          <entry key="SQL" value="2" />
-          <entry key="Scratch" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="11" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.57" value="1" />
-          <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.64" value="1" />
-          <entry key="project.open.time.72" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="12" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1435318895">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="md" value="51" />
-          <entry key="py" value="543" />
-          <entry key="txt" value="332" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="JavaScript-modules-diagram/C:/Users/pmc/PycharmProjects/Pixeldrohne" value="1" />
-          <entry key="md" value="1" />
-          <entry key="py" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="51" />
-          <entry key="PLAIN_TEXT" value="332" />
-          <entry key="Python" value="543" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="Python" value="13" />
-          <entry key="UML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="164" column="77" selection-start-line="164" selection-start-column="77" selection-end-line="164" selection-end-column="77" />
+            <state relative-caret-position="2516">
+              <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
               </folding>
@@ -160,56 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pxldrn/zitate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2363">
-              <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6103">
-              <caret line="363" column="41" selection-start-line="363" selection-start-column="41" selection-end-line="363" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="706">
+              <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -244,18 +103,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d2d5abab-6736-41ee-902e-3daa4ed334b6/console.sql" />
         <option value="$PROJECT_DIR$/database_test.py" />
         <option value="$PROJECT_DIR$/pxldrn/music.py" />
-        <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
-        <option value="$PROJECT_DIR$/pxldrn/zitate.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/docs/README.md" />
+        <option value="$PROJECT_DIR$/pxldrn/zitate.py" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -274,11 +127,6 @@
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pixeldrohne" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pixeldrohne" type="b2602c69:ProjectViewProjectNode" />
@@ -386,6 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529679858097</updated>
+      <workItem from="1549132480294" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="Boop Beep Boop Roboter aktualisiert&#10;helps.py: Hilfe für neue Befehle und Erklärungen hinzugefügt&#10;main.py: Neue Befehle">
       <created>1529759486418</created>
@@ -541,8 +390,25 @@
       <option name="project" value="LOCAL" />
       <updated>1537897619953</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Jetzt sind die Zitate endlich gefixt zur Freude aller.">
+      <created>1539885501146</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1539885501146</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Noch ein Readme Fix">
+      <created>1539885580717</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539885580717</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,8 +421,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2754372" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28020668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -568,7 +435,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" visible="true" weight="0.36193448" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" visible="true" weight="0.36165237" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007949" side_tool="true" weight="0.36193448" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
@@ -606,9 +473,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Boop Beep Boop Roboter aktualisiert&#10;helps.py: Hilfe für neue Befehle und Erklärungen hinzugefügt&#10;main.py: Neue Befehle" />
     <MESSAGE value="Operationen ausgelagert ins Paket pxldrn" />
@@ -630,7 +494,9 @@
     <MESSAGE value="Snosh Sicherheit vom Würfel Befehl gesichert" />
     <MESSAGE value="Readme Update" />
     <MESSAGE value="Ich bin ein absoluter Idiot, ich habe jetzt seit zu vielen Commits vergessen endlich den Run auf Token zu ändern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ich bin ein absoluter Idiot, ich habe jetzt seit zu vielen Commits vergessen endlich den Run auf Token zu ändern." />
+    <MESSAGE value="Jetzt sind die Zitate endlich gefixt zur Freude aller." />
+    <MESSAGE value="Noch ein Readme Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noch ein Readme Fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py" />
@@ -673,23 +539,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/embed_data/help_embeds.py" />
     <entry file="file://$PROJECT_DIR$/pxldrn/hilfe.py" />
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6103">
@@ -700,10 +549,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/zitate.py">
+    <entry file="file://$PROJECT_DIR$/docs/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
+        <state relative-caret-position="736">
+          <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -711,19 +570,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="164" column="77" selection-start-line="164" selection-start-column="77" selection-end-line="164" selection-end-column="77" />
+        <state relative-caret-position="2516">
+          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
           <folding>
             <element signature="e#74#88#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/zitate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="171" column="10" selection-start-line="171" selection-start-column="10" selection-end-line="171" selection-end-column="10" />
         </state>
       </provider>
     </entry>
