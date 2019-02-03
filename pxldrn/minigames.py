@@ -1,5 +1,5 @@
-import random
-import discord
+import random, discord, typing
+from pxldrn.tools import MineSweeper
 from discord.ext import commands
 
 
@@ -115,3 +115,23 @@ class SchereSteinPapier:
     async def extended_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send("Bitte wähle zwischen Schere, Stein, Papier, Echse oder Spock.")
+
+
+class Minesweeper:
+
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command(name="minesweeper")
+    async def minesweeper(self, ctx, rows: typing.Union[int, str] = None, columns: typing.Optional[int] = None):
+        if rows is None:
+            mine_help = discord.Embed(
+                title="Minesweeper",
+                description="Dieser Befehl ist ein Generator für Minesweeper Layouts.",
+                colour=0x123456
+            )
+            await ctx.send(embed=mine_help)
+        else:
+            mines = MineSweeper(rows, columns)
+            mapped = await mines.map_builder()
+            await ctx.send(mapped)
