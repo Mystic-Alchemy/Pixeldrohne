@@ -15,7 +15,6 @@ import pxldrn
 import functools
 import keys
 import random
-import asyncpg
 
 giphy = safygiphy.Giphy()
 bot = commands.Bot(command_prefix=keys.prefix, case_insensitive=True)
@@ -208,4 +207,4 @@ bot.add_cog(pxldrn.minigames.SchereSteinPapier(bot))
 bot.add_cog(CustomCommands(bot))
 bot.add_cog(pxldrn.minigames.Minesweeper(bot))
 bot.add_cog(MainCommands(bot))
-bot.run(keys.dev)
+bot.run(keys.token)

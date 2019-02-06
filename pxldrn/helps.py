@@ -11,7 +11,6 @@ class Help:
         self.footer_choices = ["Liest überhaupt jemand das hier unten?",
                                f"Deine zufällige Zahl ist: nicht existent",
                                "Hier sind so viele lustige Fakten, was meinst du wie viele?",
-                               "[         ]",
                                "Dieser Bot ist zu 100 % Fairtrade.",
                                "Wusstest du schon, dass Delfine sich im Spiegel erkennen?",
                                "Wusstest du schon, dass Katzen in jedem ihrer Ohren 32 Muskeln haben?",
@@ -95,6 +94,8 @@ class Help:
             me.set_footer(icon_url=self.bot.user.avatar_url, text=random.choice(self.footer_choices))
             me.add_field(name=f"{self.bot.command_prefix}ssp <wahl[-e]> {'{extended}'}",
                          value="Normales Schere Stein Papier und Extended mit Echse und Spock. Wenn -e genutzt wird, muss auch extended gesetzt sein.")
+            me.add_field(name=f'{self.bot.command_prefix}minesweeper <x[help]> <y> [bombs|tag]',
+                         value=f"Ein Minesweeper Generator, der die Spoiler nutzt. Für eine ausfühlichere Hilfe nutze `{self.bot.command_prefix}minesweeper` ohne weitere Argumente")
             await ctx.send(embed=me)
         else:
             pass

@@ -1,4 +1,5 @@
-import random, discord, typing
+import random, discord, typing, asyncio, pxldrn.tools
+from math import sqrt
 from pxldrn.tools import MineSweeper
 from discord.ext import commands
 
@@ -123,15 +124,59 @@ class Minesweeper:
         self.bot = bot
 
     @commands.command(name="minesweeper")
-    async def minesweeper(self, ctx, rows: typing.Union[int, str] = None, columns: typing.Optional[int] = None):
-        if rows is None:
+    async def minesweeper(self, ctx, columns: typing.Union[int, str] = None, rows: typing.Optional[int] = None, bombs: typing.Union[int, str] = None, output: typing.Optional[str] = None):
+        if columns is None:
             mine_help = discord.Embed(
                 title="Minesweeper",
                 description="Dieser Befehl ist ein Generator für Minesweeper Layouts.",
                 colour=0x123456
             )
-            await ctx.send(embed=mine_help)
+            mine_help.add_field(
+                name=f"Aufbau | Generelle Form: {self.bot.command_prefix}minesweeper <x> <y> [bombs|tag]",
+                value=f"Wenn du die Anzahl and Spalten (x) angibst musst du auch die Anzahl an Zeilen (y) angeben. Die Anzahl an Bomben ist optional, wenn man keinen Wert angibt, dann wird die Anzahl automatisch festgelegt."
+                      f"Man kann auch das Tag `-v` oder `--visible` nutzen um das generierte Spiel nicht zu verdecken, dies sollte immer am Schluss stehen, kann aber auch mit angegeber Anzahl von Bomben genutzt werden."
+            )
+            mine_help.add_field(name="Wie man spielt.", value=f"Eine Hilfe wie man Minesweeper spielt ist mit `{self.bot.command_prefix}minesweeper help` aufrufbar.")
+            mine_help.add_field(name="Tipp", value="Klicke auf 🇦 unter dieser Nachricht um ein zufälliges Spiel zu generieren.\n"
+                                                   "Klicke auf 🇧 um die oben genannte Spielhilfe aufzurufen.")
+            help_message = await ctx.send(embed=mine_help)
+            await help_message.add_reaction("🇦")
+            await help_message.add_reaction('🇧')
+
+            def check(reaction, user):
+                reaction_list = ["🇦", '🇧']
+                return user == ctx.message.author and str(reaction.emoji) in reaction_list
+
+            try:
+                reaction, user = await self.bot.wait_for('reaction_add', timeout=30.0, check=check)
+            except asyncio.TimeoutError:
+                pass
+            else:
+                if str(reaction.emoji) == "🇦":
+                    mines = MineSweeper(rows=random.randint(7, 12), columns=random.randint(7, 12), bombs=random.randint(12, 20))
+                    mapped = await mines.map_builder()
+                    await ctx.send(mapped)
+                if str(reaction.emoji) == '🇧':
+                    await ctx.send(embed=pxldrn.tools.minesweeper_spielhilfe)
+        elif columns == "help" or columns == "hilfe":
+            await ctx.send(embed=pxldrn.tools.minesweeper_spielhilfe)
+        elif columns > 15 or rows > 13:
+            await ctx.send("Die maximale Größe is 15x13")
         else:
-            mines = MineSweeper(rows, columns)
+            if bombs is None:
+                tag = None
+                if rows < 10 or columns < 10:
+                    bombs = int(sqrt(rows * columns * 2))
+                else:
+                    bombs = int(sqrt(rows * columns * 3))
+            elif bombs == "-v" or bombs == "--visible":
+                tag = "-v"
+                if rows < 10 or columns < 10:
+                    bombs = int(sqrt(rows * columns * 2))
+                else:
+                    bombs = int(sqrt(rows * columns * 3))
+            else:
+                tag = output
+            mines = MineSweeper(rows=rows, columns=columns, bombs=bombs, tag=tag)
             mapped = await mines.map_builder()
             await ctx.send(mapped)
