@@ -5,7 +5,7 @@ import youtube_dl
 import random
 
 
-class Voice:
+class Voice(commands.Cog):
 
     def __init__(self, bot):
 

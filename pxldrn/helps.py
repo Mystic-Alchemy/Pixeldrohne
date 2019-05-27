@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 
 
-class Help:
+class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color_help = 0x0affe0

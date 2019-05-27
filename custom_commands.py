@@ -23,7 +23,7 @@ https://discordpy.readthedocs.io/en/rewrite/
 """
 
 
-class CustomCommands:
+class CustomCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         # Klassenweite Variablen bitte hier definieren als self.var = var

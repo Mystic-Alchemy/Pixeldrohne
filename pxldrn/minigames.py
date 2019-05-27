@@ -8,7 +8,7 @@ def to_lower(argument):
     return str(argument.lower())
 
 
-class SchereSteinPapier:
+class SchereSteinPapier(commands.Cog):
 
     def __init__(self, bot):
 
@@ -118,7 +118,7 @@ class SchereSteinPapier:
             await ctx.send("Bitte wähle zwischen Schere, Stein, Papier, Echse oder Spock.")
 
 
-class Minesweeper:
+class Minesweeper(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot

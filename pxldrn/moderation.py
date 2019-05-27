@@ -3,7 +3,7 @@ from discord.ext import commands
 from datetime import datetime
 
 
-class Mods:
+class Mods(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color = 0xf0aade
