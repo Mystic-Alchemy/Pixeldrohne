@@ -104,7 +104,7 @@ class Help(commands.Cog):
     async def about_panel(self, ctx):
         about_embed = discord.Embed(
             title="Über die Pixeldrohne",
-            description="An der Pixeldrohne wir schon seit Oktober 2017 gearbeitet. Ursprünglich war der Bot als "
+            description="An der Pixeldrohne haben wir schon seit Oktober 2017 gearbeitet. Ursprünglich war der Bot als "
                         "universeller Bot für den Streamer Pixelwerfer gedacht hat sich dann aber hat sich dann "
                         "zu etwas einiges größerem entwickelt. Jetzt ist die Pixeldrohne schon eigentlich viel zu"
                         "groß, dass ich diese alleine aufrecht erhalten kann.",

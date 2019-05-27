@@ -1,6 +1,9 @@
 ---
 name: Funktion vorschlagen
 about: Du vermisst eine Funktion im Bot, dann schlage sie doch vor.
+title: ''
+labels: Feature Request
+assignees: ''
 
 ---
 
