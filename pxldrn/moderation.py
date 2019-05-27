@@ -77,7 +77,7 @@ class Mods(commands.Cog):
             await  ctx.send("Bitte warte kurz bevor du diesen Befehl wieder nutzt.\nLeider unterliege ich Rate-Limits")
 
 
-class Admin:
+class Admin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color = 0x0d8dff
