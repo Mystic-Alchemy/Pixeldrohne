@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Klassen in Cog Derivate umbewandelt" />
+    <list default="true" id="ce291789-b466-46a5-8f9d-977743153acc" name="Default" comment="Klassen in Cog Derivate umbewandelt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pxldrn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pxldrn/__init__.py" afterDir="false" />
+    </list>
     <ignored path="venv/" />
     <ignored path=".idea/dictionaries/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,10 +56,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1036">
-              <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            <state relative-caret-position="90">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding>
                 <element signature="e#74#88#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/tools/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -95,22 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-208">
-              <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="1386">
+              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -122,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/pxldrn/zitate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3132">
-              <caret line="174" column="85" lean-forward="true" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="85" />
+              <caret line="174" column="85" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -130,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom_commands.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="432">
               <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -142,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="36">
               <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -186,7 +189,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d2d5abab-6736-41ee-902e-3daa4ed334b6/console.sql" />
         <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/pxldrn/zitate.py" />
-        <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
         <option value="$PROJECT_DIR$/keys.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/pxldrn/tools/__init__.py" />
@@ -194,9 +196,10 @@
         <option value="$PROJECT_DIR$/pxldrn/helps.py" />
         <option value="$PROJECT_DIR$/pxldrn/tools/minesweeper.py" />
         <option value="$PROJECT_DIR$/pxldrn/minigames.py" />
-        <option value="$PROJECT_DIR$/pxldrn/moderation.py" />
         <option value="$PROJECT_DIR$/custom_commands.py" />
         <option value="$PROJECT_DIR$/database_test.py" />
+        <option value="$PROJECT_DIR$/pxldrn/moderation.py" />
+        <option value="$PROJECT_DIR$/pxldrn/__init__.py" />
       </list>
     </option>
   </component>
@@ -211,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,6 +370,10 @@
       <workItem from="1554421081063" duration="3053000" />
       <workItem from="1554585836952" duration="1232000" />
       <workItem from="1558976602530" duration="178000" />
+      <workItem from="1558977044717" duration="100000" />
+      <workItem from="1560090644781" duration="336000" />
+      <workItem from="1560091149385" duration="651000" />
+      <workItem from="1563052875639" duration="1393000" />
     </task>
     <task id="LOCAL-00001" summary="Boop Beep Boop Roboter aktualisiert&#10;helps.py: Hilfe für neue Befehle und Erklärungen hinzugefügt&#10;main.py: Neue Befehle">
       <created>1529759486418</created>
@@ -564,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558976756070</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Klassen in Cog Derivate umbewandelt">
+      <created>1558977122698</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558977122698</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30198000" />
+    <option name="totallyTimeSpent" value="32678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,19 +596,19 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2209857" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22893482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33826968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.46999222" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969603" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" weight="0.17069368" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49920508" visible="true" weight="0.16991426" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007949" side_tool="true" weight="0.36193448" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
@@ -702,7 +716,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Klassen in Cog Derivate umbewandelt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pixeldrohne$main.coverage" NAME="main Coverage Results" MODIFIED="1558977104267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pixeldrohne$main.coverage" NAME="main Coverage Results" MODIFIED="1563053645196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pxldrn/adv/twitch.py" />
@@ -750,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/music.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -774,16 +781,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/minigames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
+        <state relative-caret-position="2106">
           <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
@@ -793,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pxldrn/moderation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="1386">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -804,13 +804,13 @@
     <entry file="file://$PROJECT_DIR$/pxldrn/zitate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3132">
-          <caret line="174" column="85" lean-forward="true" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="85" />
+          <caret line="174" column="85" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom_commands.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="432">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -820,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="36">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -837,10 +837,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1036">
-          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state relative-caret-position="90">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
             <element signature="e#74#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/helps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pxldrn/tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -854,12 +871,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pxldrn/tools/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pxldrn/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="72">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
