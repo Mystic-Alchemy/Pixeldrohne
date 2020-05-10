@@ -27,7 +27,13 @@ class Voice(commands.Cog):
             "http://us2.internet-radio.com:8281/live,Bollywood,bollywood",
             "http://64.71.79.181:8040/,Big B Korea,bigb-k",
             "http://64.71.79.181:8018/,Big B Japan,bigb-j",
-            "http://ibizaglobalradio.streaming-pro.com:8024/,Ibiza Global Radio,ibiza"
+            "http://ibizaglobalradio.streaming-pro.com:8024/,Ibiza Global Radio,ibiza",
+            "http://stream.laut.fm/alles-radio,Alles Radio,allesradio",
+            "http://stream.laut.fm/alles-chill,Alles Chill,alleschill",
+            "http://stream.laut.fm/alles-dance,Alles Dance,allesdance",
+            "http://stream.laut.fm/alles-techno,Alles Techno,allestechno",
+            "http://stream.laut.fm/alles-hardstyle,Alles Hardstyle,alleshardstyle",
+            "http://stream.laut.fm/alles-klub,Alles Klub,allesklub",
         ]
 
         self.ytdl_opts = {
