@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 import matplotlib
 from discord.ext import commands
 from custom_commands import CustomCommands
-from database_test import MainCommands
 import pxldrn
 import functools
 import keys
@@ -206,5 +205,4 @@ bot.add_cog(pxldrn.moderation.Admin(bot))
 bot.add_cog(pxldrn.minigames.SchereSteinPapier(bot))
 bot.add_cog(CustomCommands(bot))
 bot.add_cog(pxldrn.minigames.Minesweeper(bot))
-bot.add_cog(MainCommands(bot))
 bot.run(keys.token)
